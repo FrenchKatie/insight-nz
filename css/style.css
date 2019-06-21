@@ -1,4 +1,46 @@
 body {
-  background-color: black; }
-  body .container h1 {
-    font-size: 30px; }
+  background-color: black;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  body .navbar {
+    max-width: 200px; }
+    body .navbar.right {
+      float: right;
+      position: relative; }
+    body .navbar .nav {
+      margin-left: 20px;
+      margin-top: 30px; }
+      body .navbar .nav a {
+        color: white; }
+        body .navbar .nav a:hover {
+          text-decoration: underline;
+          background-color: unset; }
+        body .navbar .nav a:focus {
+          text-decoration: underline;
+          background-color: unset; }
+      body .navbar .nav .active {
+        font-weight: bolder; }
+  body .container {
+    width: 100%; }
+    body .container h3 {
+      color: #FFF;
+      font-family: Helvetica;
+      font-size: 20px;
+      line-height: 32px; }
+    body .container .text {
+      margin: auto;
+      max-width: 530px; }
+    body .container .rules {
+      color: #FFF;
+      font-family: "Helvetica Neue";
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 38px; }
+    body .container .rotate {
+      -moz-transition: all .2s linear;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear; }
+    body .container .rotate.down {
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }

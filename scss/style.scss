@@ -1,9 +1,71 @@
 body {
 	background-color: black;
+	color: white;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+	.navbar {
+		max-width: 200px;
+
+		&.right {
+			float: right;
+			position: relative;
+		}
+
+		.nav {
+			margin-left: 20px;
+			margin-top: 30px;
+
+			a {
+				color: white;
+
+				&:hover {
+					text-decoration: underline;
+					background-color: unset;
+				}
+
+				&:focus {
+					text-decoration: underline;
+					background-color: unset;
+				}
+			}
+
+			.active {
+				font-weight: bolder;
+			}
+		}
+	}
 
 	.container {
-		h1 {
-			font-size: 30px;
+		width: 100%;
+
+		h3 {
+			color: #FFF;
+			font-family: Helvetica;
+			font-size: 20px;
+			line-height: 32px;
 		}
+
+		.text {
+			margin: auto;
+			max-width: 530px;
+		}
+      .rules {
+        color: #FFF;
+        font-family: "Helvetica Neue";
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 38px;
+      }
+      .rotate {
+          -moz-transition: all .2s linear;
+          -webkit-transition: all .2s linear;
+          transition: all .2s linear;
+      }
+      .rotate.down {
+          -moz-transform:rotate(90deg);
+          -webkit-transform:rotate(90deg);
+          transform:rotate(90deg);
+      }
+
 	}
 }
