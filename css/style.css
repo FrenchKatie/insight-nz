@@ -44,3 +44,5 @@ body {
       -moz-transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
+    body .container i {
+      font-size: 20px; }
