@@ -4,6 +4,10 @@ body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   body .navbar {
     max-width: 200px; }
+    @media only screen and (max-width: 768px) {
+      body .navbar {
+        width: 100%;
+        background-color: black; } }
     body .navbar.right {
       float: right;
       position: relative;
@@ -62,6 +66,9 @@ body {
       display: none; } }
   body .container {
     width: 100%; }
+    @media only screen and (max-width: 768px) {
+      body .container {
+        margin-top: 35%; } }
     @media only screen and (min-width: 768px) {
       body .container video {
         margin-top: -92px; } }
