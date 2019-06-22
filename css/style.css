@@ -10,16 +10,30 @@ body {
     body .navbar .nav {
       margin-left: 20px;
       margin-top: 30px; }
-      body .navbar .nav a {
-        color: white; }
-        body .navbar .nav a:hover {
+      body .navbar .nav .nav-link {
+        color: white;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px; }
+        body .navbar .nav .nav-link:hover {
           text-decoration: underline;
           background-color: unset; }
-        body .navbar .nav a:focus {
+        body .navbar .nav .nav-link:focus {
           text-decoration: underline;
           background-color: unset; }
+        body .navbar .nav .nav-link .arrow {
+          background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
+          width: 30px;
+          height: 14px;
+          display: inline-block; }
       body .navbar .nav .active {
-        font-weight: bolder; }
+        text-decoration: underline; }
+      body .navbar .nav .insight {
+        font-size: 19px; }
+      body .navbar .nav .year {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 14px; }
   body .container {
     width: 100%; }
     body .container h3 {
