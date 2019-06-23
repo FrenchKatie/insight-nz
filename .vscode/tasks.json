@@ -6,5 +6,9 @@
 	},
 	"args": [
 		"${file}"
+	],
+	"problemMatchers": [
+		"$gulp-tsc",
+		"$node-sass"
 	]
 }
