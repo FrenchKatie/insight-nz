@@ -1,4 +1,26 @@
 body {
-  background-color: black; }
-  body .container h1 {
-    font-size: 100px; }
+  background-color: black;
+  color: white; }
+  body .navbar {
+    max-width: 300px; }
+    body .navbar .nav {
+      margin-left: 20px;
+      margin-top: 30px; }
+      body .navbar .nav a {
+        color: white; }
+        body .navbar .nav a:hover {
+          text-decoration: underline;
+          background-color: unset; }
+      body .navbar .nav .active {
+        font-weight: bolder; }
+  body video {
+    margin-top: 85px; }
+  body .container h3 {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 20px;
+    line-height: 32px; }
+  body .container .text {
+    text-align: center;
+    margin: auto;
+    max-width: 530px; }
