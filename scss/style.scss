@@ -15,8 +15,11 @@ body {
 			margin-left: 20px;
 			margin-top: 30px;
 
-			a {
+			.nav-link {
 				color: white;
+				font-size: 20px;
+				font-weight: 300;
+				line-height: 24px;
 
 				&:hover {
 					text-decoration: underline;
@@ -27,10 +30,29 @@ body {
 					text-decoration: underline;
 					background-color: unset;
 				}
+
+				.arrow {
+					background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
+					width: 30px;
+					height: 14px;
+					display: inline-block;
+
+				}
 			}
 
 			.active {
-				font-weight: bolder;
+				text-decoration: underline;
+			}
+
+			.insight {
+				font-size: 19px;
+			}
+
+			.year {
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 14px;
+
 			}
 		}
 	}
