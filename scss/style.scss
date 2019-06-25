@@ -6,6 +6,11 @@ body {
 	.navbar {
 		max-width: 200px;
 
+		&.right {
+			float: right;
+			position: relative;
+		}
+
 		.nav {
 			margin-left: 20px;
 			margin-top: 30px;
@@ -22,8 +27,6 @@ body {
 					text-decoration: underline;
 					background-color: unset;
 				}
-
-
 			}
 
 			.active {
@@ -32,22 +35,17 @@ body {
 		}
 	}
 
-	video {
-		margin-top: 85px;
-
-	}
-
 	.container {
+		width: 100%;
+
 		h3 {
 			color: #FFF;
 			font-family: Helvetica;
 			font-size: 20px;
 			line-height: 32px;
-
 		}
 
 		.text {
-			text-align: center;
 			margin: auto;
 			max-width: 530px;
 		}

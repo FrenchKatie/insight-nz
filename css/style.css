@@ -1,8 +1,12 @@
 body {
   background-color: black;
-  color: white; }
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   body .navbar {
-    max-width: 300px; }
+    max-width: 200px; }
+    body .navbar.right {
+      float: right;
+      position: relative; }
     body .navbar .nav {
       margin-left: 20px;
       margin-top: 30px; }
@@ -11,16 +15,18 @@ body {
         body .navbar .nav a:hover {
           text-decoration: underline;
           background-color: unset; }
+        body .navbar .nav a:focus {
+          text-decoration: underline;
+          background-color: unset; }
       body .navbar .nav .active {
         font-weight: bolder; }
-  body video {
-    margin-top: 85px; }
-  body .container h3 {
-    color: #FFF;
-    font-family: Helvetica;
-    font-size: 20px;
-    line-height: 32px; }
-  body .container .text {
-    text-align: center;
-    margin: auto;
-    max-width: 530px; }
+  body .container {
+    width: 100%; }
+    body .container h3 {
+      color: #FFF;
+      font-family: Helvetica;
+      font-size: 20px;
+      line-height: 32px; }
+    body .container .text {
+      margin: auto;
+      max-width: 530px; }

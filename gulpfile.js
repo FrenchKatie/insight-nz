@@ -7,9 +7,6 @@ gulp.task('styles', () => {
 		.pipe(gulp.dest('./css/'));
 });
 
-gulp.task('watch', function () {
-	gulp.watch('./**/*.scss', ['styles']);
-});
 gulp.task('watch', () => {
 	gulp.watch('scss/**/*.scss', (done) => {
 		gulp.series(['styles'])(done);
