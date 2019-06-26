@@ -44,3 +44,19 @@ body {
     body .container .text {
       margin: auto;
       max-width: 530px; }
+    body .container .rules {
+      color: #FFF;
+      font-family: "Helvetica Neue";
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 38px; }
+    body .container .rotate {
+      -moz-transition: all .2s linear;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear; }
+    body .container .rotate.down {
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    body .container i {
+      font-size: 20px; }

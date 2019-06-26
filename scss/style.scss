@@ -71,5 +71,26 @@ body {
 			margin: auto;
 			max-width: 530px;
 		}
+      .rules {
+        color: #FFF;
+        font-family: "Helvetica Neue";
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 38px;
+      }
+      .rotate {
+          -moz-transition: all .2s linear;
+          -webkit-transition: all .2s linear;
+          transition: all .2s linear;
+      }
+      .rotate.down {
+          -moz-transform:rotate(90deg);
+          -webkit-transform:rotate(90deg);
+          transform:rotate(90deg);
+      }
+      i{
+         font-size: 20px;
+      }
+
 	}
 }
