@@ -1,9 +1,7 @@
-$('document').ready(function(){
+$('document').ready(function () {
 
-   $('.nav-item').click(function (event) {
-     event.preventDefault();
-   });
-   $(".rotate").click(function () {
-       $(this).toggleClass("down");
-   });
+	$(".nav-item").click(function () {
+		event.preventDefault();
+		$(this).toggleClass("down");
+	});
 });

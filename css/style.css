@@ -6,7 +6,8 @@ body {
     max-width: 200px; }
     body .navbar.right {
       float: right;
-      position: relative; }
+      position: relative;
+      margin-right: 30px; }
     body .navbar .nav {
       margin-left: 20px;
       margin-top: 30px; }
@@ -21,11 +22,6 @@ body {
         body .navbar .nav .nav-link:focus {
           text-decoration: underline;
           background-color: unset; }
-        body .navbar .nav .nav-link .arrow {
-          background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
-          width: 30px;
-          height: 14px;
-          display: inline-block; }
       body .navbar .nav .active {
         text-decoration: underline; }
       body .navbar .nav .insight {
@@ -36,13 +32,15 @@ body {
         line-height: 14px; }
   body .container {
     width: 100%; }
+    body .container video {
+      margin-top: -92px; }
     body .container h3 {
       color: #FFF;
       font-family: Helvetica;
       font-size: 20px;
       line-height: 32px; }
     body .container .text {
-      margin: auto;
+      margin: 200px auto;
       max-width: 530px; }
     body .container .rules {
       color: #FFF;
@@ -50,13 +48,39 @@ body {
       font-size: 32px;
       font-weight: 300;
       line-height: 38px; }
+      body .container .rules .nav-link {
+        color: white; }
+        body .container .rules .nav-link:hover {
+          color: white;
+          text-decoration: underline;
+          background: black;
+          cursor: pointer; }
+      body .container .rules .nested-list {
+        display: none;
+        list-style: none; }
+        body .container .rules .nested-list a {
+          color: white; }
+          body .container .rules .nested-list a:hover {
+            color: white;
+            text-decoration: underline;
+            background: black;
+            cursor: pointer; }
+      body .container .rules .number {
+        opacity: 0.3; }
     body .container .rotate {
       -moz-transition: all .2s linear;
       -webkit-transition: all .2s linear;
       transition: all .2s linear; }
-    body .container .rotate.down {
+    body .container .down .arrow {
       -moz-transform: rotate(90deg);
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
+    body .container .down .nested-list {
+      display: block; }
     body .container i {
       font-size: 20px; }
+  body .arrow {
+    background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
+    width: 30px;
+    height: 14px;
+    display: inline-block; }

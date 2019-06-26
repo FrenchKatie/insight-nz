@@ -9,6 +9,7 @@ body {
 		&.right {
 			float: right;
 			position: relative;
+			margin-right: 30px;
 		}
 
 		.nav {
@@ -31,13 +32,7 @@ body {
 					background-color: unset;
 				}
 
-				.arrow {
-					background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
-					width: 30px;
-					height: 14px;
-					display: inline-block;
 
-				}
 			}
 
 			.active {
@@ -60,6 +55,10 @@ body {
 	.container {
 		width: 100%;
 
+		video {
+			margin-top: -92px;
+		}
+
 		h3 {
 			color: #FFF;
 			font-family: Helvetica;
@@ -68,29 +67,76 @@ body {
 		}
 
 		.text {
-			margin: auto;
+			margin: 200px auto;
 			max-width: 530px;
 		}
-      .rules {
-        color: #FFF;
-        font-family: "Helvetica Neue";
-        font-size: 32px;
-        font-weight: 300;
-        line-height: 38px;
-      }
-      .rotate {
-          -moz-transition: all .2s linear;
-          -webkit-transition: all .2s linear;
-          transition: all .2s linear;
-      }
-      .rotate.down {
-          -moz-transform:rotate(90deg);
-          -webkit-transform:rotate(90deg);
-          transform:rotate(90deg);
-      }
-      i{
-         font-size: 20px;
-      }
 
+		.rules {
+			color: #FFF;
+			font-family: "Helvetica Neue";
+			font-size: 32px;
+			font-weight: 300;
+			line-height: 38px;
+
+			.nav-link {
+				color: white;
+
+				&:hover {
+					color: white;
+					text-decoration: underline;
+					background: black;
+					cursor: pointer;
+				}
+			}
+
+			.nested-list {
+				display: none;
+				list-style: none;
+
+				a {
+					color: white;
+
+					&:hover {
+						color: white;
+						text-decoration: underline;
+						background: black;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.number {
+				opacity: 0.3;
+			}
+		}
+
+		.rotate {
+			-moz-transition: all .2s linear;
+			-webkit-transition: all .2s linear;
+			transition: all .2s linear;
+		}
+
+		.down {
+			.arrow {
+				-moz-transform: rotate(90deg);
+				-webkit-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+
+			.nested-list {
+				display: block;
+			}
+		}
+
+		i {
+			font-size: 20px;
+		}
+	}
+
+	.arrow {
+		background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
+		width: 30px;
+		height: 14px;
+		display: inline-block;
 	}
 }
