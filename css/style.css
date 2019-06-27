@@ -58,15 +58,22 @@ body {
       body .container .rules .nested-list {
         display: none;
         list-style: none; }
-        body .container .rules .nested-list a {
-          color: white; }
-          body .container .rules .nested-list a:hover {
+        body .container .rules .nested-list li {
+          padding: 0 27px; }
+          body .container .rules .nested-list li a {
             color: white;
-            text-decoration: underline;
-            background: black;
-            cursor: pointer; }
+            font-size: 20px; }
+            body .container .rules .nested-list li a:hover {
+              color: white;
+              text-decoration: underline;
+              background: black;
+              cursor: pointer; }
       body .container .rules .number {
-        opacity: 0.3; }
+        opacity: 0.3;
+        padding-right: 7px;
+        font-size: 20px; }
+        body .container .rules .number:hover {
+          text-decoration: unset; }
     body .container .rotate {
       -moz-transition: all .2s linear;
       -webkit-transition: all .2s linear;
