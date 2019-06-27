@@ -22,8 +22,18 @@ body {
         body .navbar .nav .nav-link:focus {
           text-decoration: underline;
           background-color: unset; }
+      body .navbar .nav .nav-item .arrow {
+        display: none; }
+      body .navbar .nav .hover .arrow {
+        display: inline-block; }
       body .navbar .nav .active {
         text-decoration: underline; }
+        body .navbar .nav .active .arrow {
+          display: inline-block; }
+      body .navbar .nav .unactive {
+        text-decoration: none; }
+        body .navbar .nav .unactive .arrow {
+          display: none; }
       body .navbar .nav .insight {
         font-size: 19px; }
       body .navbar .nav .year {
@@ -40,21 +50,24 @@ body {
       font-size: 20px;
       line-height: 32px; }
     body .container .text {
-      margin: 200px auto;
+      margin: 200px auto 0px;
       max-width: 530px; }
     body .container .rules {
       color: #FFF;
       font-family: "Helvetica Neue";
       font-size: 32px;
       font-weight: 300;
-      line-height: 38px; }
-      body .container .rules .nav-link {
-        color: white; }
-        body .container .rules .nav-link:hover {
-          color: white;
-          text-decoration: underline;
-          background: black;
-          cursor: pointer; }
+      line-height: 38px;
+      margin: 100px auto; }
+      body .container .rules .nav {
+        margin-left: -16px; }
+        body .container .rules .nav .nav-item .nav-link {
+          color: white; }
+          body .container .rules .nav .nav-item .nav-link:hover {
+            color: white;
+            text-decoration: underline;
+            background: black;
+            cursor: pointer; }
       body .container .rules .nested-list {
         display: none;
         list-style: none; }
@@ -84,10 +97,11 @@ body {
       transform: rotate(90deg); }
     body .container .down .nested-list {
       display: block; }
+      body .container .down .nested-list .arrow {
+        display: inline-block; }
     body .container i {
       font-size: 20px; }
   body .arrow {
     background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
     width: 30px;
-    height: 14px;
-    display: inline-block; }
+    height: 14px; }

@@ -35,8 +35,32 @@ body {
 
 			}
 
+			.nav-item {
+				.arrow {
+					display: none;
+				}
+			}
+
+			.hover {
+				.arrow {
+					display: inline-block;
+				}
+			}
+
 			.active {
 				text-decoration: underline;
+
+				.arrow {
+					display: inline-block;
+				}
+			}
+
+			.unactive {
+				text-decoration: none;
+
+				.arrow {
+					display: none;
+				}
 			}
 
 			.insight {
@@ -67,7 +91,7 @@ body {
 		}
 
 		.text {
-			margin: 200px auto;
+			margin: 200px auto 0px;
 			max-width: 530px;
 		}
 
@@ -77,15 +101,23 @@ body {
 			font-size: 32px;
 			font-weight: 300;
 			line-height: 38px;
+			margin: 100px auto;
 
-			.nav-link {
-				color: white;
+			.nav {
+				margin-left: -16px;
 
-				&:hover {
-					color: white;
-					text-decoration: underline;
-					background: black;
-					cursor: pointer;
+				.nav-item {
+
+					.nav-link {
+						color: white;
+
+						&:hover {
+							color: white;
+							text-decoration: underline;
+							background: black;
+							cursor: pointer;
+						}
+					}
 				}
 			}
 
@@ -136,6 +168,10 @@ body {
 
 			.nested-list {
 				display: block;
+
+				.arrow {
+					display: inline-block;
+				}
 			}
 		}
 
@@ -148,6 +184,5 @@ body {
 		background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
 		width: 30px;
 		height: 14px;
-		display: inline-block;
 	}
 }
