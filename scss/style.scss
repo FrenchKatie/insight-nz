@@ -31,8 +31,6 @@ body {
 					text-decoration: underline;
 					background-color: unset;
 				}
-
-
 			}
 
 			.nav-item {
@@ -76,11 +74,37 @@ body {
 		}
 	}
 
+	.main {
+		@media only screen and (max-width: 768px) {
+			max-width: 100%;
+
+			.nav {
+				border: 3px solid white;
+
+				.nav-item {
+					float: left;
+					margin-top: 0px;
+					border: 3px solid white;
+					width: 50%;
+
+					.nav-link {
+						.arrow {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	.container {
 		width: 100%;
 
 		video {
-			margin-top: -92px;
+			@media only screen and (min-width: 768px) {
+
+				margin-top: -92px;
+			}
 		}
 
 		h3 {
@@ -107,6 +131,9 @@ body {
 				margin-left: -16px;
 
 				.nav-item {
+					.arrow {
+						display: inline-block;
+					}
 
 					.nav-link {
 						color: white;

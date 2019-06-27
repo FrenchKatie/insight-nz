@@ -40,10 +40,23 @@ body {
         font-size: 14px;
         font-weight: 300;
         line-height: 14px; }
+  @media only screen and (max-width: 768px) {
+    body .main {
+      max-width: 100%; }
+      body .main .nav {
+        border: 3px solid white; }
+        body .main .nav .nav-item {
+          float: left;
+          margin-top: 0px;
+          border: 3px solid white;
+          width: 50%; }
+          body .main .nav .nav-item .nav-link .arrow {
+            display: none; } }
   body .container {
     width: 100%; }
-    body .container video {
-      margin-top: -92px; }
+    @media only screen and (min-width: 768px) {
+      body .container video {
+        margin-top: -92px; } }
     body .container h3 {
       color: #FFF;
       font-family: Helvetica;
@@ -61,6 +74,8 @@ body {
       margin: 100px auto; }
       body .container .rules .nav {
         margin-left: -16px; }
+        body .container .rules .nav .nav-item .arrow {
+          display: inline-block; }
         body .container .rules .nav .nav-item .nav-link {
           color: white; }
           body .container .rules .nav .nav-item .nav-link:hover {
