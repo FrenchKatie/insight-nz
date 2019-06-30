@@ -2,22 +2,6 @@ body {
   background-color: black;
   color: white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  @media only screen and (max-width: 768px) {
-    body .main {
-      max-width: 100%; }
-      body .main .nav {
-        border: 3px solid white;
-        background-color: black; }
-        body .main .nav .nav-item {
-          float: left;
-          margin-top: 0px;
-          border: 2px solid white;
-          width: 50%; }
-          body .main .nav .nav-item .nav-link .arrow {
-            display: none; } }
-  @media only screen and (max-width: 768px) {
-    body .logo {
-      display: none; } }
   body .container {
     width: 100%; }
     @media only screen and (min-width: 768px) {

@@ -44,3 +44,21 @@
       font-size: 14px;
       font-weight: 300;
       line-height: 14px; }
+
+@media only screen and (max-width: 768px) {
+  .main {
+    max-width: 100%; }
+    .main .nav {
+      border: 3px solid white;
+      background-color: black; }
+      .main .nav .nav-item {
+        float: left;
+        margin-top: 0px;
+        border: 2px solid white;
+        width: 50%; }
+        .main .nav .nav-item .nav-link .arrow {
+          display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none; } }
