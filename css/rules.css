@@ -18,42 +18,42 @@ body {
     body .container .text {
       margin: 200px auto 0px;
       max-width: 530px; }
-    body .container .rules {
+    body .container .row.rules {
       color: #FFF;
       font-family: "Helvetica Neue";
       font-size: 32px;
       font-weight: 300;
       line-height: 38px;
       margin: 100px auto; }
-      body .container .rules .nav {
+      body .container .row.rules .nav {
         margin-left: -16px; }
-        body .container .rules .nav .nav-item .arrow {
+        body .container .row.rules .nav .nav-item .arrow {
           display: inline-block; }
-        body .container .rules .nav .nav-item .nav-link {
+        body .container .row.rules .nav .nav-item .nav-link {
           color: white; }
-          body .container .rules .nav .nav-item .nav-link:hover {
+          body .container .row.rules .nav .nav-item .nav-link:hover {
             color: white;
             text-decoration: underline;
             background: black;
             cursor: pointer; }
-      body .container .rules .nested-list {
+      body .container .row.rules .nested-list {
         display: none;
         list-style: none; }
-        body .container .rules .nested-list li {
+        body .container .row.rules .nested-list li {
           padding: 0 27px; }
-          body .container .rules .nested-list li a {
+          body .container .row.rules .nested-list li a {
             color: white;
             font-size: 20px; }
-            body .container .rules .nested-list li a:hover {
+            body .container .row.rules .nested-list li a:hover {
               color: white;
               text-decoration: underline;
               background: black;
               cursor: pointer; }
-      body .container .rules .number {
+      body .container .row.rules .number {
         opacity: 0.3;
         padding-right: 7px;
         font-size: 20px; }
-        body .container .rules .number:hover {
+        body .container .row.rules .number:hover {
           text-decoration: unset; }
     body .container .insights-titles {
       color: #E0E0E0;

@@ -23,38 +23,6 @@ body {
 		max-width: 530px;
 	}
 
-	.rules {
-		color: #FFF;
-		font-family: "Helvetica Neue";
-		font-size: 32px;
-		font-weight: 300;
-		line-height: 38px;
-		margin: 100px auto;
-
-		.nav {
-			margin-left: -16px;
-
-			.nav-item {
-				.arrow {
-					display: inline-block;
-				}
-
-				.nav-link {
-					color: white;
-
-					&:hover {
-						color: white;
-						text-decoration: underline;
-						background: black;
-						cursor: pointer;
-					}
-				}
-			}
-		}
-
-
-	}
-
 	$width: 768px;
 
 	.insights-titles {

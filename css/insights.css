@@ -15,24 +15,6 @@ body {
   body .text {
     margin: 200px auto 0px;
     max-width: 530px; }
-  body .rules {
-    color: #FFF;
-    font-family: "Helvetica Neue";
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 38px;
-    margin: 100px auto; }
-    body .rules .nav {
-      margin-left: -16px; }
-      body .rules .nav .nav-item .arrow {
-        display: inline-block; }
-      body .rules .nav .nav-item .nav-link {
-        color: white; }
-        body .rules .nav .nav-item .nav-link:hover {
-          color: white;
-          text-decoration: underline;
-          background: black;
-          cursor: pointer; }
   body .insights-titles {
     color: #E0E0E0;
     font-size: 25px;
