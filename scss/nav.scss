@@ -1,0 +1,111 @@
+.navbar {
+	@media only screen and (max-width: 768px) {
+		width: 100%;
+		background-color: black;
+	}
+
+	max-width: 200px;
+
+	&.right {
+		float: right;
+		position: relative;
+		margin-right: 30px;
+	}
+
+	.nav {
+		@media only screen and (max-width: 768px) {
+			margin: 30px 20px 0px 20px;
+			text-align: center;
+		}
+
+		margin-left: 20px;
+		margin-top: 30px;
+
+
+		.nav-link {
+			color: white;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 24px;
+
+			&:hover {
+				text-decoration: underline;
+				background-color: unset;
+			}
+
+			&:focus {
+				text-decoration: underline;
+				background-color: unset;
+			}
+		}
+
+		.nav-item {
+			.arrow {
+				display: none;
+			}
+		}
+
+		.hover {
+			.arrow {
+				display: inline-block;
+			}
+		}
+
+		.active {
+			text-decoration: underline;
+
+			.arrow {
+				display: inline-block;
+			}
+		}
+
+		.unactive {
+			text-decoration: none;
+
+			.arrow {
+				display: none;
+			}
+		}
+
+		.insight {
+			font-size: 19px;
+		}
+
+		.year {
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 14px;
+
+		}
+	}
+}
+
+.main {
+	@media only screen and (max-width: 768px) {
+		max-width: 100%;
+
+		.nav {
+			border: 3px solid white;
+			background-color: black;
+
+			.nav-item {
+				float: left;
+				margin-top: 0px;
+				border: 2px solid white;
+				width: 50%;
+
+				.nav-link {
+					.arrow {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.logo {
+	@media only screen and (max-width: 768px) {
+		display: none;
+	}
+}
