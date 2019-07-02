@@ -11,7 +11,7 @@
 }
 
 .insights-content {
-	overflow-y: scroll;
+	overflow: hidden;
 	position: -webkit-sticky;
 	/* Safari */
 	position: sticky;
@@ -34,6 +34,7 @@
 		padding-bottom: calc(.75 * var(--gutter));
 		margin-bottom: calc(-.25 * var(--gutter));
 		scroll-padding-left: 100px;
+		margin-bottom: -36px;
 
 		.item {
 			scroll-snap-align: center;
