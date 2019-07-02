@@ -42,7 +42,6 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			background: #fff;
 		}
 	}
 }
@@ -50,15 +49,21 @@
 .item {
 	margin: 0;
 	padding: 0;
-	height: 400px;
+	height: 500px;
 
 	.person {
-		display: contents;
+		display: flex;
+		width: 640px;
+		height: 400px;
 	}
 
 	.journal {
 		display: flex;
-
+		width: 410PX;
+		height: 495PX;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		object-fit: cover;
 	}
 
 	.photograph {
@@ -71,54 +76,90 @@
 }
 
 .item.one {
+	.journal {
+		background-image: url('../assets/Images/Shoes/a.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/1.png');
 	}
 }
 
 .item.two {
+	.journal {
+		background-image: url('../assets/Images/Shoes/b.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/2.png');
 	}
 }
 
 .item.three {
+	.journal {
+		background-image: url('../assets/Images/Shoes/c.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/3.png');
 	}
 }
 
 .item.four {
+	.journal {
+		background-image: url('../assets/Images/Shoes/d.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/4.png');
 	}
 }
 
 .item.five {
+	.journal {
+		background-image: url('../assets/Images/Shoes/e.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/5.png');
 	}
 }
 
 .item.six {
+	.journal {
+		background-image: url('../assets/Images/Shoes/f.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/6.png');
 	}
 }
 
 .item.seven {
+	.journal {
+		background-image: url('../assets/Images/Shoes/g.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/7.png');
 	}
 }
 
 .item.eight {
+	.journal {
+		background-image: url('../assets/Images/Shoes/h.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/8.png');
 	}
 }
 
 .item.nine {
+	.journal {
+		background-image: url('../assets/Images/Shoes/i.png');
+	}
+
 	.photograph {
 		background-image: url('../assets/Images/Shoes/9.png');
 	}

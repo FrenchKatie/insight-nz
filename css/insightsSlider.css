@@ -36,17 +36,23 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      background: #fff; }
+      align-items: center; }
 
 .item {
   margin: 0;
   padding: 0;
-  height: 400px; }
+  height: 500px; }
   .item .person {
-    display: contents; }
+    display: flex;
+    width: 640px;
+    height: 400px; }
   .item .journal {
-    display: flex; }
+    display: flex;
+    width: 410PX;
+    height: 495PX;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    object-fit: cover; }
   .item .photograph {
     display: flex;
     width: 100%;
@@ -54,29 +60,56 @@
     background-size: 100% auto;
     background-repeat: no-repeat; }
 
+.item.one .journal {
+  background-image: url("../assets/Images/Shoes/a.png"); }
+
 .item.one .photograph {
   background-image: url("../assets/Images/Shoes/1.png"); }
+
+.item.two .journal {
+  background-image: url("../assets/Images/Shoes/b.png"); }
 
 .item.two .photograph {
   background-image: url("../assets/Images/Shoes/2.png"); }
 
+.item.three .journal {
+  background-image: url("../assets/Images/Shoes/c.png"); }
+
 .item.three .photograph {
   background-image: url("../assets/Images/Shoes/3.png"); }
+
+.item.four .journal {
+  background-image: url("../assets/Images/Shoes/d.png"); }
 
 .item.four .photograph {
   background-image: url("../assets/Images/Shoes/4.png"); }
 
+.item.five .journal {
+  background-image: url("../assets/Images/Shoes/e.png"); }
+
 .item.five .photograph {
   background-image: url("../assets/Images/Shoes/5.png"); }
+
+.item.six .journal {
+  background-image: url("../assets/Images/Shoes/f.png"); }
 
 .item.six .photograph {
   background-image: url("../assets/Images/Shoes/6.png"); }
 
+.item.seven .journal {
+  background-image: url("../assets/Images/Shoes/g.png"); }
+
 .item.seven .photograph {
   background-image: url("../assets/Images/Shoes/7.png"); }
 
+.item.eight .journal {
+  background-image: url("../assets/Images/Shoes/h.png"); }
+
 .item.eight .photograph {
   background-image: url("../assets/Images/Shoes/8.png"); }
+
+.item.nine .journal {
+  background-image: url("../assets/Images/Shoes/i.png"); }
 
 .item.nine .photograph {
   background-image: url("../assets/Images/Shoes/9.png"); }
