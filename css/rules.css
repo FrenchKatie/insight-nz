@@ -2,73 +2,6 @@ body {
   background-color: black;
   color: white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  body .navbar {
-    max-width: 200px; }
-    @media only screen and (max-width: 768px) {
-      body .navbar {
-        width: 100%;
-        background-color: black; } }
-    body .navbar.right {
-      float: right;
-      position: relative;
-      margin-right: 30px; }
-    body .navbar .nav {
-      margin-left: 20px;
-      margin-top: 30px; }
-      @media only screen and (max-width: 768px) {
-        body .navbar .nav {
-          margin: 30px 20px 0px 20px;
-          text-align: center; } }
-      body .navbar .nav .nav-link {
-        color: white;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 24px; }
-        body .navbar .nav .nav-link:hover {
-          text-decoration: underline;
-          background-color: unset; }
-        body .navbar .nav .nav-link:focus {
-          text-decoration: underline;
-          background-color: unset; }
-      body .navbar .nav .nav-item .arrow {
-        display: none; }
-      body .navbar .nav .hover .arrow {
-        display: inline-block; }
-      body .navbar .nav .active {
-        text-decoration: underline; }
-        body .navbar .nav .active .arrow {
-          display: inline-block; }
-      body .navbar .nav .unactive {
-        text-decoration: none; }
-        body .navbar .nav .unactive .arrow {
-          display: none; }
-      body .navbar .nav .insight {
-        font-size: 19px; }
-      body .navbar .nav .year {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 14px; }
-  body .breadcrumbs {
-    color: white; }
-    @media only screen and (max-width: 768px) {
-      body .breadcrumbs {
-        margin-top: 100px; } }
-  @media only screen and (max-width: 768px) {
-    body .main {
-      max-width: 100%; }
-      body .main .nav {
-        border: 3px solid white;
-        background-color: black; }
-        body .main .nav .nav-item {
-          float: left;
-          margin-top: 0px;
-          border: 2px solid white;
-          width: 50%; }
-          body .main .nav .nav-item .nav-link .arrow {
-            display: none; } }
-  @media only screen and (max-width: 768px) {
-    body .logo {
-      display: none; } }
   body .container {
     width: 100%; }
     @media only screen and (min-width: 768px) {
@@ -85,42 +18,42 @@ body {
     body .container .text {
       margin: 200px auto 0px;
       max-width: 530px; }
-    body .container .rules {
+    body .container .row.rules {
       color: #FFF;
       font-family: "Helvetica Neue";
       font-size: 32px;
       font-weight: 300;
       line-height: 38px;
       margin: 100px auto; }
-      body .container .rules .nav {
+      body .container .row.rules .nav {
         margin-left: -16px; }
-        body .container .rules .nav .nav-item .arrow {
+        body .container .row.rules .nav .nav-item .arrow {
           display: inline-block; }
-        body .container .rules .nav .nav-item .nav-link {
+        body .container .row.rules .nav .nav-item .nav-link {
           color: white; }
-          body .container .rules .nav .nav-item .nav-link:hover {
+          body .container .row.rules .nav .nav-item .nav-link:hover {
             color: white;
             text-decoration: underline;
             background: black;
             cursor: pointer; }
-      body .container .rules .nested-list {
+      body .container .row.rules .nested-list {
         display: none;
         list-style: none; }
-        body .container .rules .nested-list li {
+        body .container .row.rules .nested-list li {
           padding: 0 27px; }
-          body .container .rules .nested-list li a {
+          body .container .row.rules .nested-list li a {
             color: white;
             font-size: 20px; }
-            body .container .rules .nested-list li a:hover {
+            body .container .row.rules .nested-list li a:hover {
               color: white;
               text-decoration: underline;
               background: black;
               cursor: pointer; }
-      body .container .rules .number {
+      body .container .row.rules .number {
         opacity: 0.3;
         padding-right: 7px;
         font-size: 20px; }
-        body .container .rules .number:hover {
+        body .container .row.rules .number:hover {
           text-decoration: unset; }
     body .container .insights-titles {
       color: #E0E0E0;

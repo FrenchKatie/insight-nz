@@ -10,7 +10,6 @@ $('document').ready(function () {
 		if (!dwn) {
 			elem.addClass("down"); //to close all other arrows when another is opened
 		}
-		event.preventDefault();
 	});
 
 
@@ -34,8 +33,6 @@ $('document').ready(function () {
 		$(".top-bar").removeClass("hover");
 
 		$(".top-bar").removeClass("unactive");
-
-		event.preventDefault();
 	});
 
 
