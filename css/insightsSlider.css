@@ -1,0 +1,144 @@
+.item.two .journal {
+  background-image: url("../assets/Images/Shoes/b.png"); }
+
+.item.two .photograph {
+  background-image: url("../assets/Images/Shoes/2.png"); }
+
+.item.three .journal {
+  background-image: url("../assets/Images/Shoes/c.png"); }
+
+.item.three .photograph {
+  background-image: url("../assets/Images/Shoes/3.png"); }
+
+.item.four .journal {
+  background-image: url("../assets/Images/Shoes/d.png"); }
+
+.item.four .photograph {
+  background-image: url("../assets/Images/Shoes/4.png"); }
+
+.item.five .journal {
+  background-image: url("../assets/Images/Shoes/e.png"); }
+
+.item.five .photograph {
+  background-image: url("../assets/Images/Shoes/5.png"); }
+
+.item.six .journal {
+  background-image: url("../assets/Images/Shoes/f.png"); }
+
+.item.six .photograph {
+  background-image: url("../assets/Images/Shoes/6.png"); }
+
+.item.seven .journal {
+  background-image: url("../assets/Images/Shoes/g.png"); }
+
+.item.seven .photograph {
+  background-image: url("../assets/Images/Shoes/7.png"); }
+
+.item.eight .journal {
+  background-image: url("../assets/Images/Shoes/h.png"); }
+
+.item.eight .photograph {
+  background-image: url("../assets/Images/Shoes/8.png"); }
+
+.item.nine .journal {
+  background-image: url("../assets/Images/Shoes/i.png"); }
+
+.item.nine .photograph {
+  background-image: url("../assets/Images/Shoes/9.png"); }
+
+@media only screen and (max-width: 768px) {
+  .insights-content {
+    overflow: hidden;
+    width: 100%;
+    padding: 15px; }
+    .insights-content .hs {
+      padding: 0px; }
+      .insights-content .hs .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+  .item {
+    margin: 0;
+    padding: 0;
+    height: 500px; }
+    .item .person {
+      display: flex;
+      width: 640px;
+      height: 400px; }
+    .item .journal {
+      display: flex;
+      width: 410PX;
+      height: 495PX;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      object-fit: cover; }
+    .item .photograph {
+      display: flex;
+      width: 100%;
+      height: 60em;
+      background-size: 100% auto;
+      background-repeat: no-repeat; }
+  .item.one .journal {
+    background-image: url("../assets/Images/Shoes/a.png"); }
+  .item.one .photograph {
+    background-image: url("../assets/Images/Shoes/1.png"); } }
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --gutter: 20px; }
+  .insights-content > * {
+    grid-column: 2 / -2; }
+  .insights-content > .full {
+    grid-column: 1 / -1; }
+  .insights-content {
+    overflow: hidden;
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    bottom: 0;
+    padding-left: 30%;
+    width: 100vw;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: start;
+    padding: var(--gutter) 0; }
+    .insights-content .hs {
+      display: grid;
+      grid-gap: calc(var(--gutter) / 2);
+      grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+      grid-template-rows: minmax(150px, 1fr);
+      overflow-x: scroll;
+      scroll-snap-type: x proximity;
+      padding-bottom: calc(.75 * var(--gutter));
+      margin-bottom: calc(-.25 * var(--gutter));
+      scroll-padding-left: 100px;
+      margin-bottom: -36px; }
+      .insights-content .hs .item {
+        scroll-snap-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+  .item {
+    margin: 0;
+    padding: 0;
+    height: 500px; }
+    .item .person {
+      display: flex;
+      width: 640px;
+      height: 400px; }
+    .item .journal {
+      display: flex;
+      width: 410PX;
+      height: 495PX;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      object-fit: cover; }
+    .item .photograph {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-size: 100% auto;
+      background-repeat: no-repeat; } }

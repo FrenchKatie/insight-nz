@@ -69,3 +69,45 @@ body {
   background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
   width: 30px;
   height: 14px; }
+
+:root {
+  --gutter: 20px; }
+
+.insights-content > * {
+  grid-column: 2 / -2; }
+
+.insights-content > .full {
+  grid-column: 1 / -1; }
+
+.insights-content {
+  overflow-y: scroll;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  bottom: 0;
+  padding-left: 30%;
+  width: 100vw;
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start; }
+  .insights-content .hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(6, calc(50% - var(--gutter) * 2));
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    scroll-padding-left: 100px; }
+    .insights-content .hs .item {
+      scroll-snap-align: center;
+      padding: calc(var(--gutter) / 2 * 1.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      height: 300px; }

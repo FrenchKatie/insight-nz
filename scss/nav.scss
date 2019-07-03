@@ -1,5 +1,7 @@
+$width: 768px;
+
 .navbar {
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: $width) {
 		width: 100%;
 		background-color: black;
 	}
@@ -13,7 +15,7 @@
 	}
 
 	.nav {
-		@media only screen and (max-width: 768px) {
+		@media only screen and (max-width: $width) {
 			margin: 30px 20px 0px 20px;
 			text-align: center;
 		}
@@ -81,7 +83,7 @@
 }
 
 .main {
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: $width) {
 		max-width: 100%;
 
 		.nav {
@@ -105,7 +107,7 @@
 }
 
 .logo {
-	@media only screen and (max-width: 768px) {
+	@media only screen and (max-width: $width) {
 		display: none;
 	}
 }
