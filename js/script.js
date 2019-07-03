@@ -35,8 +35,10 @@ $('document').ready(function () {
 		var elem = $(this);
 		if (elem.closest('.item').hasClass("service-designer")) {
 			$(".item-wrapper").addClass("service-designer");
+			$(".sticky-note").addClass("service-designer");
 		} else if (elem.closest('.item').hasClass("ux-designer")) {
 			$(".item-wrapper").addClass("ux-designer");
+			$(".sticky-note").addClass("ux-designer");
 		}
 	});
 

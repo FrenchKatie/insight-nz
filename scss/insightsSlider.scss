@@ -89,6 +89,33 @@
 	}
 }
 
+.sticky-note {
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	height: 100px;
+	width: 100px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	object-fit: cover;
+}
+
+.sticky-note.ux-designer {
+	background-image: url('../assets/UX.png');
+}
+
+.sticky-note.service-designer {
+	background-image: url('../assets/SERV.png');
+}
+
+.sticky-note.typographer {
+	background-image: url('../assets/TYPE.png');
+}
+
+.sticky-note.creative {
+	background-image: url('../assets/creat.png');
+}
+
 .ux-designer {
 	.tag {
 		background-image: url('../assets/UX.png');
@@ -125,7 +152,10 @@
 	}
 }
 
+// changed mind - add images to the divs via javascript because i dont want to write this out a 100 times lol 
 .item.one {
+
+
 	.journal {
 		background-image: url('../assets/Images/Shoes/a.png');
 	}
