@@ -1,74 +1,3 @@
-<<<<<<< HEAD
-=======
-:root {
-  --gutter: 20px; }
-
-.insights-content > * {
-  grid-column: 2 / -2; }
-
-.insights-content > .full {
-  grid-column: 1 / -1; }
-
-.insights-content {
-  overflow: hidden;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  bottom: 0;
-  padding-left: 30%;
-  width: 100vw;
-  display: grid;
-  grid-gap: var(--gutter) 0;
-  grid-template-columns: var(--gutter) 1fr var(--gutter);
-  align-content: start;
-  padding: var(--gutter) 0; }
-  .insights-content .hs {
-    display: grid;
-    grid-gap: calc(var(--gutter) / 2);
-    grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
-    grid-template-rows: minmax(150px, 1fr);
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    padding-bottom: calc(.75 * var(--gutter));
-    margin-bottom: calc(-.25 * var(--gutter));
-    scroll-padding-left: 100px;
-    margin-bottom: -36px; }
-    .insights-content .hs .item {
-      scroll-snap-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-
-.item {
-  margin: 0;
-  padding: 0;
-  height: 500px; }
-  .item .person {
-    display: flex;
-    width: 640px;
-    height: 400px; }
-  .item .journal {
-    display: flex;
-    width: 410PX;
-    height: 495PX;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    object-fit: cover; }
-  .item .photograph {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-size: 100% auto;
-    background-repeat: no-repeat; }
-
-.item.one .journal {
-  background-image: url("../assets/Images/Shoes/a.png"); }
-
-.item.one .photograph {
-  background-image: url("../assets/Images/Shoes/1.png"); }
-
->>>>>>> 5160ec73dff50a3fc4aa545a3e9347172f0250ad
 .item.two .journal {
   background-image: url("../assets/Images/Shoes/b.png"); }
 
@@ -149,11 +78,7 @@
       width: 100%;
       height: 60em;
       background-size: 100% auto;
-      background-repeat: no-repeat; }
-  .item.one .journal {
-    background-image: url("../assets/Images/Shoes/a.png"); }
-  .item.one .photograph {
-    background-image: url("../assets/Images/Shoes/1.png"); } }
+      background-repeat: no-repeat; } }
 
 @media only screen and (min-width: 768px) {
   :root {
