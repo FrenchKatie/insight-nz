@@ -25,7 +25,7 @@
 		align-content: start;
 		padding: var(--gutter) 0;
 
-		.hs {
+		.item-wrapper {
 			display: grid;
 			grid-gap: calc(var(--gutter) / 2);
 			grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
@@ -81,23 +81,47 @@
 			position: absolute;
 			float: right;
 			width: 100px;
-			height: auto;
+			height: 100px;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			object-fit: cover;
 		}
+	}
+}
 
-		.ux-designer {
-			background-image: url('../assets/UX.png');
-		}
+.ux-designer {
+	.tag {
+		background-image: url('../assets/UX.png');
+	}
+}
 
-		.typographer {
-			background-image: url('../assets/TYPE.png');
-		}
+.typographer {
+	.tag {
+		background-image: url('../assets/TYPE.png');
+	}
+}
 
-		.service-designer {
-			background-image: url('../assets/SERV.png');
-		}
+.service-designer {
+	.tag {
+		background-image: url('../assets/SERV.png');
+	}
+}
+
+.item-wrapper.service-designer {
+	.service-designer {
+		margin-top: -101px;
+	}
+}
+
+.item-wrapper.ux-designer {
+	.ux-designer {
+		margin-top: -101px;
+	}
+}
+
+.item-wrapper.typographer {
+	.typographer {
+		margin-top: -101px;
 	}
 }
 
@@ -199,7 +223,7 @@
 		width: 100%;
 		padding: 15px;
 
-		.hs {
+		.item-wrapper {
 			padding: 0px;
 
 			.item {

@@ -12,9 +12,6 @@ $('document').ready(function () {
 		}
 	});
 
-
-
-
 	$(".top-bar").mouseenter(function () {
 		var elem = $(this);
 		var dwn = false;
@@ -26,14 +23,25 @@ $('document').ready(function () {
 			elem.removeClass("unactive");
 			elem.toggleClass("hover");
 		}
-
-
 		event.preventDefault();
 	}).mouseleave(function () {
 		$(".top-bar").removeClass("hover");
-
 		$(".top-bar").removeClass("unactive");
 	});
+
+
+
+	$(".tag").click(function () {
+		var elem = $(this);
+		if (elem.closest('.item').hasClass("service-designer")) {
+			$(".item-wrapper").addClass("service-designer");
+		} else if (elem.closest('.item').hasClass("ux-designer")) {
+			$(".item-wrapper").addClass("ux-designer");
+		}
+	});
+
+
+
 
 
 
