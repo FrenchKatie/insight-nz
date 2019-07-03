@@ -59,6 +59,19 @@
     height: 100%;
     background-size: 100% auto;
     background-repeat: no-repeat; }
+  .item .tag {
+    display: flex;
+    width: 100px;
+    height: auto;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    object-fit: cover; }
+  .item .ux-designer {
+    background-image: url("../assets/UX.png"); }
+  .item .typographer {
+    background-image: url("../assets/TYPE.png"); }
+  .item .service-designer {
+    background-image: url("../assets/SERV.png"); }
 
 .item.one .journal {
   background-image: url("../assets/Images/Shoes/a.png"); }

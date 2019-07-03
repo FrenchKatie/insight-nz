@@ -73,6 +73,27 @@
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 	}
+
+	.tag {
+		display: flex;
+		width: 100px;
+		height: auto;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		object-fit: cover;
+	}
+
+	.ux-designer {
+		background-image: url('../assets/UX.png');
+	}
+
+	.typographer {
+		background-image: url('../assets/TYPE.png');
+	}
+
+	.service-designer {
+		background-image: url('../assets/SERV.png');
+	}
 }
 
 .item.one {
