@@ -14,7 +14,6 @@ $width: 768px;
 	.item {
 		height: 500px;
 		position: relative;
-		margin-bottom: 100px;
 
 		.person {
 			display: flex;
@@ -23,25 +22,38 @@ $width: 768px;
 		}
 
 		.journal-wrapper {
-			display: flex;
-			// width: 410PX;
+			.journal{
+				// width: 410PX;
+				max-width: 100%;
 
-			height: 495PX;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			object-fit: cover;
+				// height: 495PX;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				object-fit: cover;
+
+				top: 0;
+				right: 0;
+				// display: flex;
+			}
 			position: absolute;
-			top: 0;
-			right: 0;
+			max-width: 100vw;
+
+
+
 
 		}
 
 		.photograph-wrapper {
-			// width: 100%;
-			height: 495px;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
+			.photograph{
+				margin-top: 240px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				max-width: 100%;
+
+			}
+			max-width: 100vw;
 			position: absolute;
+
 		}
 	}
 

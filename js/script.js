@@ -39,7 +39,7 @@ $('document').ready(function () {
            $(".holder >div:first-child").addClass("current");
          }else{
            $(".current").removeClass("current").next().addClass("current");
-			  console.log('if statement passed');
+			  console.log('else statement passed');
          }
       });
 
