@@ -1,8 +1,6 @@
 
 // changed mind - add images to the divs via javascript because i dont want to write this out a 100 times lol
 .item.one {
-
-	// background-color: red;
 	.journal {
 		background-image: url('../assets/Images/Shoes/a.png');
 	}
@@ -127,11 +125,7 @@
 		}
 
 		.photograph {
-			// width: 100%;
-			// height: 495px;
-			// background-size: 100% auto;
-			// background-repeat: no-repeat;
-			// position: absolute;
+			position: absolute;
 			background-image: url('../assets/Images/Shoes/1.png');
 		   width: 100%;
 		   height: 495px;
@@ -148,6 +142,7 @@
 	} /*only this DIV will be visible*/
 
 }
+
 
 //Desktop
 
@@ -199,38 +194,32 @@
 			}
 		}
 	}
-
+//
 	.item {
+		display: flex;
 		margin: 0;
 		padding: 0;
 		height: 500px;
-		display: relative;
-
 		.person {
-			// display: flex;
 			width: 640px;
 			height: 400px;
+			display: flex;
 		}
-
-		.journal {
-			// display: flex;
-			position: absolute;
+		.journal{
 			width: 410PX;
 			height: 495PX;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			object-fit: cover;
+			top: 0;
+			right:0;
 		}
-
 		.photograph {
-			// display: flex;
-			display: absolute;
 			width: 100%;
 			height: 100%;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 		}
-
 		.tag {
 			display: flex;
 			position: absolute;
