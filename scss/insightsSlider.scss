@@ -1,8 +1,7 @@
-
 // changed mind - add images to the divs via javascript because i dont want to write this out a 100 times lol
-.item.one {
+$width: 768px;
 
-	// background-color: red;
+.item.one {
 	.journal {
 		background-image: url('../assets/Images/Shoes/a.png');
 	}
@@ -97,7 +96,9 @@
 @media only screen and (max-width: 768px) {
 	.insights-content {
 		width: 100%;
+
 		.item-wrapper {
+			list-style: none;
 			padding: 0px;
 		}
 	}
@@ -122,7 +123,7 @@
 			object-fit: cover;
 			position: absolute;
 			top: 0;
-			right:0;
+			right: 0;
 
 		}
 
@@ -133,19 +134,24 @@
 			// background-repeat: no-repeat;
 			// position: absolute;
 			background-image: url('../assets/Images/Shoes/1.png');
-		   width: 100%;
-		   height: 495px;
-		   background-size: 100% auto;
-		   background-repeat: no-repeat;
+			width: 100%;
+			height: 495px;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
 			position: relative;
 		}
 	}
+
 	.holder div {
-	   z-index:0; /*init z-index*/
+		z-index: 0;
+		/*init z-index*/
 	}
-	.holder div.current{
-	   z-index:1;
-	} /*only this DIV will be visible*/
+
+	.holder div.current {
+		z-index: 1;
+	}
+
+	/*only this DIV will be visible*/
 
 }
 
@@ -179,6 +185,7 @@
 		padding: var(--gutter) 0;
 
 		.item-wrapper {
+			list-style: none;
 			display: grid;
 			grid-gap: calc(var(--gutter) / 2);
 			grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
@@ -204,17 +211,17 @@
 		margin: 0;
 		padding: 0;
 		height: 500px;
-		display: relative;
+		position: relative;
 
 		.person {
-			// display: flex;
+			display: flex;
 			width: 640px;
 			height: 400px;
 		}
 
 		.journal {
-			// display: flex;
-			position: absolute;
+			display: flex;
+			//	position: absolute;
 			width: 410PX;
 			height: 495PX;
 			background-size: 100% auto;
@@ -223,8 +230,8 @@
 		}
 
 		.photograph {
-			// display: flex;
-			display: absolute;
+			display: flex;
+			position: absolute;
 			width: 100%;
 			height: 100%;
 			background-size: 100% auto;
@@ -242,17 +249,17 @@
 			object-fit: cover;
 		}
 	}
-}
 
-.sticky-note {
-	position: absolute;
-	top: 100px;
-	right: 50px;
-	height: 100px;
-	width: 100px;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	object-fit: cover;
+	.sticky-note {
+		position: absolute;
+		top: 100px;
+		right: 50px;
+		height: 100px;
+		width: 100px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		object-fit: cover;
+	}
 }
 
 .sticky-note.ux-designer {
