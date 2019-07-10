@@ -7,6 +7,8 @@ $('document').ready(function () {
 			dwn = true;
 		}
 		$(".nav-item").removeClass("down");
+		$(".nav-item").addClass("grey");
+		elem.removeClass("grey");
 		if (!dwn) {
 			elem.addClass("down"); //to close all other arrows when another is opened
 		}
@@ -14,7 +16,6 @@ $('document').ready(function () {
 
 	$(".top-bar").mouseenter(function () {
 		var elem = $(this);
-		var dwn = false;
 		if (elem.hasClass("active")) {
 			//do nothing
 		} else {
