@@ -15,7 +15,9 @@ function showImages(id) {
 		var photograph = elem.find('.photograph');
 		var journal = elem.find('.journal');
 		var tag = elem.closest('.tag');
+		var file = 'assets/Images' + id + '/';
 
+		//photograph.attr('src', file + index + '.png');
 		photograph.attr('src', 'assets/Images/Shoes/' + index + '.png');
 		journal.attr('src', 'assets/Images/Shoes/' + String.fromCharCode(97 + index) + '.png');
 	});
