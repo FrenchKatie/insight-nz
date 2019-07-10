@@ -2,7 +2,7 @@ $width: 768px;
 //Mobile
 
 @media only screen and (max-width: $width) {
-	#rotateBtn{
+	#rotateBtn {
 		text-align: right;
 		background: none;
 		color: inherit;
@@ -14,6 +14,7 @@ $width: 768px;
 		padding-right: 20px;
 		padding-top: 20px;
 	}
+
 	.insights-content {
 		width: 100%;
 
@@ -71,9 +72,15 @@ $width: 768px;
 //Desktop
 
 @media only screen and (min-width: $width) {
-	#rotateBtn{
+	.container {
+		position: relative;
+		height: 100vh;
+	}
+
+	#rotateBtn {
 		display: none;
 	}
+
 	:root {
 		--gutter: 1px;
 	}
@@ -89,49 +96,41 @@ $width: 768px;
 	.insights-content {
 		display: none;
 		overflow: hidden;
-		position: -webkit-sticky;
-		/* Safari */
-		position: sticky;
+		position: absolute;
 		bottom: 0;
-		padding-left: 30%;
 		width: 100vw;
 		display: grid;
 		grid-gap: var(--gutter) 0;
 		grid-template-columns: var(--gutter) 1fr var(--gutter);
 		align-content: start;
-		padding: var(--gutter) 0;
 
 		.item-wrapper {
 			list-style: none;
 			display: grid;
 			grid-gap: calc(var(--gutter) / 2);
-			grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
-			grid-template-rows: minmax(150px, 1fr);
+			grid-template-columns: repeat(9, calc(35% - var(--gutter) * 2));
+			grid-template-rows: minmax(400px, 1fr);
 			overflow-x: scroll;
+			overflow-y: hidden;
 			scroll-snap-type: x proximity;
 			padding-bottom: calc(.75 * var(--gutter));
 			margin-bottom: calc(-.25 * var(--gutter));
 			scroll-padding-left: 100px;
-			margin-bottom: -36px;
 
-			.item {
-				scroll-snap-align: center;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
+
 		}
 	}
+
 	.item {
-		display: flex;
 		margin: 0;
 		padding: 0;
-		height: 1000px;
 		position: relative;
+		scroll-snap-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
 
 		.person {
-			display: flex;
 			width: 640px;
 			height: 400px;
 			display: flex;
@@ -144,7 +143,7 @@ $width: 768px;
 			.journal {
 				display: flex;
 				position: absolute;
-				width: 410PX;
+				width: 310PX;
 				height: 495PX;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
@@ -165,7 +164,6 @@ $width: 768px;
 
 		.photograph {
 			display: flex;
-			right: 6px;
 			position: absolute;
 			bottom: 55px;
 			bottom: 0;
@@ -232,6 +230,8 @@ li.service-designer {
 }
 
 .item-wrapper.service-designer {
+
+	//what happens when sticky note is clicked to each item
 	.service-designer {
 		margin-top: -101px;
 	}
