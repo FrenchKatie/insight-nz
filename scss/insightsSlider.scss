@@ -1,101 +1,12 @@
-
-// changed mind - add images to the divs via javascript because i dont want to write this out a 100 times lol
-.item.one {
-	.journal {
-		background-image: url('../assets/Images/Shoes/a.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/1.png');
-	}
-}
-
-.item.two {
-	.journal {
-		background-image: url('../assets/Images/Shoes/b.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/2.png');
-	}
-}
-
-.item.three {
-	.journal {
-		background-image: url('../assets/Images/Shoes/c.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/3.png');
-	}
-}
-
-.item.four {
-	.journal {
-		background-image: url('../assets/Images/Shoes/d.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/4.png');
-	}
-}
-
-.item.five {
-	.journal {
-		background-image: url('../assets/Images/Shoes/e.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/5.png');
-	}
-}
-
-.item.six {
-	.journal {
-		background-image: url('../assets/Images/Shoes/f.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/6.png');
-	}
-}
-
-.item.seven {
-	.journal {
-		background-image: url('../assets/Images/Shoes/g.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/7.png');
-	}
-}
-
-.item.eight {
-	.journal {
-		background-image: url('../assets/Images/Shoes/h.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/8.png');
-	}
-}
-
-.item.nine {
-	.journal {
-		background-image: url('../assets/Images/Shoes/i.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/8.png');
-	}
-}
-
+$width: 768px;
 //Mobile
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $width) {
 	.insights-content {
 		width: 100%;
+
 		.item-wrapper {
+			list-style: none;
 			padding: 0px;
 		}
 	}
@@ -111,44 +22,51 @@
 			height: 400px;
 		}
 
-		.journal {
+		.journal-wrapper {
 			display: flex;
-			width: 410PX;
+			// width: 410PX;
+
 			height: 495PX;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			object-fit: cover;
 			position: absolute;
 			top: 0;
-			right:0;
+			right: 0;
 
 		}
 
-		.photograph {
+		.photograph-wrapper {
+			// width: 100%;
+			height: 495px;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
 			position: absolute;
-			background-image: url('../assets/Images/Shoes/1.png');
-		   width: 100%;
-		   height: 495px;
-		   background-size: 100% auto;
-		   background-repeat: no-repeat;
-			position: relative;
 		}
 	}
+
 	.holder div {
-	   z-index:0; /*init z-index*/
+		z-index: 0;
+		/*init z-index*/
 	}
-	.holder div.current{
-	   z-index:1;
-	} /*only this DIV will be visible*/
+
+	.holder div.current {
+		z-index: 1;
+	}
+
+	/*only this DIV will be visible*/
 
 }
 
 
 //Desktop
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width) {
+	#rotateBtn{
+		display: none;
+	}
 	:root {
-		--gutter: 20px;
+		--gutter: 1px;
 	}
 
 	.insights-content>* {
@@ -160,6 +78,7 @@
 	}
 
 	.insights-content {
+		display: none;
 		overflow: hidden;
 		position: -webkit-sticky;
 		/* Safari */
@@ -174,6 +93,7 @@
 		padding: var(--gutter) 0;
 
 		.item-wrapper {
+			list-style: none;
 			display: grid;
 			grid-gap: calc(var(--gutter) / 2);
 			grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
@@ -194,54 +114,71 @@
 			}
 		}
 	}
-//
 	.item {
 		display: flex;
 		margin: 0;
 		padding: 0;
-		height: 500px;
+		height: 1000px;
+		position: relative;
+
 		.person {
+			display: flex;
 			width: 640px;
 			height: 400px;
 			display: flex;
 		}
-		.journal{
-			width: 410PX;
-			height: 495PX;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			object-fit: cover;
-			top: 0;
-			right:0;
+
+		.info {
+			position: relative;
+			z-index: 1;
+
+			.journal {
+				display: flex;
+				position: absolute;
+				width: 410PX;
+				height: 495PX;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				object-fit: cover;
+			}
+
+			.tag {
+				display: flex;
+				position: absolute;
+				float: right;
+				width: 100px;
+				height: 100px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				object-fit: cover;
+			}
 		}
+
 		.photograph {
-			width: 100%;
-			height: 100%;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-		}
-		.tag {
 			display: flex;
+			right: 6px;
 			position: absolute;
-			float: right;
-			width: 100px;
-			height: 100px;
+			bottom: 55px;
+			bottom: 0;
+			width: 300px;
+			height: 200px;
+			object-fit: cover;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
-			object-fit: cover;
+			z-index: 2;
 		}
 	}
-}
 
-.sticky-note {
-	position: absolute;
-	top: 100px;
-	right: 50px;
-	height: 100px;
-	width: 100px;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	object-fit: cover;
+	.sticky-note {
+		position: absolute;
+		top: 100px;
+		right: 50px;
+		height: 100px;
+		width: 100px;
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		object-fit: cover;
+	}
 }
 
 .sticky-note.ux-designer {
@@ -260,19 +197,19 @@
 	background-image: url('../assets/creat.png');
 }
 
-.ux-designer {
+li.ux-designer {
 	.tag {
 		background-image: url('../assets/UX.png');
 	}
 }
 
-.typographer {
+li.typographer {
 	.tag {
 		background-image: url('../assets/TYPE.png');
 	}
 }
 
-.service-designer {
+li.service-designer {
 	.tag {
 		background-image: url('../assets/SERV.png');
 	}
