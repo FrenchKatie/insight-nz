@@ -1,8 +1,14 @@
 @media only screen and (max-width: 768px) {
+  #rotateBtn {
+    text-align: right;
+    width: 100%;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 20px; }
   .insights-content {
     width: 100%; }
     .insights-content .item-wrapper {
-      list-style: none;
+      list-style-type: none;
       padding: 0px; }
   .item {
     height: 500px;
@@ -15,6 +21,7 @@
       position: absolute;
       max-width: 100vw; }
       .item .journal-wrapper .journal {
+        width: 100%;
         max-width: 100%;
         background-size: 100% auto;
         background-repeat: no-repeat;

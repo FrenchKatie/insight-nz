@@ -2,11 +2,18 @@ $width: 768px;
 //Mobile
 
 @media only screen and (max-width: $width) {
+	#rotateBtn{
+		text-align: right;
+    width: 100%;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+	}
 	.insights-content {
 		width: 100%;
 
 		.item-wrapper {
-			list-style: none;
+			list-style-type: none;
 			padding: 0px;
 		}
 	}
@@ -23,7 +30,7 @@ $width: 768px;
 
 		.journal-wrapper {
 			.journal{
-				// width: 410PX;
+				width: 100%;
 				max-width: 100%;
 
 				// height: 495PX;
