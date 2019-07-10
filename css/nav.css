@@ -5,9 +5,8 @@
       width: 100%;
       background-color: black; } }
   .navbar.right {
-    float: right;
-    position: relative;
-    margin-right: 30px; }
+    left: unset;
+    right: 20px; }
   .navbar .nav {
     margin-left: 20px;
     margin-top: 30px; }

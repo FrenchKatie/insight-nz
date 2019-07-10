@@ -9,9 +9,8 @@ $width: 768px;
 	max-width: 200px;
 
 	&.right {
-		float: right;
-		position: relative;
-		margin-right: 30px;
+		left: unset;
+		right: 20px;
 	}
 
 	.nav {

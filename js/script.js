@@ -12,9 +12,6 @@ $('document').ready(function () {
 		}
 	});
 
-
-
-
 	$(".top-bar").mouseenter(function () {
 		var elem = $(this);
 		var dwn = false;
@@ -26,13 +23,32 @@ $('document').ready(function () {
 			elem.removeClass("unactive");
 			elem.toggleClass("hover");
 		}
-
-
 		event.preventDefault();
 	}).mouseleave(function () {
 		$(".top-bar").removeClass("hover");
-
 		$(".top-bar").removeClass("unactive");
+	});
+
+
+	$("#rotateBtn").click(function(){
+         if($(".holder >div:last-child").hasClass("current")){
+				console.log('clicked fro class change');
+           $(".holder >div:last-child").removeClass("current");
+           $(".holder >div:first-child").addClass("current");
+         }else{
+           $(".current").removeClass("current").next().addClass("current");
+         }
+      });
+
+	$(".tag").click(function () {
+		var elem = $(this);
+		if (elem.closest('.item').hasClass("service-designer")) {
+			$(".item-wrapper").addClass("service-designer");
+			$(".sticky-note").addClass("service-designer");
+		} else if (elem.closest('.item').hasClass("ux-designer")) {
+			$(".item-wrapper").addClass("ux-designer");
+			$(".sticky-note").addClass("ux-designer");
+		}
 	});
 
 });
