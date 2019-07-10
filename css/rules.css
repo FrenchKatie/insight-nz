@@ -96,7 +96,7 @@ body {
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
     body .container .down .nested-list {
-      display: block; }
+      display: block !important; }
       body .container .down .nested-list .arrow {
         display: inline-block; }
     body .container i {

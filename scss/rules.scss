@@ -160,7 +160,7 @@ body {
 			}
 
 			.nested-list {
-				display: block;
+				display: block !important;
 
 				.arrow {
 					display: inline-block;
