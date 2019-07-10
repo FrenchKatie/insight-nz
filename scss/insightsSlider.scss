@@ -1,99 +1,7 @@
-// changed mind - add images to the divs via javascript because i dont want to write this out a 100 times lol
 $width: 768px;
-
-.item.one {
-	.journal {
-		background-image: url('../assets/Images/Shoes/a.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/1.png');
-	}
-}
-
-.item.two {
-	.journal {
-		background-image: url('../assets/Images/Shoes/b.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/2.png');
-	}
-}
-
-.item.three {
-	.journal {
-		background-image: url('../assets/Images/Shoes/c.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/3.png');
-	}
-}
-
-.item.four {
-	.journal {
-		background-image: url('../assets/Images/Shoes/d.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/4.png');
-	}
-}
-
-.item.five {
-	.journal {
-		background-image: url('../assets/Images/Shoes/e.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/5.png');
-	}
-}
-
-.item.six {
-	.journal {
-		background-image: url('../assets/Images/Shoes/f.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/6.png');
-	}
-}
-
-.item.seven {
-	.journal {
-		background-image: url('../assets/Images/Shoes/g.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/7.png');
-	}
-}
-
-.item.eight {
-	.journal {
-		background-image: url('../assets/Images/Shoes/h.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/8.png');
-	}
-}
-
-.item.nine {
-	.journal {
-		background-image: url('../assets/Images/Shoes/i.png');
-	}
-
-	.photograph {
-		background-image: url('../assets/Images/Shoes/8.png');
-	}
-}
-
 //Mobile
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $width) {
 	.insights-content {
 		width: 100%;
 
@@ -128,12 +36,6 @@ $width: 768px;
 		}
 
 		.photograph {
-			// width: 100%;
-			// height: 495px;
-			// background-size: 100% auto;
-			// background-repeat: no-repeat;
-			// position: absolute;
-			background-image: url('../assets/Images/Shoes/1.png');
 			width: 100%;
 			height: 495px;
 			background-size: 100% auto;
@@ -157,9 +59,9 @@ $width: 768px;
 
 //Desktop
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $width) {
 	:root {
-		--gutter: 20px;
+		--gutter: 1px;
 	}
 
 	.insights-content>* {
@@ -210,7 +112,7 @@ $width: 768px;
 	.item {
 		margin: 0;
 		padding: 0;
-		height: 500px;
+		height: 1000px;
 		position: relative;
 
 		.person {
@@ -219,34 +121,44 @@ $width: 768px;
 			height: 400px;
 		}
 
-		.journal {
-			display: flex;
-			//	position: absolute;
-			width: 410PX;
-			height: 495PX;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			object-fit: cover;
+		.info {
+			position: relative;
+			z-index: 1;
+
+			.journal {
+				display: flex;
+				position: absolute;
+				width: 410PX;
+				height: 495PX;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				object-fit: cover;
+			}
+
+			.tag {
+				display: flex;
+				position: absolute;
+				float: right;
+				width: 100px;
+				height: 100px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				object-fit: cover;
+			}
 		}
 
 		.photograph {
 			display: flex;
+			right: 6px;
 			position: absolute;
-			width: 100%;
-			height: 100%;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-		}
-
-		.tag {
-			display: flex;
-			position: absolute;
-			float: right;
-			width: 100px;
-			height: 100px;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
+			bottom: 55px;
+			bottom: 0;
+			width: 300px;
+			height: 200px;
 			object-fit: cover;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			z-index: 2;
 		}
 	}
 
@@ -278,19 +190,19 @@ $width: 768px;
 	background-image: url('../assets/creat.png');
 }
 
-.ux-designer {
+li.ux-designer {
 	.tag {
 		background-image: url('../assets/UX.png');
 	}
 }
 
-.typographer {
+li.typographer {
 	.tag {
 		background-image: url('../assets/TYPE.png');
 	}
 }
 
-.service-designer {
+li.service-designer {
 	.tag {
 		background-image: url('../assets/SERV.png');
 	}
