@@ -78,7 +78,6 @@
       margin-bottom: calc(-.25 * var(--gutter));
       scroll-padding-left: 100px; }
   .item {
-    display: flex;
     margin: 0;
     padding: 0;
     position: relative;
@@ -87,7 +86,6 @@
     flex-direction: column;
     align-items: baseline; }
     .item .person {
-      display: flex;
       width: 640px;
       height: 400px;
       display: flex; }
