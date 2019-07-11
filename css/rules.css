@@ -49,6 +49,17 @@ body {
               text-decoration: underline;
               background: black;
               cursor: pointer; }
+      body .container .row.rules .guidelines-list {
+        padding: 0; }
+        body .container .row.rules .guidelines-list > li {
+          padding: 0; }
+        body .container .row.rules .guidelines-list .guideline-photo {
+          width: 360px;
+          margin-top: 50px;
+          margin-left: 30px;
+          transition: all .2s ease-in-out; }
+          body .container .row.rules .guidelines-list .guideline-photo:hover {
+            width: 450px; }
       body .container .row.rules .number {
         opacity: 0.3;
         padding-right: 7px;
