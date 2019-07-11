@@ -22,6 +22,7 @@ body {
       color: #FFF;
       font-family: "Helvetica Neue";
       font-size: 32px;
+      letter-spacing: 2px;
       font-weight: 300;
       line-height: 38px;
       margin: 100px auto; }
@@ -110,6 +111,9 @@ body {
       display: block !important; }
       body .container .down .nested-list .arrow {
         display: inline-block; }
+    body .container .grey {
+      opacity: 0.3;
+      transition: opacity .2s ease-in-out; }
     body .container i {
       font-size: 20px; }
   body .arrow {

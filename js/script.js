@@ -7,6 +7,8 @@ $('document').ready(function () {
 			dwn = true;
 		}
 		$(".nav-item").removeClass("down");
+		$(".nav-item").addClass("grey");
+		elem.removeClass("grey");
 		if (!dwn) {
 			elem.addClass("down"); //to close all other arrows when another is opened
 		}
@@ -14,7 +16,6 @@ $('document').ready(function () {
 
 	$(".top-bar").mouseenter(function () {
 		var elem = $(this);
-		var dwn = false;
 		if (elem.hasClass("active")) {
 			//do nothing
 		} else {
@@ -30,15 +31,15 @@ $('document').ready(function () {
 	});
 
 
-	$("#rotateBtn").click(function(){
-         if($(".holder >div:last-child").hasClass("current")){
-				console.log('clicked fro class change');
-           $(".holder >div:last-child").removeClass("current");
-           $(".holder >div:first-child").addClass("current");
-         }else{
-           $(".current").removeClass("current").next().addClass("current");
-         }
-      });
+	$("#rotateBtn").click(function () {
+		if ($(".holder >div:last-child").hasClass("current")) {
+			console.log('clicked fro class change');
+			$(".holder >div:last-child").removeClass("current");
+			$(".holder >div:first-child").addClass("current");
+		} else {
+			$(".current").removeClass("current").next().addClass("current");
+		}
+	});
 
 	$(".tag").click(function () {
 		var elem = $(this);

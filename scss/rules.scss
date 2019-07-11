@@ -9,7 +9,6 @@ body {
 
 		video {
 			@media only screen and (min-width: 768px) {
-
 				margin-top: -92px;
 			}
 
@@ -35,6 +34,7 @@ body {
 			color: #FFF;
 			font-family: "Helvetica Neue";
 			font-size: 32px;
+			letter-spacing: 2px;
 			font-weight: 300;
 			line-height: 38px;
 			margin: 100px auto;
@@ -189,6 +189,12 @@ body {
 					display: inline-block;
 				}
 			}
+		}
+
+		.grey {
+			opacity: 0.3;
+			transition: opacity .2s ease-in-out;
+
 		}
 
 		i {
