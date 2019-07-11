@@ -29,6 +29,7 @@
       .item .journal-wrapper .journal {
         max-width: 90%;
         margin-left: 5%;
+        max-height: 330px;
         object-fit: cover;
         padding-bottom: 100px; }
     .item .photograph-wrapper {
