@@ -23,3 +23,17 @@ function showImages(id) {
 
 	});
 }
+
+$(".tag").click(function () {
+	var elem = $(this);
+	if (elem.closest('.item').hasClass("service-designer")) {
+		$(".item-wrapper").attr('class', ' item-wrapper service-designer');
+		$(".sticky-note").attr('class', ' sticky-note service-designer');
+	} else if (elem.closest('.item').hasClass("ux-designer")) {
+		$(".item-wrapper").attr('class', ' item-wrapper ux-designer');
+		$(".sticky-note").attr('class', ' sticky-note ux-designer');
+	} else if (elem.closest('.item').hasClass("typographer")) {
+		$(".item-wrapper").attr('class', ' item-wrapper typographer');
+		$(".sticky-note").attr('class', ' sticky-note typographer');
+	}
+});

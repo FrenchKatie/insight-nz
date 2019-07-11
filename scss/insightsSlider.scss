@@ -176,7 +176,6 @@ $width: 768px;
 
 		.photograph {
 			display: flex;
-			right: 6px;
 			position: absolute;
 			bottom: 55px;
 			bottom: 0;
@@ -243,6 +242,8 @@ li.service-designer {
 }
 
 .item-wrapper.service-designer {
+
+	//what happens when sticky note is clicked to each item
 	.service-designer {
 		margin-top: -101px;
 	}

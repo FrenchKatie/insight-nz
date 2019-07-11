@@ -31,26 +31,15 @@ $('document').ready(function () {
 	});
 
 
-	$("#rotateBtn").click(function(){
+	$("#rotateBtn").click(function () {
 		console.log('clicked for class change');
-         if($(".holder >div:last-child").hasClass("current")){
-				console.log('if statement passed');
-           $(".holder >div:last-child").removeClass("current");
-           $(".holder >div:first-child").addClass("current");
-         }else{
-           $(".current").removeClass("current").next().addClass("current");
-			  console.log('else statement passed');
-         }
-      });
-
-	$(".tag").click(function () {
-		var elem = $(this);
-		if (elem.closest('.item').hasClass("service-designer")) {
-			$(".item-wrapper").attr('class', ' item-wrapper service-designer');
-			$(".sticky-note").attr('class', ' item-wrapper service-designer');
-		} else if (elem.closest('.item').hasClass("ux-designer")) {
-			$(".item-wrapper").attr('class', ' item-wrapper ux-designer');
-			$(".sticky-note").attr('class', ' item-wrapper ux-designer');
+		if ($(".holder >div:last-child").hasClass("current")) {
+			console.log('if statement passed');
+			$(".holder >div:last-child").removeClass("current");
+			$(".holder >div:first-child").addClass("current");
+		} else {
+			$(".current").removeClass("current").next().addClass("current");
+			console.log('else statement passed');
 		}
 	});
 
