@@ -36,6 +36,9 @@
   /*only this DIV will be visible*/ }
 
 @media only screen and (min-width: 768px) {
+  .container {
+    position: relative;
+    height: 100vh; }
   :root {
     --gutter: 1px; }
   .insights-content > * {
@@ -45,40 +48,33 @@
   .insights-content {
     display: none;
     overflow: hidden;
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
+    position: absolute;
     bottom: 0;
-    padding-left: 30%;
     width: 100vw;
     display: grid;
     grid-gap: var(--gutter) 0;
     grid-template-columns: var(--gutter) 1fr var(--gutter);
-    align-content: start;
-    padding: var(--gutter) 0; }
+    align-content: start; }
     .insights-content .item-wrapper {
       list-style: none;
       display: grid;
       grid-gap: calc(var(--gutter) / 2);
-      grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
-      grid-template-rows: minmax(150px, 1fr);
+      grid-template-columns: repeat(9, calc(35% - var(--gutter) * 2));
+      grid-template-rows: minmax(400px, 1fr);
       overflow-x: scroll;
+      overflow-y: hidden;
       scroll-snap-type: x proximity;
       padding-bottom: calc(.75 * var(--gutter));
       margin-bottom: calc(-.25 * var(--gutter));
-      scroll-padding-left: 100px;
-      margin-bottom: -36px; }
-      .insights-content .item-wrapper .item {
-        scroll-snap-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
+      scroll-padding-left: 100px; }
   .item {
     margin: 0;
     padding: 0;
-    height: 1000px;
-    position: relative; }
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; }
     .item .person {
       display: flex;
       width: 640px;
@@ -89,7 +85,7 @@
       .item .info .journal {
         display: flex;
         position: absolute;
-        width: 410PX;
+        width: 310PX;
         height: 495PX;
         background-size: 100% auto;
         background-repeat: no-repeat;

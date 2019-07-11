@@ -33,7 +33,8 @@ body {
         margin-top: 100px;
         position: relative; } }
     body .insights-titles ul .nav-link {
-      color: white; }
+      color: white;
+      padding: 5px; }
       @media only screen and (max-width: 768px) {
         body .insights-titles ul .nav-link {
           border: 2px solid white; } }

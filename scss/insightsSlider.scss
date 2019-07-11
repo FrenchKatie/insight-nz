@@ -60,6 +60,11 @@ $width: 768px;
 //Desktop
 
 @media only screen and (min-width: $width) {
+	.container {
+		position: relative;
+		height: 100vh;
+	}
+
 	:root {
 		--gutter: 1px;
 	}
@@ -75,46 +80,39 @@ $width: 768px;
 	.insights-content {
 		display: none;
 		overflow: hidden;
-		position: -webkit-sticky;
-		/* Safari */
-		position: sticky;
+		position: absolute;
 		bottom: 0;
-		padding-left: 30%;
 		width: 100vw;
 		display: grid;
 		grid-gap: var(--gutter) 0;
 		grid-template-columns: var(--gutter) 1fr var(--gutter);
 		align-content: start;
-		padding: var(--gutter) 0;
 
 		.item-wrapper {
 			list-style: none;
 			display: grid;
 			grid-gap: calc(var(--gutter) / 2);
-			grid-template-columns: repeat(9, calc(50% - var(--gutter) * 2));
-			grid-template-rows: minmax(150px, 1fr);
+			grid-template-columns: repeat(9, calc(35% - var(--gutter) * 2));
+			grid-template-rows: minmax(400px, 1fr);
 			overflow-x: scroll;
+			overflow-y: hidden;
 			scroll-snap-type: x proximity;
 			padding-bottom: calc(.75 * var(--gutter));
 			margin-bottom: calc(-.25 * var(--gutter));
 			scroll-padding-left: 100px;
-			margin-bottom: -36px;
 
-			.item {
-				scroll-snap-align: center;
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-			}
+
 		}
 	}
 
 	.item {
 		margin: 0;
 		padding: 0;
-		height: 1000px;
 		position: relative;
+		scroll-snap-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
 
 		.person {
 			display: flex;
@@ -129,7 +127,7 @@ $width: 768px;
 			.journal {
 				display: flex;
 				position: absolute;
-				width: 410PX;
+				width: 310PX;
 				height: 495PX;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
