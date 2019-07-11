@@ -31,15 +31,17 @@ $('document').ready(function () {
 	});
 
 
-	$("#rotateBtn").click(function () {
-		if ($(".holder >div:last-child").hasClass("current")) {
-			console.log('clicked fro class change');
-			$(".holder >div:last-child").removeClass("current");
-			$(".holder >div:first-child").addClass("current");
-		} else {
-			$(".current").removeClass("current").next().addClass("current");
-		}
-	});
+	$("#rotateBtn").click(function(){
+		console.log('clicked for class change');
+         if($(".holder >div:last-child").hasClass("current")){
+				console.log('if statement passed');
+           $(".holder >div:last-child").removeClass("current");
+           $(".holder >div:first-child").addClass("current");
+         }else{
+           $(".current").removeClass("current").next().addClass("current");
+			  console.log('else statement passed');
+         }
+      });
 
 	$(".tag").click(function () {
 		var elem = $(this);
