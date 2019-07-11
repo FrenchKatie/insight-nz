@@ -24,6 +24,8 @@ $width: 768px;
 
 
 		.nav-link {
+			transition: all 1s ease-in-out;
+
 			color: white;
 			font-size: 20px;
 			font-weight: 300;
@@ -41,29 +43,45 @@ $width: 768px;
 		}
 
 		.nav-item {
+			transition: all 1s ease-in-out;
+
 			.arrow {
+				transition: all 1s ease-in-out;
+
 				display: none;
 			}
 		}
 
 		.hover {
+			transition: all 1s ease-in-out;
+
 			.arrow {
+				transition: all 1s ease-in-out;
+
 				display: inline-block;
 			}
 		}
 
 		.active {
+			transition: all 1s ease-in-out;
+
 			text-decoration: underline;
 
 			.arrow {
+				transition: all 1s ease-in-out;
+
 				display: inline-block;
 			}
 		}
 
 		.unactive {
+			transition: all 1s ease-in-out;
+
 			text-decoration: none;
 
 			.arrow {
+				transition: all 1s ease-in-out;
+
 				display: none;
 			}
 		}
