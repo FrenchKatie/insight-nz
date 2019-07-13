@@ -1,13 +1,13 @@
 $('document').ready(function () {
 
-	$(".nav-item").click(function () {
+	$(".index").click(function () {
 		var elem = $(this);
 		var dwn = false;
 		if (elem.hasClass("down")) {
 			dwn = true;
 		}
-		$(".nav-item").removeClass("down");
-		$(".nav-item").addClass("grey");
+		$(".index").removeClass("down");
+		$(".index").addClass("grey");
 		elem.removeClass("grey");
 		if (!dwn) {
 			elem.addClass("down"); //to close all other arrows when another is opened

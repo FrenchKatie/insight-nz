@@ -24,6 +24,7 @@ $width: 768px;
 
 		}
 	}
+
 	.item {
 		height: 250px;
 		margin-bottom: 10px;
@@ -35,11 +36,12 @@ $width: 768px;
 			width: 640px;
 			height: 400px;
 		}
+
 		.journal-wrapper {
 			position: absolute;
 			// max-width: 100vw;
 
-			.journal{
+			.journal {
 				// background-color: pink;
 				// outline: 1px red solid;
 				// width: 100%;
@@ -53,11 +55,13 @@ $width: 768px;
 
 			}
 		}
+
 		.photograph-wrapper {
 			max-width: 100vw;
 			position: absolute;
 			margin-top: 210px;
-			.photograph{
+
+			.photograph {
 				// margin-top: 240px;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
@@ -66,11 +70,15 @@ $width: 768px;
 			}
 		}
 	}
+
 	.holder div {
-		z-index: 0;	/*init z-index*/
+		z-index: 0;
+		/*init z-index*/
 	}
+
 	.holder div.current {
-		z-index: 1;/*only this DIV will be visible*/
+		z-index: 1;
+		/*only this DIV will be visible*/
 	}
 }
 
