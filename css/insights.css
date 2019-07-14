@@ -25,7 +25,8 @@ body {
     line-height: 25px; }
     @media only screen and (max-width: 768px) {
       body .insights-titles {
-        margin: 60px 5px 0px 5px; } }
+        margin: 60px 20px 0px;
+        font-size: 19px; } }
     @media only screen and (min-width: 768px) {
       body .insights-titles {
         max-width: max-content;
@@ -50,10 +51,8 @@ body {
       font-size: 20px; }
       @media only screen and (max-width: 768px) {
         body .insights-titles ul .active-guideline {
-          font-size: 16px; } }
-      @media only screen and (max-width: 768px) {
-        body .insights-titles ul .active-guideline .active-guideline-link {
-          margin-left: 12px; } }
+          font-size: 16px;
+          max-width: 90%; } }
       body .insights-titles ul .active-guideline .active-guideline-link .arrow {
         width: 15px;
         height: 11px;
@@ -61,7 +60,9 @@ body {
       @media only screen and (max-width: 768px) {
         body .insights-titles ul .active-guideline .active-guideline-link {
           padding-left: 30px;
-          border: 0px solid white; } }
+          border: 0px solid white; }
+          body .insights-titles ul .active-guideline .active-guideline-link:hover {
+            text-decoration: none; } }
       body .insights-titles ul .active-guideline .active-guideline-link.active {
         text-decoration: underline; }
         body .insights-titles ul .active-guideline .active-guideline-link.active .arrow {
