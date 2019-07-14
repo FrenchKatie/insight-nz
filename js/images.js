@@ -91,13 +91,21 @@ $('.item-wrapper').on('scroll', function (index) {
 	var mrg = imagePos - topOfWindow;
 	if (mrg <= 1) {
 		// if mrg is less than 1 then it loses margin. Translate
-		$('.insights-content').css('margin-left', 0 + 'px');
+		// $('.insights-content').css('margin-left', 0 + 'px');
+		$('.insights-content').removeClass('scroller-margin');
+		$('.insights-content').addClass('no-scroller-margin');
+
 		// When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
 		console.log("margin-lost");
 	} else if (mrg <= 600){
-		//or if margin is less than 600
+		//or if margin is less than 600, add margin.
 		console.log('else if');
-		$('.insights-content').css('margin-left', 450 + 'px');
+		// $('.insights-content').css('margin-left', 450 + 'px');
+		$('.insights-content').removeClass('no-scroller-margin');
+		console.log('margin less than 600, no-scroller-margin class removed');
+		$('.insights-content').addClass('scroller-margin');
+		console.log('margin less than 600, scroller-margin class add');
+
 
 	} else {
 		console.log('else');
@@ -105,7 +113,8 @@ $('.item-wrapper').on('scroll', function (index) {
 	if (mrg < topOfWindow) {
 		console.log('top of window');
 		$(this).delay(index * 600).queue(function () {
-			$('.insights-content').css('margin-left', mrg + 'px')
+			// $('.insights-content').css('margin-left', mrg + 'px')
+
 		});
 	}
 });

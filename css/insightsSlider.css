@@ -95,7 +95,10 @@
     grid-gap: var(--gutter) 0;
     grid-template-columns: var(--gutter) 1fr var(--gutter);
     align-content: start;
-    margin-left: 450px; }
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
     .insights-content .item-wrapper-left-scroll {
       background-color: pink; }
     .insights-content .item-wrapper {
@@ -109,6 +112,10 @@
       scroll-snap-type: x proximity;
       padding-bottom: calc(.75 * var(--gutter));
       margin-bottom: calc(-.25 * var(--gutter)); }
+  .scroller-margin {
+    margin-left: 450px; }
+  .no-scroller-margin {
+    margin-left: 0px; }
   .item {
     padding: 0;
     top: 40px;

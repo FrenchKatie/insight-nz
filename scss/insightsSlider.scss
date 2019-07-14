@@ -138,6 +138,7 @@ $width: 768px;
 
 
 
+
 	.insights-content {
 		display: none;
 		overflow: hidden;
@@ -147,7 +148,11 @@ $width: 768px;
 		grid-gap: var(--gutter) 0;
 		grid-template-columns: var(--gutter) 1fr var(--gutter);
 		align-content: start;
-		margin-left: 450px;
+		// margin-left: 450px;
+		-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 
 		.item-wrapper-left-scroll {
 			background-color: pink;
@@ -170,6 +175,12 @@ $width: 768px;
 		}
 	}
 
+	.scroller-margin{
+		margin-left: 450px
+	}
+	.no-scroller-margin{
+		margin-left: 0px;
+	}
 	.item {
 		// margin: 0;
 		// margin-left: 500px;
