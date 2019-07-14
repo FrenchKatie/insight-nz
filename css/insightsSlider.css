@@ -105,27 +105,11 @@
         background-size: 100% auto;
         background-repeat: no-repeat;
         object-fit: cover; }
-<<<<<<< HEAD
-      .item .info .tag {
-        display: flex;
-        position: absolute;
-        float: right;
-        width: 100px;
-        height: 100px;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        object-fit: cover;
-        transition: transform 0.5s; }
-      .item .info .tag:hover {
-        transform: rotate(20deg); }
-    .item .photograph {
-=======
     .item .tag {
       cursor: pointer;
       z-index: 2;
       top: 130px;
       right: 50px;
->>>>>>> ef0ee16c5d4ea61a4472fee024d52a350888258f
       display: flex;
       position: absolute;
       width: 100px;

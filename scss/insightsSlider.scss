@@ -164,21 +164,6 @@ $width: 768px;
 				background-repeat: no-repeat;
 				object-fit: cover;
 			}
-
-			.tag {
-				display: flex;
-				position: absolute;
-				float: right;
-				width: 100px;
-				height: 100px;
-				background-size: 100% auto;
-				background-repeat: no-repeat;
-				object-fit: cover;
-				transition: transform 0.5s;
-			}
-			.tag:hover {
-			  transform: rotate(20deg);
-			}
 		}
 
 		.tag {
