@@ -9,7 +9,7 @@ $(".guideline").click(function () {
 });
 
 function doMobileStuff(elem) {
-	if ($(window).width() < 768 || $(window).height() < 768) {
+	if ($(window).width() < 768) {
 		$(".guideline").hide('slide').delay(1000).queue(function () {
 			$(".insights-content").show('slide', {
 				direction: "right"
