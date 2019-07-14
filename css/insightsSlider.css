@@ -213,8 +213,7 @@
   background-image: url("../assets/creat.png"); }
 
 .sub-sticky-note.inhouse {
-  background-image: url("../assets/inhouse.png");
-  z-index: 500; }
+  background-image: url("../assets/inhouse.png"); }
 
 .sub-sticky-note.agency {
   background-image: url("../assets/agency.png"); }
@@ -250,4 +249,13 @@ li.freelance .subtag {
   top: 0px; }
 
 .item-wrapper.typographer .typographer {
+  top: 0px; }
+
+.item-wrapper.inhouse .inhouse {
+  top: 0px; }
+
+.item-wrapper.agency .agency {
+  top: 0px; }
+
+.item-wrapper.freelance .freelance {
   top: 0px; }

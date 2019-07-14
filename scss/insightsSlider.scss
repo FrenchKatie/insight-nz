@@ -306,7 +306,6 @@ $width: 768px;
 // **subtags**
 .sub-sticky-note.inhouse {
 	background-image: url('../assets/inhouse.png');
-	z-index: 500;
 }
 
 .sub-sticky-note.agency {
@@ -380,6 +379,27 @@ li.freelance {
 
 .item-wrapper.typographer {
 	.typographer {
+		top: 0px;
+	}
+}
+
+
+
+//**subtags**
+.item-wrapper.inhouse {
+	.inhouse {
+		top: 0px;
+	}
+}
+
+.item-wrapper.agency {
+	.agency {
+		top: 0px;
+	}
+}
+
+.item-wrapper.freelance {
+	.freelance {
 		top: 0px;
 	}
 }

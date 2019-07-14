@@ -62,3 +62,21 @@ $(".tag").click(function () {
 		$(".sticky-note").attr('class', ' sticky-note typographer');
 	}
 });
+
+$(".subtag").click(function () {
+	// console.log('function run');
+	var elem = $(this);
+	if (elem.closest('.item').hasClass("inhouse")) {
+		$(".item-wrapper").attr('class', ' item-wrapper inhouse');
+		$(".sticky-note").attr('class', ' sub-sticky-note inhouse');
+		// console.log('inhouse subtag was clicked');
+	} else if (elem.closest('.item').hasClass("agency")) {
+		$(".item-wrapper").attr('class', ' item-wrapper agency');
+		$(".sticky-note").attr('class', ' sub-sticky-note agency');
+		// console.log('agency subtag was clicked');
+	} else if (elem.closest('.item').hasClass("freelance")) {
+		$(".item-wrapper").attr('class', ' item-wrapper freelance');
+		$(".sticky-note").attr('class', ' sub-sticky-note freelance');
+		// console.log('freelance subtag was clicked');
+	}
+});
