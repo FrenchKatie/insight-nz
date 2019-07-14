@@ -113,7 +113,10 @@
         height: 100px;
         background-size: 100% auto;
         background-repeat: no-repeat;
-        object-fit: cover; }
+        object-fit: cover;
+        transition: transform 0.5s; }
+      .item .info .tag:hover {
+        transform: rotate(20deg); }
     .item .photograph {
       display: flex;
       position: absolute;
