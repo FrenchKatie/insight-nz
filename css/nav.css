@@ -51,7 +51,6 @@
   .main {
     max-width: 100%; }
     .main .nav {
-      border: 3px solid white;
       background-color: black; }
       .main .nav .nav-item {
         float: left;
@@ -59,7 +58,11 @@
         border: 2px solid white;
         width: 50%; }
         .main .nav .nav-item .nav-link .arrow {
-          display: none; } }
+          display: none; }
+    .main.selected .nav-item:first-child {
+      width: 35%; }
+    .main.selected .nav-item:last-child {
+      width: 65%; } }
 
 @media only screen and (max-width: 768px) {
   .logo {

@@ -25,7 +25,7 @@ body {
     line-height: 25px; }
     @media only screen and (max-width: 768px) {
       body .insights-titles {
-        margin: 100px 5px 0px 5px; } }
+        margin: 60px 5px 0px 5px; } }
     @media only screen and (min-width: 768px) {
       body .insights-titles {
         max-width: max-content;
@@ -48,6 +48,20 @@ body {
       margin-bottom: 12px;
       margin-left: -30px;
       font-size: 20px; }
+      @media only screen and (max-width: 768px) {
+        body .insights-titles ul .active-guideline {
+          font-size: 16px; } }
+      @media only screen and (max-width: 768px) {
+        body .insights-titles ul .active-guideline .active-guideline-link {
+          margin-left: 12px; } }
+      body .insights-titles ul .active-guideline .active-guideline-link .arrow {
+        width: 15px;
+        height: 11px;
+        margin-right: 4px; }
+      @media only screen and (max-width: 768px) {
+        body .insights-titles ul .active-guideline .active-guideline-link {
+          padding-left: 30px;
+          border: 0px solid white; } }
       body .insights-titles ul .active-guideline .active-guideline-link.active {
         text-decoration: underline; }
         body .insights-titles ul .active-guideline .active-guideline-link.active .arrow {
@@ -79,6 +93,7 @@ body {
     font-size: 20px; }
 
 .arrow {
-  background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
-  width: 30px;
-  height: 14px; }
+  background: url("../assets/icons/arrow.svg") no-repeat no-repeat center;
+  width: 22px;
+  height: 11px;
+  background-size: cover; }
