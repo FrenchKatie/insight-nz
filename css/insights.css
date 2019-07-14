@@ -54,8 +54,6 @@ body {
           font-size: 16px;
           max-width: 90%; } }
       body .insights-titles ul .active-guideline .active-guideline-link .arrow {
-        width: 15px;
-        height: 11px;
         margin-right: 4px; }
       @media only screen and (max-width: 768px) {
         body .insights-titles ul .active-guideline .active-guideline-link {
