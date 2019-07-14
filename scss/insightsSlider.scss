@@ -29,8 +29,6 @@ $width: 768px;
 		}
 	}
 
-
-
 	.item {
 		height: 250px;
 		margin-bottom: 10px;
@@ -194,7 +192,7 @@ $width: 768px;
 			cursor: pointer;
 			z-index: 3;
 			top: 130px;
-			right: 100px;
+			right: 180px;
 			float: right;
 			display: flex;
 			position: absolute;
@@ -214,8 +212,8 @@ $width: 768px;
 		.subtag {
 			cursor: pointer;
 			z-index: 5;
-			top: 180px;
-			right: 100px;
+			top: 200px;
+			right: 180px;
 			float: right;
 			display: flex;
 			position: absolute;

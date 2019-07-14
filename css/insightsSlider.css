@@ -133,7 +133,7 @@
       cursor: pointer;
       z-index: 3;
       top: 130px;
-      right: 100px;
+      right: 180px;
       float: right;
       display: flex;
       position: absolute;
@@ -145,6 +145,23 @@
       -webkit-transition: -webkit-transform .8s ease-in-out;
       transition: transform .3s ease-in-out; }
       .item .tag:hover {
+        transform: rotate(10deg); }
+    .item .subtag {
+      cursor: pointer;
+      z-index: 5;
+      top: 200px;
+      right: 180px;
+      float: right;
+      display: flex;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .3s ease-in-out; }
+      .item .subtag:hover {
         transform: rotate(10deg); }
     .item .photograph-wrapper {
       width: content; }
@@ -172,6 +189,15 @@
     width: 100px;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    object-fit: cover; }
+  .sub-sticky-note {
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    height: 60px;
+    width: 60px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     object-fit: cover; } }
 
 .sticky-note.ux-designer {
@@ -186,6 +212,16 @@
 .sticky-note.creative {
   background-image: url("../assets/creat.png"); }
 
+.sub-sticky-note.inhouse {
+  background-image: url("../assets/inhouse.png");
+  z-index: 500; }
+
+.sub-sticky-note.agency {
+  background-image: url("../assets/agency.png"); }
+
+.sub-sticky-note.freelance {
+  background-image: url("../assets/freelance.png"); }
+
 li.ux-designer .tag {
   background-image: url("../assets/UX.png"); }
 
@@ -197,6 +233,15 @@ li.service-designer .tag {
 
 li.creative .tag {
   background-image: url("../assets/creat.png"); }
+
+li.inhouse .subtag {
+  background-image: url("../assets/inhouse.png"); }
+
+li.agency .subtag {
+  background-image: url("../assets/agency.png"); }
+
+li.freelance .subtag {
+  background-image: url("../assets/freelance.png"); }
 
 .item-wrapper.service-designer .service-designer {
   top: 0px; }
