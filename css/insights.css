@@ -29,9 +29,9 @@ body {
     @media only screen and (min-width: 768px) {
       body .insights-titles {
         max-width: max-content;
-        margin-left: 10%;
-        margin-top: 100px;
-        position: relative; } }
+        margin-left: 153px;
+        margin-top: 80px;
+        position: sticky; } }
     body .insights-titles ul .nav-link {
       color: white;
       padding: 5px; }
@@ -43,15 +43,26 @@ body {
         text-decoration: underline;
         background: black;
         cursor: pointer; }
+    body .insights-titles ul .active-guideline {
+      opacity: 1;
+      margin-bottom: 12px;
+      margin-left: -30px;
+      font-size: 20px; }
+      body .insights-titles ul .active-guideline .active-guideline-link.active {
+        text-decoration: underline; }
+        body .insights-titles ul .active-guideline .active-guideline-link.active .arrow {
+          display: inline-block; }
     @media only screen and (min-width: 768px) {
       body .insights-titles li {
-        opacity: 1.0; }
+        opacity: 0.5; }
       body .insights-titles li:hover {
         opacity: 0.5; }
-      body .insights-titles .parent:hover > li {
+      body .insights-titles .parent:hover > li:not(:first-child) {
         opacity: 0.5; }
       body .insights-titles .parent:hover > li:hover {
-        opacity: 1.0; } }
+        opacity: 1.0; }
+      body .insights-titles .visited {
+        opacity: 0.2 !important; } }
   body .rotate {
     -moz-transition: all .2s linear;
     -webkit-transition: all .2s linear;

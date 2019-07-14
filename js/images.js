@@ -3,10 +3,18 @@
 $(".guideline").click(function () {
 	var elem = $(this);
 	var id = elem.attr("id");
+	showText(elem);
 	showImages(id);
 });
 
 $(".insights-content").hide();
+
+function showText(elem) {
+	elem.addClass("visited");
+	$('.active-guideline-link-text').text(elem.text().trim());
+	$('.active-guideline-link').addClass("active");
+
+}
 
 function showImages(id) {
 	$(".insights-content").show();

@@ -75,7 +75,7 @@
       display: grid;
       grid-gap: calc(var(--gutter) / 2);
       grid-template-columns: repeat(9, calc(35% - var(--gutter) * 2));
-      grid-template-rows: minmax(400px, 1fr);
+      grid-auto-rows: minmax(440px, 1fr);
       overflow-x: scroll;
       overflow-y: hidden;
       scroll-snap-type: x proximity;
@@ -85,6 +85,7 @@
   .item {
     margin: 0;
     padding: 0;
+    top: 40px;
     position: relative;
     scroll-snap-align: center;
     display: flex;
@@ -100,8 +101,7 @@
       .item .info .journal {
         display: flex;
         position: absolute;
-        width: 310PX;
-        height: 495PX;
+        width: 270PX;
         background-size: 100% auto;
         background-repeat: no-repeat;
         object-fit: cover; }
@@ -118,7 +118,6 @@
       display: flex;
       position: absolute;
       bottom: 55px;
-      bottom: 0;
       width: 300px;
       height: 200px;
       object-fit: cover;
@@ -161,10 +160,10 @@ li.service-designer .tag {
   background-image: url("../assets/SERV.png"); }
 
 .item-wrapper.service-designer .service-designer {
-  margin-top: -101px; }
+  top: 0px; }
 
 .item-wrapper.ux-designer .ux-designer {
-  margin-top: -101px; }
+  top: 0px; }
 
 .item-wrapper.typographer .typographer {
-  margin-top: -101px; }
+  top: 0px; }

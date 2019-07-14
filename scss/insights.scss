@@ -36,9 +36,9 @@ body {
 
 		@media only screen and (min-width: $width) {
 			max-width: max-content;
-			margin-left: 10%;
-			margin-top: 100px;
-			position: relative;
+			margin-left: 153px;
+			margin-top: 80px;
+			position: sticky;
 		}
 
 		color: #E0E0E0;
@@ -62,24 +62,43 @@ body {
 					cursor: pointer;
 				}
 			}
+
+			.active-guideline {
+				opacity: 1;
+				margin-bottom: 12px;
+				margin-left: -30px;
+				font-size: 20px;
+
+				.active-guideline-link.active {
+					text-decoration: underline;
+
+					.arrow {
+						display: inline-block
+					}
+				}
+			}
 		}
 
 		@media only screen and (min-width: 768px) {
 
 			li {
-				opacity: 1.0;
+				opacity: 0.5;
 			}
 
 			li:hover {
 				opacity: 0.5;
 			}
 
-			.parent:hover>li {
+			.parent:hover>li:not(:first-child) {
 				opacity: 0.5;
 			}
 
 			.parent:hover>li:hover {
 				opacity: 1.0;
+			}
+
+			.visited {
+				opacity: 0.2 !important;
 			}
 		}
 	}

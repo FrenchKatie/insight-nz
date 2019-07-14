@@ -15,7 +15,6 @@
         margin: 30px 20px 0px 20px;
         text-align: center; } }
     .navbar .nav .nav-link {
-      transition: all 1s ease-in-out;
       color: white;
       font-size: 20px;
       font-weight: 300;
@@ -26,27 +25,20 @@
       .navbar .nav .nav-link:focus {
         text-decoration: underline;
         background-color: unset; }
-    .navbar .nav .nav-item {
-      transition: all 1s ease-in-out; }
-      .navbar .nav .nav-item .arrow {
-        transition: all 1s ease-in-out;
-        display: none; }
+    .navbar .nav .nav-item .arrow {
+      display: none; }
     .navbar .nav .hover {
       transition: all 1s ease-in-out; }
       .navbar .nav .hover .arrow {
         transition: all 1s ease-in-out;
         display: inline-block; }
     .navbar .nav .active {
-      transition: all 1s ease-in-out;
       text-decoration: underline; }
       .navbar .nav .active .arrow {
-        transition: all 1s ease-in-out;
         display: inline-block; }
     .navbar .nav .unactive {
-      transition: all 1s ease-in-out;
       text-decoration: none; }
       .navbar .nav .unactive .arrow {
-        transition: all 1s ease-in-out;
         display: none; }
     .navbar .nav .insight {
       font-size: 19px; }
