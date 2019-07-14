@@ -115,7 +115,11 @@
       height: 100px;
       background-size: 100% auto;
       background-repeat: no-repeat;
-      object-fit: cover; }
+      object-fit: cover;
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      transition: transform .3s ease-in-out; }
+      .item .tag:hover {
+        transform: rotate(10deg); }
     .item .photograph-wrapper {
       width: content; }
       .item .photograph-wrapper .photograph {

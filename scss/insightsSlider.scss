@@ -177,6 +177,12 @@ $width: 768px;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
 			object-fit: cover;
+			-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition: transform .3s ease-in-out;
+
+			&:hover {
+				transform: rotate(10deg);
+			}
 		}
 
 
