@@ -94,39 +94,44 @@
       width: 640px;
       height: 400px;
       display: flex; }
-    .item .info {
+    .item .journal-wrapper {
       position: relative;
       z-index: 1; }
-      .item .info .journal {
+      .item .journal-wrapper .journal {
         display: flex;
         position: absolute;
         width: 270PX;
         background-size: 100% auto;
         background-repeat: no-repeat;
         object-fit: cover; }
-      .item .info .tag {
-        display: flex;
-        position: absolute;
-        float: right;
-        width: 100px;
-        height: 100px;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        object-fit: cover; }
-    .item .photograph {
+    .item .tag {
+      cursor: pointer;
+      z-index: 2;
+      top: 130px;
+      right: 50px;
       display: flex;
       position: absolute;
-      bottom: 55px;
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
+      width: 100px;
+      height: 100px;
       background-size: 100% auto;
       background-repeat: no-repeat;
-      z-index: 2;
-      transition: all .2s ease-in-out; }
-      .item .photograph:hover {
-        width: 330px;
-        height: 210px; }
+      object-fit: cover; }
+    .item .photograph-wrapper {
+      width: content; }
+      .item .photograph-wrapper .photograph {
+        display: flex;
+        position: absolute;
+        bottom: 55px;
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        z-index: 2;
+        transition: all .2s ease-in-out; }
+        .item .photograph-wrapper .photograph:hover {
+          width: 330px;
+          height: 210px; }
   .sticky-note {
     position: absolute;
     top: 100px;
@@ -157,6 +162,9 @@ li.typographer .tag {
 
 li.service-designer .tag {
   background-image: url("../assets/SERV.png"); }
+
+li.creative .tag {
+  background-image: url("../assets/creat.png"); }
 
 .item-wrapper.service-designer .service-designer {
   top: 0px; }
