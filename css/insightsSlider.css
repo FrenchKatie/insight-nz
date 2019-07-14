@@ -99,7 +99,7 @@
       list-style: none;
       display: grid;
       grid-gap: calc(var(--gutter) / 2);
-      grid-template-columns: repeat(9, calc(35% - var(--gutter) * 2));
+      grid-template-columns: repeat(10, calc(35% - var(--gutter) * 2));
       grid-auto-rows: minmax(440px, 1fr);
       overflow-x: scroll;
       overflow-y: hidden;
