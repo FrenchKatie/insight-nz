@@ -47,6 +47,7 @@ $width: 768px;
 				// width: 100%;
 				max-width: 90%;
 				margin-left: 5%;
+				max-height: 330px;
 				// max-height: 330px;
 				// height: 300PX;
 				object-fit: cover;
@@ -162,6 +163,21 @@ $width: 768px;
 				background-size: 100% auto;
 				background-repeat: no-repeat;
 				object-fit: cover;
+			}
+
+			.tag {
+				display: flex;
+				position: absolute;
+				float: right;
+				width: 100px;
+				height: 100px;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				object-fit: cover;
+				transition: transform 0.5s;
+			}
+			.tag:hover {
+			  transform: rotate(20deg);
 			}
 		}
 
