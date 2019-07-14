@@ -94,7 +94,10 @@
     width: 100vw;
     grid-gap: var(--gutter) 0;
     grid-template-columns: var(--gutter) 1fr var(--gutter);
-    align-content: start; }
+    align-content: start;
+    margin-left: 450px; }
+    .insights-content .item-wrapper-left-scroll {
+      background-color: pink; }
     .insights-content .item-wrapper {
       list-style: none;
       display: grid;
@@ -107,7 +110,6 @@
       padding-bottom: calc(.75 * var(--gutter));
       margin-bottom: calc(-.25 * var(--gutter)); }
   .item {
-    margin: 0;
     padding: 0;
     top: 40px;
     position: relative;
@@ -158,8 +160,6 @@
         .item .photograph-wrapper .photograph:hover {
           width: 330px;
           height: 210px; }
-  .nopointer {
-    pointer-events: none; }
   .sticky-note {
     position: absolute;
     top: 100px;

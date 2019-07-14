@@ -35,11 +35,14 @@ function showText(elem) {
 
 function showImages(id) {
 	$(".insights-content").show();
-	$(".item:not(:first)").each(function (index) {
+	// $(".item:not(:first)").each(function (index) {
+	$(".item").each(function (index) {
 		var elem = $(this);
 		var photograph = elem.find('.photograph');
 		var journal = elem.find('.journal');
 		var tag = elem.closest('.tag');
+		var subtag = elem.closest('.subtag');
+
 		id = 5;
 		var file = 'assets/Images/' + id + '/';
 
@@ -78,5 +81,31 @@ $(".subtag").click(function () {
 		$(".item-wrapper").attr('class', ' item-wrapper freelance');
 		$(".sticky-note").attr('class', ' sub-sticky-note freelance');
 		// console.log('freelance subtag was clicked');
+	}
+});
+
+$('.item-wrapper').on('scroll', function (index) {
+	// console.log('Working');
+	var imagePos = $('.item.one').offset().left;
+	var topOfWindow = $(window).scrollLeft();
+	var mrg = imagePos - topOfWindow;
+	if (mrg <= 1) {
+		// if mrg is less than 1 then it loses margin. Translate
+		$('.insights-content').css('margin-left', 0 + 'px');
+		// When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
+		console.log("margin-lost");
+	} else if (mrg <= 600){
+		//or if margin is less than 600
+		console.log('else if');
+		$('.insights-content').css('margin-left', 450 + 'px');
+
+	} else {
+		console.log('else');
+	}
+	if (mrg < topOfWindow) {
+		console.log('top of window');
+		$(this).delay(index * 600).queue(function () {
+			$('.insights-content').css('margin-left', mrg + 'px')
+		});
 	}
 });
