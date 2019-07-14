@@ -65,6 +65,8 @@
       object-fit: cover;
       -webkit-transition: -webkit-transform .8s ease-in-out;
       transition: transform .3s ease-in-out; }
+  .item.nopointer {
+    display: none; }
   .holder div {
     z-index: 0;
     /*init z-index*/ }

@@ -29,6 +29,8 @@ $width: 768px;
 		}
 	}
 
+
+
 	.item {
 		height: 250px;
 		margin-bottom: 10px;
@@ -56,6 +58,7 @@ $width: 768px;
 				margin-bottom: 100px;
 			}
 		}
+
 
 		.photograph-wrapper {
 			position: absolute;
@@ -88,6 +91,11 @@ $width: 768px;
 			transition: transform .3s ease-in-out;
 
 		}
+	}
+
+	.item.nopointer {
+		display: none;
+
 	}
 
 	.holder div {

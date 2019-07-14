@@ -35,7 +35,7 @@ function showText(elem) {
 
 function showImages(id) {
 	$(".insights-content").show();
-	$(".item").each(function (index) {
+	$(".item:not(:first)").each(function (index) {
 		var elem = $(this);
 		var photograph = elem.find('.photograph');
 		var journal = elem.find('.journal');
