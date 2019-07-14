@@ -152,7 +152,7 @@ $width: 768px;
 			display: flex;
 		}
 
-		.info {
+		.journal-wrapper {
 			position: relative;
 			z-index: 1;
 
@@ -181,25 +181,51 @@ $width: 768px;
 			}
 		}
 
-		.photograph {
+		.tag {
+			cursor: pointer;
+			z-index: 2;
+			top: 130px;
+			right: 50px;
 			display: flex;
 			position: absolute;
-			bottom: 55px;
-			width: 300px;
-			height: 200px;
-			object-fit: cover;
+			width: 100px;
+			height: 100px;
 			background-size: 100% auto;
 			background-repeat: no-repeat;
-			z-index: 2;
-			transition: all .2s ease-in-out;
+			object-fit: cover;
+			-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition: transform .3s ease-in-out;
 
 			&:hover {
-				//transform: scale(1.2);
-				width: 330px;
-				height: 210px;
+				transform: rotate(10deg);
+			}
+		}
+
+
+		.photograph-wrapper {
+			width: content;
+
+			.photograph {
+				display: flex;
+				position: absolute;
+				bottom: 55px;
+				width: 300px;
+				height: 200px;
+				object-fit: cover;
+				background-size: 100% auto;
+				background-repeat: no-repeat;
+				z-index: 2;
+				transition: all .2s ease-in-out;
+
+				&:hover {
+					//transform: scale(1.2);
+					width: 330px;
+					height: 210px;
+				}
 			}
 		}
 	}
+
 
 	.sticky-note {
 		position: absolute;
@@ -244,6 +270,12 @@ li.typographer {
 li.service-designer {
 	.tag {
 		background-image: url('../assets/SERV.png');
+	}
+}
+
+li.creative {
+	.tag {
+		background-image: url('../assets/creat.png');
 	}
 }
 
