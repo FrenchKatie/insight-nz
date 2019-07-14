@@ -7,8 +7,6 @@ $(".guideline").click(function () {
 	showImages(id);
 });
 
-$(".insights-content").hide();
-
 function showText(elem) {
 	elem.addClass("visited");
 	$('.active-guideline-link-text').text(elem.text().trim());
