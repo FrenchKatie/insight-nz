@@ -89,12 +89,12 @@ $width: 768px;
 	}
 }
 
+
 .main {
 	@media only screen and (max-width: $width) {
 		max-width: 100%;
 
 		.nav {
-			border: 3px solid white;
 			background-color: black;
 
 			.nav-item {
@@ -108,6 +108,16 @@ $width: 768px;
 						display: none;
 					}
 				}
+			}
+		}
+
+		&.selected {
+			.nav-item:first-child {
+				width: 35%;
+			}
+
+			.nav-item:last-child {
+				width: 65%;
 			}
 		}
 	}
