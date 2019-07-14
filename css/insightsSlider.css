@@ -105,8 +105,7 @@
       overflow-y: hidden;
       scroll-snap-type: x proximity;
       padding-bottom: calc(.75 * var(--gutter));
-      margin-bottom: calc(-.25 * var(--gutter));
-      scroll-padding-left: 100px; }
+      margin-bottom: calc(-.25 * var(--gutter)); }
   .item {
     margin: 0;
     padding: 0;
@@ -130,7 +129,7 @@
       cursor: pointer;
       z-index: 3;
       top: 130px;
-      right: 100px;
+      right: 180px;
       float: right;
       display: flex;
       position: absolute;

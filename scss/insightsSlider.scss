@@ -153,7 +153,7 @@ $width: 768px;
 			scroll-snap-type: x proximity;
 			padding-bottom: calc(.75 * var(--gutter));
 			margin-bottom: calc(-.25 * var(--gutter));
-			scroll-padding-left: 100px;
+			// scroll-padding-left: 100px;
 
 		}
 	}
@@ -186,7 +186,7 @@ $width: 768px;
 			cursor: pointer;
 			z-index: 3;
 			top: 130px;
-			right: 100px;
+			right: 180px;
 			float: right;
 			display: flex;
 			position: absolute;
@@ -202,9 +202,6 @@ $width: 768px;
 				transform: rotate(10deg);
 			}
 		}
-
-
-
 
 		.photograph-wrapper {
 			width: content;
