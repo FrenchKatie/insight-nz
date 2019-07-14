@@ -115,10 +115,6 @@
     display: flex;
     flex-direction: column;
     align-items: baseline; }
-    .item .person {
-      width: 640px;
-      height: 400px;
-      display: flex; }
     .item .journal-wrapper {
       position: relative;
       z-index: 1; }
@@ -145,23 +141,6 @@
       -webkit-transition: -webkit-transform .8s ease-in-out;
       transition: transform .3s ease-in-out; }
       .item .tag:hover {
-        transform: rotate(10deg); }
-    .item .subtag {
-      cursor: pointer;
-      z-index: 5;
-      top: 200px;
-      right: 180px;
-      float: right;
-      display: flex;
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      object-fit: cover;
-      -webkit-transition: -webkit-transform .8s ease-in-out;
-      transition: transform .3s ease-in-out; }
-      .item .subtag:hover {
         transform: rotate(10deg); }
     .item .photograph-wrapper {
       width: content; }
@@ -199,6 +178,24 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     object-fit: cover; } }
+
+.subtag {
+  cursor: pointer;
+  z-index: 5;
+  top: 180px;
+  right: 100px;
+  float: right;
+  display: flex;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .3s ease-in-out; }
+  .subtag:hover {
+    transform: rotate(10deg); }
 
 .sticky-note.ux-designer {
   background-image: url("../assets/UX.png"); }

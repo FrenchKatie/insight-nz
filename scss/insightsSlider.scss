@@ -168,12 +168,6 @@ $width: 768px;
 		flex-direction: column;
 		align-items: baseline;
 
-		.person {
-			width: 640px;
-			height: 400px;
-			display: flex;
-		}
-
 		.journal-wrapper {
 			position: relative;
 			z-index: 1;
@@ -208,28 +202,6 @@ $width: 768px;
 				transform: rotate(10deg);
 			}
 		}
-
-		.subtag {
-			cursor: pointer;
-			z-index: 5;
-			top: 200px;
-			right: 180px;
-			float: right;
-			display: flex;
-			position: absolute;
-			width: 60px;
-			height: 60px;
-			background-size: 100% auto;
-			background-repeat: no-repeat;
-			object-fit: cover;
-			-webkit-transition: -webkit-transform .8s ease-in-out;
-			transition: transform .3s ease-in-out;
-
-			&:hover {
-				transform: rotate(10deg);
-			}
-		}
-
 
 		.photograph-wrapper {
 			width: content;
@@ -281,6 +253,27 @@ $width: 768px;
 		background-size: 100% auto;
 		background-repeat: no-repeat;
 		object-fit: cover;
+	}
+}
+
+.subtag {
+	cursor: pointer;
+	z-index: 5;
+	top: 180px;
+	right: 100px;
+	float: right;
+	display: flex;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition: transform .3s ease-in-out;
+
+	&:hover {
+		transform: rotate(10deg);
 	}
 }
 
