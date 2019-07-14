@@ -210,6 +210,7 @@ $width: 768px;
 				transform: rotate(10deg);
 			}
 		}
+
 		.subtag {
 			cursor: pointer;
 			z-index: 5;
@@ -272,7 +273,8 @@ $width: 768px;
 		background-repeat: no-repeat;
 		object-fit: cover;
 	}
-	.sub-sticky-note{
+
+	.sub-sticky-note {
 		position: absolute;
 		top: 130px;
 		right: 50px;
@@ -304,14 +306,16 @@ $width: 768px;
 
 
 // **subtags**
-.sub-sticky-note.inhouse{
+.sub-sticky-note.inhouse {
 	background-image: url('../assets/inhouse.png');
 	z-index: 500;
 }
-.sub-sticky-note.agency{
+
+.sub-sticky-note.agency {
 	background-image: url('../assets/agency.png');
 }
-.sub-sticky-note.freelance{
+
+.sub-sticky-note.freelance {
 	background-image: url('../assets/freelance.png');
 }
 
@@ -348,11 +352,13 @@ li.inhouse {
 		background-image: url('../assets/inhouse.png');
 	}
 }
+
 li.agency {
 	.subtag {
 		background-image: url('../assets/agency.png');
 	}
 }
+
 li.freelance {
 	.subtag {
 		background-image: url('../assets/freelance.png');

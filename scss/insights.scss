@@ -31,7 +31,9 @@ body {
 
 	.insights-titles {
 		@media only screen and (max-width: $width) {
-			margin: 60px 5px 0px 5px;
+			margin: 60px 20px 0px;
+			font-size: 19px;
+
 		}
 
 		@media only screen and (min-width: $width) {
@@ -45,6 +47,7 @@ body {
 		font-size: 25px;
 		font-weight: 300;
 		line-height: 25px;
+
 
 		ul {
 			.nav-link {
@@ -71,13 +74,11 @@ body {
 
 				@media only screen and (max-width: 768px) {
 					font-size: 16px;
+					max-width: 90%;
+
 				}
 
 				.active-guideline-link {
-					@media only screen and (max-width: 768px) {
-						margin-left: 12px;
-					}
-
 					.arrow {
 						width: 15px;
 						height: 11px;
@@ -87,6 +88,10 @@ body {
 					@media only screen and (max-width: 768px) {
 						padding-left: 30px;
 						border: 0px solid white;
+
+						&:hover {
+							text-decoration: none;
+						}
 					}
 				}
 
