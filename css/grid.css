@@ -1,0 +1,41 @@
+body {
+  background-color: black; }
+
+img {
+  height: 100%; }
+
+.grid {
+  margin: 200px;
+  writing-mode: vertical-lr;
+  display: grid;
+  grid-gap: 2vh;
+  grid-auto-rows: 131vh;
+  grid-template-columns: repeat(5, 80vh);
+  grid-auto-flow: row;
+  text-align: center; }
+
+.person {
+  overflow: hidden;
+  grid-row-end: auto;
+  width: 80vw;
+  height: 80vh; }
+
+.journal-wrapper {
+  position: relative;
+  z-index: 3; }
+
+.journal {
+  display: flex;
+  position: absolute; }
+
+.photograph-wrapper {
+  position: relative;
+  z-index: 1; }
+
+.photograph {
+  display: flex;
+  position: absolute;
+  bottom: 55px;
+  object-fit: cover;
+  z-index: 2;
+  transition: all .2s ease-in-out; }

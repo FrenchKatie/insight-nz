@@ -1,0 +1,122 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  body .container {
+    width: 100%; }
+    @media only screen and (min-width: 768px) {
+      body .container video {
+        margin-top: -92px; } }
+    @media only screen and (max-width: 768px) {
+      body .container video {
+        margin-top: 35%; } }
+    body .container h3 {
+      color: #FFF;
+      font-family: Helvetica;
+      font-size: 20px;
+      line-height: 32px; }
+    body .container .text {
+      margin: 200px auto 0px;
+      max-width: 530px; }
+    body .container .row.rules {
+      color: #FFF;
+      font-family: "Helvetica Neue";
+      font-size: 32px;
+      letter-spacing: 2px;
+      font-weight: 300;
+      line-height: 38px;
+      margin: 100px auto; }
+      body .container .row.rules .nav {
+        margin-left: -16px; }
+        body .container .row.rules .nav .nav-item .arrow {
+          display: inline-block; }
+        body .container .row.rules .nav .nav-item .nav-link {
+          color: white; }
+          body .container .row.rules .nav .nav-item .nav-link:hover {
+            color: white;
+            text-decoration: underline;
+            background: black;
+            cursor: pointer; }
+      body .container .row.rules .nested-list {
+        display: none;
+        list-style: none; }
+        body .container .row.rules .nested-list li {
+          padding: 0 27px; }
+          body .container .row.rules .nested-list li a {
+            color: white;
+            font-size: 20px; }
+            body .container .row.rules .nested-list li a:hover {
+              color: white;
+              text-decoration: underline;
+              background: black;
+              cursor: pointer; }
+      body .container .row.rules .guidelines-list {
+        padding: 0; }
+        body .container .row.rules .guidelines-list > li {
+          padding: 0; }
+        body .container .row.rules .guidelines-list .guideline-photo {
+          width: 360px;
+          margin-top: 50px;
+          margin-left: 30px;
+          transition: all .2s ease-in-out; }
+          body .container .row.rules .guidelines-list .guideline-photo:hover {
+            width: 450px; }
+      body .container .row.rules .number {
+        opacity: 0.3;
+        padding-right: 7px;
+        font-size: 20px; }
+        body .container .row.rules .number:hover {
+          text-decoration: unset; }
+    body .container .insights-titles {
+      color: #E0E0E0;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 25px; }
+      @media only screen and (max-width: 768px) {
+        body .container .insights-titles {
+          margin: 100px 5px 0px 5px; } }
+      @media only screen and (min-width: 768px) {
+        body .container .insights-titles {
+          max-width: 80%;
+          margin-left: 10%;
+          margin-top: 100px; } }
+      body .container .insights-titles ul .nav-link {
+        color: white; }
+        @media only screen and (max-width: 768px) {
+          body .container .insights-titles ul .nav-link {
+            border: 2px solid white; } }
+        body .container .insights-titles ul .nav-link:hover {
+          color: white;
+          text-decoration: underline;
+          background: black;
+          cursor: pointer; }
+      @media only screen and (min-width: 768px) {
+        body .container .insights-titles li {
+          opacity: 1.0; }
+        body .container .insights-titles li:hover {
+          opacity: 0.5; }
+        body .container .insights-titles .parent:hover > li {
+          opacity: 0.5; }
+        body .container .insights-titles .parent:hover > li:hover {
+          opacity: 1.0; } }
+    body .container .rotate {
+      -moz-transition: all .2s linear;
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear; }
+    body .container .down .arrow {
+      -moz-transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    body .container .down .nested-list {
+      display: block !important; }
+      body .container .down .nested-list .arrow {
+        display: inline-block; }
+    body .container .grey {
+      opacity: 0.3;
+      transition: opacity .2s ease-in-out; }
+    body .container i {
+      font-size: 20px; }
+  body .arrow {
+    background: url("../assets/icons/arrow.png") no-repeat no-repeat center;
+    width: 30px;
+    height: 14px; }
