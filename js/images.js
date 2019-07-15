@@ -3,6 +3,7 @@
 $(".guideline").click(function () {
 	var elem = $(this);
 	var id = elem.attr("id");
+	// console.log(id);
 	showText(elem);
 	showImages(id);
 	doMobileStuff(elem);
@@ -36,6 +37,7 @@ function showText(elem) {
 function showImages(id) {
 	$(".insights-content").show();
 	// $(".item:not(:first)").each(function (index) {
+
 	$(".item").each(function (index) {
 		var elem = $(this);
 		var photograph = elem.find('.photograph');
@@ -43,10 +45,13 @@ function showImages(id) {
 		var tag = elem.closest('.tag');
 		var subtag = elem.closest('.subtag');
 
-		id = 5;
+		// id = 5;
+		console.log('id is = ' + id);
 		var file = 'assets/Images/' + id + '/';
+		console.log('file is = ' + file);
+		console.log('index is = ' + index);
 
-		photograph.attr('src', file + index + '.png');
+		photograph.attr('src', file + index + '.jpg');
 		journal.attr('src', file + String.fromCharCode(97 + index) + '.png');
 
 	});
@@ -57,6 +62,7 @@ $(".tag").click(function () {
 	if (elem.closest('.item').hasClass("service-designer")) {
 		$(".item-wrapper").attr('class', ' item-wrapper service-designer');
 		$(".sticky-note").attr('class', ' sticky-note service-designer');
+
 	} else if (elem.closest('.item').hasClass("ux-designer")) {
 		$(".item-wrapper").attr('class', ' item-wrapper ux-designer');
 		$(".sticky-note").attr('class', ' sticky-note ux-designer');
