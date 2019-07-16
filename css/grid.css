@@ -1,24 +1,28 @@
 body {
   background-color: black; }
 
+* {
+  box-sizing: border-box; }
+
 img {
   height: 100%; }
 
 .grid {
-  margin: 200px;
-  writing-mode: vertical-lr;
-  display: grid;
-  grid-gap: 2vh;
-  grid-auto-rows: 131vh;
-  grid-template-columns: repeat(5, 80vh);
-  grid-auto-flow: row;
-  text-align: center; }
+  margin: 1000px;
+  display: table; }
 
 .person {
+  position: relative;
   overflow: hidden;
-  grid-row-end: auto;
-  width: 80vw;
-  height: 80vh; }
+  width: 4200px;
+  height: 3000px;
+  padding: 300px; }
+
+.person:nth-child(odd) .journal {
+  left: 1700px; }
+
+.person:nth-child(even) .photograph {
+  left: 420px; }
 
 .journal-wrapper {
   position: relative;
@@ -26,7 +30,9 @@ img {
 
 .journal {
   display: flex;
-  position: absolute; }
+  position: absolute;
+  width: 2000px;
+  height: 3000px; }
 
 .photograph-wrapper {
   position: relative;
@@ -35,7 +41,32 @@ img {
 .photograph {
   display: flex;
   position: absolute;
-  bottom: 55px;
+  width: 3000px;
+  height: 2000px;
   object-fit: cover;
   z-index: 2;
   transition: all .2s ease-in-out; }
+
+.ux-designer .tag {
+  background-image: url("../assets/UX.png"); }
+
+.service-designer .tag {
+  background-image: url("../assets/SERV.png"); }
+
+.tag {
+  cursor: pointer;
+  z-index: 3;
+  top: 130px;
+  right: 180px;
+  float: right;
+  display: flex;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .3s ease-in-out; }
+  .tag:hover {
+    transform: rotate(10deg); }
