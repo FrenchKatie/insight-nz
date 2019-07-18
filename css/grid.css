@@ -61,8 +61,8 @@ img {
   float: right;
   display: flex;
   position: absolute;
-  width: 100px;
-  height: 100px;
+  width: 600px;
+  height: 600px;
   background-size: 100% auto;
   background-repeat: no-repeat;
   object-fit: cover;
