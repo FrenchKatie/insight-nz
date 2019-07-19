@@ -47,20 +47,32 @@ img {
   z-index: 2;
   transition: all .2s ease-in-out; }
 
-.ux-designer .tag {
+.ux-designer .maintag {
   background-image: url("../assets/UX.png"); }
 
-.service-designer .tag {
+.service-designer .maintag {
   background-image: url("../assets/SERV.png"); }
 
+.videographer .maintag {
+  background-image: url("../assets/VID.png"); }
+
+.in-house .subtag {
+  background-image: url("../assets/inhouse.png"); }
+
+.agency .subtag {
+  background-image: url("../assets/agency.png"); }
+
+.freelance .subtag {
+  background-image: url("../assets/freelance.png"); }
+
 .tag {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5;
   cursor: pointer;
-  z-index: 3;
   top: 130px;
-  right: 180px;
   float: right;
   display: flex;
-  position: absolute;
   width: 600px;
   height: 600px;
   background-size: 100% auto;
@@ -70,3 +82,9 @@ img {
   transition: transform .3s ease-in-out; }
   .tag:hover {
     transform: rotate(10deg); }
+
+.subtag {
+  width: 400px;
+  height: 400px;
+  margin-right: -112px;
+  z-index: 4; }

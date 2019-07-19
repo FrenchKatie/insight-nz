@@ -97,7 +97,7 @@ $('.item-wrapper').on('scroll', function (index) {
 
 		// When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
 		console.log("margin-lost");
-	} else if (mrg <= 600){
+	} else if (mrg <= 600) {
 		//or if margin is less than 600, add margin.
 		console.log('else if');
 		// $('.insights-content').css('margin-left', 450 + 'px');
