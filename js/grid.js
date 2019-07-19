@@ -14,7 +14,7 @@
 			var personWrapper = $("<tr>");
 			var person = $("<td>").addClass("person");
 
-			var imageFile = 'assets/Images/' + i + '/' + j + '.png';
+			var imageFile = 'assets/Images/' + i + '/' + j + '.jpg';
 			var journalFile = 'assets/Images/' + i + '/' + String.fromCharCode(97 + j) + '.png';
 
 			var person = $('<div>').addClass('person')
