@@ -3,13 +3,12 @@
 $(".guideline").click(function () {
 	var elem = $(this);
 	var id = elem.attr("id");
-	// console.log(id);
 	showText(elem);
 	showImages(id);
 	doMobileStuff(elem);
 });
 
-function doMobileStuff(elem) {
+function doMobileStuff() {
 	if ($(window).width() < 768) {
 		$(".guideline").hide('slide').delay(1000).queue(function () {
 			$(".insights-content").show('slide', {
@@ -20,9 +19,6 @@ function doMobileStuff(elem) {
 		$('.insights.nav-link').find('.arrow').css('display', 'inline-block');
 		$('.insights.nav-link').find('.arrow').css('transform', 'rotate(180deg)');
 		$('.navbar-fixed-top.main').addClass('selected');
-
-
-
 	}
 }
 
@@ -43,6 +39,8 @@ function showImages(id) {
 		var file = 'assets/Images/' + id + '/';
 		photograph.attr('src', file + index + '.jpg');
 		journal.attr('src', file + String.fromCharCode(97 + index) + '.png');
+		elem.attr('data-guideline', id);
+		elem.attr('data-person', index);
 	});
 }
 
@@ -53,8 +51,6 @@ $(".tag").click(function () {
 		console.log('service designer filter added');
 		$(".item-wrapper").attr('class', ' item-wrapper service-designer');
 		$(".sticky-note").attr('class', ' sticky-note service-designer');
-
-
 	} else if (elem.closest('.item').hasClass("ux-designer")) {
 		//if user clicks ux-designer filter
 		console.log('ux designer filter added');
@@ -75,14 +71,11 @@ $(".sticky-note").click(function () {
 	var elem = $(this);
 	console.log(elem);
 	console.log('sticky note click');
-	// $(".item-wrapper").removeClass( 'ux-designer');
-	// $(".sticky-note").removeClass( 'sticky-note');
 
 	if (elem.hasClass("service-designer")) {
 		console.log('service-designer  filter removed');
 		$(".item-wrapper").removeClass('service-designer');
 		$(".sticky-note").removeClass('sticky-note');
-
 
 	} else if (elem.hasClass("ux-designer")) {
 		console.log('ux designer filter removed');
@@ -130,8 +123,6 @@ $('.item-wrapper').on('scroll', function (index) {
 		// console.log('margin less than 600, no-scroller-margin class removed');
 		$('.insights-content').addClass('scroller-margin');
 		// console.log('margin less than 600, scroller-margin class add');
-
-
 	} else {
 		// console.log('else');
 	}
@@ -142,4 +133,14 @@ $('.item-wrapper').on('scroll', function (index) {
 
 		});
 	}
+});
+
+$('.photograph').click(function () {
+	var item = this.closest('.item');
+	var id = item.getAttribute("data-guideline");
+	var person = item.getAttribute("data-person");
+	//window.location.href = window.location.hostname +"/grid.html?id=" + id + "&person="
+
+
+
 });

@@ -157,6 +157,7 @@
     .item .photograph-wrapper {
       width: content; }
       .item .photograph-wrapper .photograph {
+        cursor: pointer;
         display: flex;
         position: absolute;
         bottom: 55px;

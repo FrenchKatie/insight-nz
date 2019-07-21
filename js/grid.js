@@ -82,3 +82,20 @@
 			inline: "center"
 		});
 	}
+
+
+	$(".top-bar").mouseenter(function () {
+		var elem = $(this);
+		if (elem.hasClass("active")) {
+			//do nothing
+		} else {
+			$(".top-bar").removeClass("hover");
+			$(".top-bar").addClass("unactive");
+			elem.removeClass("unactive");
+			elem.toggleClass("hover");
+		}
+		event.preventDefault();
+	}).mouseleave(function () {
+		$(".top-bar").removeClass("hover");
+		$(".top-bar").removeClass("unactive");
+	});

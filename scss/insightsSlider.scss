@@ -89,7 +89,8 @@ $width: 768px;
 			transition: transform .3s ease-in-out;
 
 		}
-		.subtag{
+
+		.subtag {
 			top: 230px;
 			right: 10px;
 		}
@@ -119,8 +120,9 @@ $width: 768px;
 		position: relative;
 		height: 100vh;
 	}
+
 	webkit-scrollbar {
-		 display: none;
+		display: none;
 	}
 
 	#rotateBtn {
@@ -157,9 +159,9 @@ $width: 768px;
 		align-content: start;
 		// margin-left: 450px;
 		-webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
 
 
 		.item-wrapper {
@@ -180,12 +182,14 @@ $width: 768px;
 
 	}
 
-	.scroller-margin{
+	.scroller-margin {
 		margin-left: 450px
 	}
-	.no-scroller-margin{
+
+	.no-scroller-margin {
 		margin-left: 0px;
 	}
+
 	.item {
 		// margin: 0;
 		// margin-left: 500px;
@@ -236,6 +240,7 @@ $width: 768px;
 			width: content;
 
 			.photograph {
+				cursor: pointer;
 				display: flex;
 				position: absolute;
 				bottom: 55px;
@@ -255,6 +260,7 @@ $width: 768px;
 			}
 		}
 	}
+
 	.sticky-note {
 		position: absolute;
 		top: 100px;

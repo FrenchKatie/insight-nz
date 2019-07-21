@@ -17,7 +17,7 @@ img {
 	display: table;
 
 	table {
-		margin-top: -300px;
+		margin-top: -130px;
 	}
 }
 
@@ -70,15 +70,47 @@ tr:nth-child(even) {
 	transition: all .2s ease-in-out;
 }
 
+.tag {
+	position: -webkit-sticky;
+	position: sticky;
+	z-index: 5;
+	cursor: pointer;
+	margin-right: 73px;
+	top: 98px;
+	float: right;
+	display: flex;
+	width: 180px;
+	height: 180px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	object-fit: cover;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	transition: transform .3s ease-in-out;
+
+	&:hover {
+		transform: rotate(10deg);
+	}
+}
+
+.subtag {
+	width: 164px;
+	height: 170px;
+	margin-right: -235px;
+	z-index: 4;
+	top: 10px;
+}
+
 .ux-designer {
 	.maintag {
 		background-image: url('../assets/UX.png');
+
 	}
 }
 
 .service-designer {
 	.maintag {
 		background-image: url('../assets/SERV.png');
+
 	}
 }
 
@@ -105,32 +137,4 @@ tr:nth-child(even) {
 	.subtag {
 		background-image: url('../assets/freelance.png');
 	}
-}
-
-.tag {
-	position: -webkit-sticky;
-	position: sticky;
-	z-index: 5;
-	cursor: pointer;
-	top: 10px;
-	float: right;
-	display: flex;
-	width: 180px;
-	height: 180px;
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	object-fit: cover;
-	-webkit-transition: -webkit-transform .8s ease-in-out;
-	transition: transform .3s ease-in-out;
-
-	&:hover {
-		transform: rotate(10deg);
-	}
-}
-
-.subtag {
-	width: 164px;
-	height: 170px;
-	margin-right: -12px;
-	z-index: 4;
 }
