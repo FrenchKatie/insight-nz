@@ -39,8 +39,7 @@ function showImages(id) {
 		var elem = $(this);
 		var photograph = elem.find('.photograph');
 		var journal = elem.find('.journal');
-		var tag = elem.closest('.tag');
-		var subtag = elem.closest('.subtag');
+
 		var file = 'assets/Images/' + id + '/';
 		photograph.attr('src', file + index + '.jpg');
 		journal.attr('src', file + String.fromCharCode(97 + index) + '.png');
@@ -57,13 +56,13 @@ $(".tag").click(function () {
 
 
 	} else if (elem.closest('.item').hasClass("ux-designer")) {
-			//if user clicks ux-designer filter
+		//if user clicks ux-designer filter
 		console.log('ux designer filter added');
 		$(".item-wrapper").attr('class', ' item-wrapper ux-designer');
 		$(".sticky-note").attr('class', ' sticky-note ux-designer');
 
 	} else if (elem.closest('.item').hasClass("typographer")) {
-			//if user clicks typographer filter
+		//if user clicks typographer filter
 		console.log('typographer filter added');
 		$(".item-wrapper").attr('class', ' item-wrapper typographer');
 		$(".sticky-note").attr('class', ' sticky-note typographer');
@@ -81,19 +80,19 @@ $(".sticky-note").click(function () {
 
 	if (elem.hasClass("service-designer")) {
 		console.log('service-designer  filter removed');
-		$(".item-wrapper").removeClass( 'service-designer');
-		$(".sticky-note").removeClass( 'sticky-note');
+		$(".item-wrapper").removeClass('service-designer');
+		$(".sticky-note").removeClass('sticky-note');
 
 
 	} else if (elem.hasClass("ux-designer")) {
 		console.log('ux designer filter removed');
-		$(".item-wrapper").removeClass( 'ux-designer');
-		$(".sticky-note").removeClass( 'sticky-note');
+		$(".item-wrapper").removeClass('ux-designer');
+		$(".sticky-note").removeClass('sticky-note');
 
 	} else if (elem.hasClass("typographer")) {
 		console.log('typographer filter removed');
-		$(".item-wrapper").removeClass( 'typographer');
-		$(".sticky-note").removeClass( 'sticky-note');
+		$(".item-wrapper").removeClass('typographer');
+		$(".sticky-note").removeClass('sticky-note');
 	}
 });
 
@@ -122,7 +121,7 @@ $('.item-wrapper').on('scroll', function (index) {
 	if (mrg <= 1) {
 		// if mrg is less than 1 then it loses margin. Translate
 		$('.insights-content').removeClass('scroller-margin');
-		$('.insights-content').addClass('no-scroller-margin');// When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
+		$('.insights-content').addClass('no-scroller-margin'); // When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
 		// console.log("margin-lost");
 	} else if (mrg <= 600) {
 		//or if margin is less than 600, add margin.

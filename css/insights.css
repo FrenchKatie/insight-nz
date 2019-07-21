@@ -92,9 +92,3 @@ body {
       display: inline-block; }
   body i {
     font-size: 20px; }
-
-.arrow {
-  background: url("../assets/icons/arrow.svg") no-repeat no-repeat center;
-  width: 22px;
-  height: 11px;
-  background-size: cover; }

@@ -1,6 +1,6 @@
 	var table = $("<table>");
 	var tableWrapper = $("<tr>");
-	for (i = 1; i <= 5; i++) { //10 "people" in grid
+	for (i = 0; i <= 5; i++) { //10 "people" in grid
 		var designer = getDesignerType(i);
 		var designerWork = getDesignerWorkType(i);
 		var columnWrapper = $("<td>").addClass("column-wrapper").addClass(designer).addClass(designerWork);
@@ -10,12 +10,12 @@
 		innertable.append(tag);
 		innertable.append(subtag);
 
-		for (j = 0; j < 10; j++) { //22 guidelines 
+		for (j = 1; j < 10; j++) { //22 guidelines 
 			var personWrapper = $("<tr>");
 			var person = $("<td>").addClass("person");
 
-			var imageFile = 'assets/Images/' + i + '/' + j + '.jpg';
-			var journalFile = 'assets/Images/' + i + '/' + String.fromCharCode(97 + j) + '.png';
+			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
+			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
 
 			var person = $('<div>').addClass('person')
 			var journalWrapper = $('<div>').addClass('journal-wrapper');
@@ -33,17 +33,6 @@
 	}
 	table.append(tableWrapper);
 	$('.grid').append(table);
-
-	$('.person').on('click', clickToPerson);
-
-	function clickToPerson(event) {
-		event.stopPropagation();
-		event.target.scrollIntoView({
-			behavior: "smooth",
-			block: "center",
-			inline: "center"
-		});
-	}
 
 	function getDesignerType(index) {
 		switch (index) {
@@ -81,4 +70,15 @@
 			case 8:
 				return "freelance";
 		}
+	}
+
+	$('.person').on('click', clickToPerson);
+
+	function clickToPerson(event) {
+		event.stopPropagation();
+		event.target.scrollIntoView({
+			behavior: "smooth",
+			block: "center",
+			inline: "center"
+		});
 	}

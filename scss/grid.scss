@@ -12,27 +12,32 @@ img {
 
 .grid {
 	//use scroll snapping?
-	margin: 1000px;
+	margin: 100px;
+	margin-left: 400px;
 	display: table;
+
+	table {
+		margin-top: -300px;
+	}
 }
 
 .person {
 	position: relative;
 	overflow: hidden;
-	width: 4200px;
-	height: 3000px;
-	padding: 300px;
+	width: 1000px;
+	height: 900px;
+	padding: 100px;
 }
 
-.person:nth-child(odd) {
+tr:nth-child(odd) {
 	.journal {
-		left: 1700px;
+		left: -38px;
 	}
 }
 
-.person:nth-child(even) {
-	.photograph {
-		left: 420px;
+tr:nth-child(even) {
+	.journal {
+		left: 362px;
 	}
 
 }
@@ -45,8 +50,8 @@ img {
 .journal {
 	display: flex;
 	position: absolute;
-	width: 2000px;
-	height: 3000px;
+	width: 440px;
+	height: 620px;
 
 }
 
@@ -58,8 +63,8 @@ img {
 .photograph {
 	display: flex;
 	position: absolute;
-	width: 3000px;
-	height: 2000px;
+	width: 700px;
+	height: auto;
 	object-fit: cover;
 	z-index: 2;
 	transition: all .2s ease-in-out;
@@ -107,11 +112,11 @@ img {
 	position: sticky;
 	z-index: 5;
 	cursor: pointer;
-	top: 130px;
+	top: 10px;
 	float: right;
 	display: flex;
-	width: 600px;
-	height: 600px;
+	width: 180px;
+	height: 180px;
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	object-fit: cover;
@@ -124,8 +129,8 @@ img {
 }
 
 .subtag {
-	width: 400px;
-	height: 400px;
-	margin-right: -112px;
+	width: 164px;
+	height: 170px;
+	margin-right: -12px;
 	z-index: 4;
 }

@@ -7,8 +7,8 @@ body {
 	//for gridding insights-content
 	display: grid;
 	place-items: center;
-    max-width: 100%;
-    overflow-x: hidden;
+	max-width: 100%;
+	overflow-x: hidden;
 
 	.container {
 		width: 100%;
@@ -155,11 +155,4 @@ body {
 	i {
 		font-size: 20px;
 	}
-}
-
-.arrow {
-	background: url("../assets/icons/arrow.svg") no-repeat no-repeat center;
-	width: 22px;
-	height: 11px;
-	background-size: cover;
 }

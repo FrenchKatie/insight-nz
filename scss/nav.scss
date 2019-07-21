@@ -41,6 +41,8 @@ $width: 768px;
 		}
 
 		.nav-item {
+			color: white;
+
 			.arrow {
 				display: none;
 			}
@@ -127,4 +129,12 @@ $width: 768px;
 	@media only screen and (max-width: $width) {
 		display: none;
 	}
+}
+
+.arrow {
+	background: url("../assets/icons/arrow.svg") no-repeat no-repeat center;
+	width: 22px;
+	height: 11px;
+	background-size: cover;
+	margin-right: 7px;
 }
