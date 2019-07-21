@@ -89,6 +89,10 @@ $width: 768px;
 			transition: transform .3s ease-in-out;
 
 		}
+		.subtag{
+			top: 230px;
+			right: 10px;
+		}
 	}
 
 	.item.nopointer {
@@ -114,6 +118,9 @@ $width: 768px;
 	.container {
 		position: relative;
 		height: 100vh;
+	}
+	webkit-scrollbar {
+		 display: none;
 	}
 
 	#rotateBtn {
@@ -154,9 +161,6 @@ $width: 768px;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 
-		.item-wrapper-left-scroll {
-			background-color: pink;
-		}
 
 		.item-wrapper {
 			list-style: none;
@@ -173,6 +177,7 @@ $width: 768px;
 
 
 		}
+
 	}
 
 	.scroller-margin{
