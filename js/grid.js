@@ -1,6 +1,6 @@
 	var table = $("<table>");
 	var tableWrapper = $("<tr>");
-	for (i = 0; i <= 5; i++) { //10 "people" in grid
+	for (i = 0; i <= 10; i++) { //10 "people" in grid
 		var designer = getDesignerType(i);
 		var designerWork = getDesignerWorkType(i);
 		var columnWrapper = $("<td>").addClass("column-wrapper").addClass(designer).addClass(designerWork);
@@ -10,7 +10,7 @@
 		innertable.append(tag);
 		innertable.append(subtag);
 
-		for (j = 1; j < 10; j++) { //22 guidelines 
+		for (j = 1; j < 22; j++) { //22 guidelines 
 			var thisid = j + "" + i;
 			var personWrapper = $("<tr>");
 
