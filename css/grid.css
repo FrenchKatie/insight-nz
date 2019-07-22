@@ -167,3 +167,5 @@ tr {
     list-style-type: none;
     padding: 0;
     line-height: 1.5; }
+  .share-box li:hover {
+    text-decoration: underline; }
