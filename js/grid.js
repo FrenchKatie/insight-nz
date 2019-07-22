@@ -11,13 +11,13 @@
 		innertable.append(subtag);
 
 		for (j = 1; j < 10; j++) { //22 guidelines 
+			var thisid = j + "" + i;
 			var personWrapper = $("<tr>");
-			var person = $("<td>").addClass("person");
 
 			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
 
-			var person = $('<div>').addClass('person')
+			var person = $('<div>').addClass('person').attr('id', thisid);
 			var journalWrapper = $('<div>').addClass('journal-wrapper');
 			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
 			var photoWrapper = $('<div>').addClass('photograph-wrapper');

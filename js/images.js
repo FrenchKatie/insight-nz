@@ -137,9 +137,12 @@ $('.item-wrapper').on('scroll', function (index) {
 
 $('.photograph').click(function () {
 	var item = this.closest('.item');
-	var id = item.getAttribute("data-guideline");
+	var guideline = item.getAttribute("data-guideline");
 	var person = item.getAttribute("data-person");
-	//window.location.href = window.location.hostname +"/grid.html?id=" + id + "&person="
+	var url = "";
+	var produrl = "https://insight-nz.com";
+	var url = "file:///Users/hannahauckram/Documents/GitHub/insight-nz";
+	window.location.href = url + "/grid.html#" + guideline + person;
 
 
 
