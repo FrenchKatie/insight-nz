@@ -46,65 +46,89 @@ function showImages(id) {
 
 $(".tag").click(function () {
 	var elem = $(this);
-	if (elem.closest('.item').hasClass("service-designer")) {
-		//if user clicks service-designer filter
-		console.log('service designer filter added');
-		$(".item-wrapper").attr('class', ' item-wrapper service-designer');
-		$(".sticky-note").attr('class', ' sticky-note service-designer');
-	} else if (elem.closest('.item').hasClass("ux-designer")) {
-		//if user clicks ux-designer filter
-		console.log('ux designer filter added');
-		$(".item-wrapper").attr('class', ' item-wrapper ux-designer');
-		$(".sticky-note").attr('class', ' sticky-note ux-designer');
-
-	} else if (elem.closest('.item').hasClass("typographer")) {
-		//if user clicks typographer filter
-		console.log('typographer filter added');
-		$(".item-wrapper").attr('class', ' item-wrapper typographer');
-		$(".sticky-note").attr('class', ' sticky-note typographer');
-	}
+	var item = elem.closest('.item');
+	var filter = item.attr('class').split(' ')[2]; //this should be in a data attribute
+	$(".item-wrapper").attr('data-maintag', filter);
+	$(".sticky-note").show();
+	$(".sticky-note").attr('class', 'sticky-note ' + filter);
+	refreshFilters();
+});
+$(".subtag").click(function () {
+	var elem = $(this);
+	var item = elem.closest('.item');
+	var filter = item.attr('class').split(' ')[3];
+	$(".item-wrapper").attr('data-subtag', filter);
+	$(".sub-sticky-note").show();
+	$(".sub-sticky-note").attr('class', 'sub-sticky-note ' + filter);
+	refreshFilters();
 });
 
+
+function refreshFilters() {
+	var main = $(".item-wrapper").attr('data-maintag');
+	var sub = $(".item-wrapper").attr('data-subtag');
+	if (hasDoubleFilter()) {
+		attachTwoFiltersToItem(main, sub);
+	} else if (doesClassExist(main)) {
+		attachFilterToItem(main);
+	} else if (doesClassExist(sub)) {
+		attachFilterToItem(sub);
+	} else {
+		$(".item").removeClass('filtered');
+	}
+}
+
+function attachFilterToItem(filter) {
+	$(".item").each(function () {
+		var elem = $(this);
+		if (elem.hasClass(filter)) {
+			elem.addClass('filtered')
+		} else {
+			elem.removeClass('filtered')
+		}
+	});
+};
+
+function attachTwoFiltersToItem(filter1, filter2) {
+	$(".item").each(function () {
+		var elem = $(this);
+		if (elem.hasClass(filter1) && elem.hasClass(filter2)) {
+			console.log(elem);
+			elem.addClass('filtered')
+		} else {
+			elem.removeClass('filtered')
+		}
+	});
+};
+
+function hasDoubleFilter() {
+	var sub = $(".item-wrapper").attr('data-subtag');
+	var main = $(".item-wrapper").attr('data-maintag');
+	if (doesClassExist(sub) && doesClassExist(main)) {
+		return true;
+	}
+	return false;
+};
+
+function doesClassExist(attr) {
+	if (typeof attr !== typeof undefined && attr !== false && attr != "") {
+		return true;
+	}
+	return false;
+}
 
 //removing sticky note filter
 $(".sticky-note").click(function () {
 	var elem = $(this);
-	console.log(elem);
-	console.log('sticky note click');
-
-	if (elem.hasClass("service-designer")) {
-		console.log('service-designer  filter removed');
-		$(".item-wrapper").removeClass('service-designer');
-		$(".sticky-note").removeClass('sticky-note');
-
-	} else if (elem.hasClass("ux-designer")) {
-		console.log('ux designer filter removed');
-		$(".item-wrapper").removeClass('ux-designer');
-		$(".sticky-note").removeClass('sticky-note');
-
-	} else if (elem.hasClass("typographer")) {
-		console.log('typographer filter removed');
-		$(".item-wrapper").removeClass('typographer');
-		$(".sticky-note").removeClass('sticky-note');
-	}
+	$(".item-wrapper").attr('data-maintag', "");
+	refreshFilters();
+	elem.hide();
 });
-
-$(".subtag").click(function () {
-	// console.log('function run');
+$(".sub-sticky-note").click(function () {
 	var elem = $(this);
-	if (elem.closest('.item').hasClass("inhouse")) {
-		$(".item-wrapper").attr('class', ' item-wrapper inhouse');
-		$(".sub-sticky-note").attr('class', ' sub-sticky-note inhouse');
-		// console.log('inhouse subtag was clicked');
-	} else if (elem.closest('.item').hasClass("agency")) {
-		$(".item-wrapper").attr('class', ' item-wrapper agency');
-		$(".sub-sticky-note").attr('class', ' sub-sticky-note agency');
-		// console.log('agency subtag was clicked');
-	} else if (elem.closest('.item').hasClass("freelance")) {
-		$(".item-wrapper").attr('class', ' item-wrapper freelance');
-		$(".sub-sticky-note").attr('class', ' sub-sticky-note freelance');
-		// console.log('freelance subtag was clicked');
-	}
+	$(".item-wrapper").attr('data-subtag', "");
+	refreshFilters();
+	elem.hide();
 });
 
 $('.item-wrapper').on('scroll', function (index) {
@@ -143,7 +167,5 @@ $('.photograph').click(function () {
 	var produrl = "https://insight-nz.com";
 	var url = "file:///Users/hannahauckram/Documents/GitHub/insight-nz";
 	window.location.href = url + "/grid.html#" + guideline + person;
-
-
 
 });

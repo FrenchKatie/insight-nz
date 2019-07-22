@@ -1,32 +1,34 @@
 	var table = $("<table>");
 	var tableWrapper = $("<tr>");
-	for (i = 0; i <= 5; i++) { //10 "people" in grid
+	for (i = 0; i <= 10; i++) { //10 "people" in grid
 		var designer = getDesignerType(i);
 		var designerWork = getDesignerWorkType(i);
-		var columnWrapper = $("<td>").addClass("column-wrapper").addClass(designer).addClass(designerWork);
+		var columnWrapper = $("<td>").addClass("column-wrapper").attr('data-designer', designer).attr('data-designerWork', designerWork);
 		var innertable = $("<table>");
 		var tag = $('<div>').addClass('tag maintag');
 		var subtag = $('<div>').addClass('tag subtag');
+		var shareLink = '<div class = "share-link"> <a href="#">Share</a></div> ';
+		var shareBox = '<div class= "share-box"><p>Share to</p><ul><li>Twitter</li><li>Facebook</li><li>Pinterest</li></ul></div> ';
+
 		innertable.append(tag);
 		innertable.append(subtag);
+		innertable.append(shareLink);
+		innertable.append(shareBox);
 
-		for (j = 1; j < 10; j++) { //22 guidelines
+		for (j = 1; j < 22; j++) { //22 guidelines
 			var thisid = j + "" + i;
 			var personWrapper = $("<tr>");
 
 			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
-			var shareLink = '<div class = "share-link"> <a href="#">Share</a></div> ';
-			var shareBox = '<div class= "share-box">Shared Successfuly</div> ';
-			var person = $('<div>').addClass('person').attr('id', thisid);
+				var person = $('<div>').addClass('person').attr('id', thisid);
 			var journalWrapper = $('<div>').addClass('journal-wrapper');
 			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
 			var photoWrapper = $('<div>').addClass('photograph-wrapper');
 			var photo = '<img class = "lazy photograph" src="' + imageFile + '" />';
 			person.append(journalWrapper.append(journal));
 			person.append(photoWrapper.append(photo));
-			person.append(shareLink);
-			person.append(shareBox);
+
 
 			personWrapper.append(person);
 			innertable.append(personWrapper);
@@ -75,17 +77,24 @@
 		}
 	}
 
-	$('.person').on('click', clickToPerson);
+	function toString(classStr) {
+		return classStr.replace("-", " ");
+	}
+
+	$('.column-wrapper').on('click', clickToPerson);
 
 	function clickToPerson(event) {
+		var person = $(this);
+		console.log(person);
 		event.stopPropagation();
 		event.target.scrollIntoView({
 			behavior: "smooth",
 			block: "center",
 			inline: "center"
 		});
+		var filter = person.attr('data-designer');
+		$('.grid-breadcrumb-text').text(toString(filter));
 	}
-
 
 	$(".top-bar").mouseenter(function () {
 		var elem = $(this);
@@ -104,32 +113,11 @@
 	});
 
 
-	// $(".share-link").click(function () {
-	// 	console.log('shared');
-	// 	$('.share-box').removeClass('hidden');
-	// 	$('.share-box').addClass('show');
-	// })
+	function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollLeft();
+		var docViewBottom = docViewTop + $(window).width();
 
-
-	$(".share-link").click(function(){
-    // $(".share-box").slideToggle();
-  // $(this).nextElementSibling.slideToggle();
-  // var selectedShareBox = $(this)["0"].nextElementSibling;
-  // selectedShareBox.slideToggle();
-  console.log($(this));
-
-  });
-
-  // $(document).on('click', '.share-link' , function(){
-  //     $(this).children('.share-box').show();
-  // }):
-  //
-  // $('share-link').click(function(e){
-	//   $(e.currentTarget).toggle();
-	// });
-
-
-	//
-	// $(document).on('click', '.share-link' , function(){
-	//     $(this).hide(); // hides only the element that was clicked with the class .the-class
-	// }):
+		var elemTop = $(elem).offset().left;
+		var elemBottom = elemTop + $(elem).width();
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}

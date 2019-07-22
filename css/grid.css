@@ -1,5 +1,6 @@
 body {
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 * {
   box-sizing: border-box; }
@@ -9,6 +10,11 @@ img {
 
 .navbar {
   z-index: 15; }
+
+.grid-breadcrumb {
+  display: inline-block; }
+  .grid-breadcrumb .arrow {
+    display: inline-block !important; }
 
 .grid {
   margin: 100px;
@@ -85,22 +91,22 @@ tr {
   z-index: 4;
   top: 10px; }
 
-.ux-designer .maintag {
+[data-designer="ux-designer"] .maintag {
   background-image: url("../assets/UX.png"); }
 
-.service-designer .maintag {
+[data-designer="service-designer"] .maintag {
   background-image: url("../assets/SERV.png"); }
 
-.videographer .maintag {
+[data-designer="videographer"] .maintag {
   background-image: url("../assets/VID.png"); }
 
-.in-house .subtag {
+[data-designerWork="in-house"] .subtag {
   background-image: url("../assets/inhouse.png"); }
 
-.agency .subtag {
+[data-designerWork="agency"] .subtag {
   background-image: url("../assets/agency.png"); }
 
-.freelance .subtag {
+[data-designerWork="freelance"] .subtag {
   background-image: url("../assets/freelance.png"); }
 
 .left-shadow {
@@ -130,23 +136,23 @@ tr {
   pointer-events: none; }
 
 .share-link {
-  position: absolute;
-  right: 150px;
-  top: 400px; }
+  position: fixed;
+  right: 310px;
+  top: 350px; }
   .share-link a {
     color: white; }
 
 .share-box {
-  height: 100px;
+  width: 150px;
   background-color: white;
   color: black;
-  position: absolute;
-  right: 150px;
-  top: 500px;
-  display: none; }
-
-.hidden {
-  display: none; }
-
-.show {
-  display: block; }
+  right: 200px;
+  top: 380px;
+  position: fixed;
+  padding: 10px; }
+  .share-box p {
+    font-size: 10px; }
+  .share-box ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5; }

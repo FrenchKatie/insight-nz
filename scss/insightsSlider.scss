@@ -305,7 +305,6 @@ $width: 768px;
 	}
 }
 
-
 .sticky-note.ux-designer {
 	background-image: url('../assets/UX.png');
 }
@@ -322,8 +321,6 @@ $width: 768px;
 	background-image: url('../assets/creat.png');
 }
 
-
-
 // **subtags**
 .sub-sticky-note.inhouse {
 	background-image: url('../assets/inhouse.png');
@@ -336,8 +333,6 @@ $width: 768px;
 .sub-sticky-note.freelance {
 	background-image: url('../assets/freelance.png');
 }
-
-
 
 li.ux-designer {
 	.tag {
@@ -383,44 +378,6 @@ li.freelance {
 	}
 }
 
-
-.item-wrapper.service-designer {
-
-	//what happens when sticky note is clicked to each item
-	.service-designer {
-		top: 0px;
-	}
-}
-
-.item-wrapper.ux-designer {
-	.ux-designer {
-		top: 0px;
-	}
-}
-
-.item-wrapper.typographer {
-	.typographer {
-		top: 0px;
-	}
-}
-
-
-
-//**subtags**
-.item-wrapper.inhouse {
-	.inhouse {
-		top: 0px;
-	}
-}
-
-.item-wrapper.agency {
-	.agency {
-		top: 0px;
-	}
-}
-
-.item-wrapper.freelance {
-	.freelance {
-		top: 0px;
-	}
+.filtered {
+	top: 0px;
 }

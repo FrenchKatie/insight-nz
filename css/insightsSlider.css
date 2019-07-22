@@ -250,20 +250,5 @@ li.agency .subtag {
 li.freelance .subtag {
   background-image: url("../assets/freelance.png"); }
 
-.item-wrapper.service-designer .service-designer {
-  top: 0px; }
-
-.item-wrapper.ux-designer .ux-designer {
-  top: 0px; }
-
-.item-wrapper.typographer .typographer {
-  top: 0px; }
-
-.item-wrapper.inhouse .inhouse {
-  top: 0px; }
-
-.item-wrapper.agency .agency {
-  top: 0px; }
-
-.item-wrapper.freelance .freelance {
+.filtered {
   top: 0px; }
