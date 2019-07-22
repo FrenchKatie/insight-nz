@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	overflow-x: hidden; //can always remove this if decide want horizontal scrolling not just click
 }
 
 * {
@@ -9,8 +10,14 @@ body {
 img {
 	height: 100%;
 }
-.navbar{
+
+.navbar {
 	z-index: 15;
+}
+
+.grid-breadcrumb {
+
+	.arrow {}
 }
 
 .grid {
@@ -30,9 +37,11 @@ img {
 	width: 1000px;
 	height: 500px;
 	padding: 50px;
-	.journal-wrapper{
+
+	.journal-wrapper {
+
 		// height: 100%;
-		.journal{
+		.journal {
 			height: 500px;
 			width: auto;
 		}
@@ -116,68 +125,68 @@ tr {
 	top: 10px;
 }
 
-.ux-designer {
+[data-designer="ux-designer"] {
 	.maintag {
 		background-image: url('../assets/UX.png');
 
 	}
 }
 
-.service-designer {
+[data-designer="service-designer"] {
 	.maintag {
 		background-image: url('../assets/SERV.png');
 
 	}
 }
 
-.videographer {
+[data-designer="videographer"] {
 	.maintag {
 		background-image: url('../assets/VID.png');
 	}
 }
 
 //**subtags**
-.in-house {
+[data-designerWork="in-house"] {
 	.subtag {
 		background-image: url('../assets/inhouse.png');
 	}
 }
 
-.agency {
+[data-designerWork="agency"] {
 	.subtag {
 		background-image: url('../assets/agency.png');
 	}
 }
 
-.freelance {
+[data-designerWork="freelance"] {
 	.subtag {
 		background-image: url('../assets/freelance.png');
 	}
 }
 
-.left-shadow{
+.left-shadow {
 	height: 100vh;
 	width: 20%;
-	background: rgb(0,0,0);
-	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-	background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+	background: rgb(0, 0, 0);
+	background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: -o-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
 	position: fixed;
-	top:0px;
+	top: 0px;
 	left: 0px;
 	z-index: 10;
 	pointer-events: none;
 }
 
-.right-shadow{
+.right-shadow {
 	height: 100vh;
 	width: 20%;
-	background: rgb(255,255,255);
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
-	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+	background: rgb(255, 255, 255);
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+	background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
 	position: fixed;
-	top:0px;
+	top: 0px;
 	right: 0px;
 	z-index: 10;
 	pointer-events: none;

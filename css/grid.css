@@ -1,5 +1,6 @@
 body {
-  background-color: black; }
+  background-color: black;
+  overflow-x: hidden; }
 
 * {
   box-sizing: border-box; }
@@ -85,22 +86,22 @@ tr {
   z-index: 4;
   top: 10px; }
 
-.ux-designer .maintag {
+[data-designer="ux-designer"] .maintag {
   background-image: url("../assets/UX.png"); }
 
-.service-designer .maintag {
+[data-designer="service-designer"] .maintag {
   background-image: url("../assets/SERV.png"); }
 
-.videographer .maintag {
+[data-designer="videographer"] .maintag {
   background-image: url("../assets/VID.png"); }
 
-.in-house .subtag {
+[data-designerWork="in-house"] .subtag {
   background-image: url("../assets/inhouse.png"); }
 
-.agency .subtag {
+[data-designerWork="agency"] .subtag {
   background-image: url("../assets/agency.png"); }
 
-.freelance .subtag {
+[data-designerWork="freelance"] .subtag {
   background-image: url("../assets/freelance.png"); }
 
 .left-shadow {

@@ -3,7 +3,7 @@
 	for (i = 0; i <= 10; i++) { //10 "people" in grid
 		var designer = getDesignerType(i);
 		var designerWork = getDesignerWorkType(i);
-		var columnWrapper = $("<td>").addClass("column-wrapper").addClass(designer).addClass(designerWork);
+		var columnWrapper = $("<td>").addClass("column-wrapper").attr('data-designer', designer).attr('data-designerWork', designerWork);
 		var innertable = $("<table>");
 		var tag = $('<div>').addClass('tag maintag');
 		var subtag = $('<div>').addClass('tag subtag');
@@ -72,17 +72,24 @@
 		}
 	}
 
-	$('.person').on('click', clickToPerson);
+	function toString(classStr) {
+		return classStr.replace("-", " ");
+	}
+
+	$('.column-wrapper').on('click', clickToPerson);
 
 	function clickToPerson(event) {
+		var person = $(this);
+		console.log(person);
 		event.stopPropagation();
 		event.target.scrollIntoView({
 			behavior: "smooth",
 			block: "center",
 			inline: "center"
 		});
+		var filter = person.attr('data-designer');
+		$('.grid-breadcrumb-text').text(toString(filter));
 	}
-
 
 	$(".top-bar").mouseenter(function () {
 		var elem = $(this);
@@ -99,3 +106,13 @@
 		$(".top-bar").removeClass("hover");
 		$(".top-bar").removeClass("unactive");
 	});
+
+
+	function isScrolledIntoView(elem) {
+		var docViewTop = $(window).scrollLeft();
+		var docViewBottom = docViewTop + $(window).width();
+
+		var elemTop = $(elem).offset().left;
+		var elemBottom = elemTop + $(elem).width();
+		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+	}
