@@ -121,3 +121,8 @@
 		var elemBottom = elemTop + $(elem).width();
 		return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 	}
+
+	var url = window.location.href;
+	var position = (url.substring(url.indexOf("#") + 1)).charAt(0);
+	var designer = getDesignerType(parseInt(position));
+	$('.grid-breadcrumb-text').text(toString(designer));

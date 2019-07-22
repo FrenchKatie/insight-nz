@@ -172,6 +172,7 @@
           width: 330px;
           height: 210px; }
   .sticky-note {
+    cursor: pointer;
     position: absolute;
     top: 100px;
     right: 50px;
@@ -179,8 +180,13 @@
     width: 100px;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    object-fit: cover; }
+    object-fit: cover;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .3s ease-in-out; }
+    .sticky-note:hover {
+      transform: rotate(10deg); }
   .sub-sticky-note {
+    cursor: pointer;
     position: absolute;
     top: 180px;
     right: 50px;
@@ -188,7 +194,11 @@
     width: 60px;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    object-fit: cover; } }
+    object-fit: cover;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .3s ease-in-out; }
+    .sub-sticky-note:hover {
+      transform: rotate(10deg); } }
 
 .subtag {
   cursor: pointer;
