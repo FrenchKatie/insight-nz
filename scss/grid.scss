@@ -138,3 +138,31 @@ tr:nth-child(even) {
 		background-image: url('../assets/freelance.png');
 	}
 }
+
+.left-shadow{
+	height: 100vh;
+	width: 20%;
+	background: rgb(0,0,0);
+	background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+	background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+	background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+	position: fixed;
+	top:0px;
+	left: 0px;
+	z-index: 10000;
+	pointer-events: none;
+}
+
+.right-shadow{
+	height: 100vh;
+	width: 20%;
+	background: rgb(255,255,255);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+	position: fixed;
+	top:0px;
+	right: 0px;
+	z-index: 10000;
+	pointer-events: none;
+}
