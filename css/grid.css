@@ -11,6 +11,11 @@ img {
 .navbar {
   z-index: 15; }
 
+.grid-breadcrumb {
+  display: inline-block; }
+  .grid-breadcrumb .arrow {
+    display: inline-block !important; }
+
 .grid {
   margin: 100px;
   margin-left: 400px;

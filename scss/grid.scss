@@ -16,8 +16,11 @@ img {
 }
 
 .grid-breadcrumb {
+	display: inline-block;
 
-	.arrow {}
+	.arrow {
+		display: inline-block !important;
+	}
 }
 
 .grid {
