@@ -92,6 +92,10 @@ tr:nth-child(even) {
 	}
 }
 
+tr {
+	scroll-snap-type: y mandatory;
+}
+
 .subtag {
 	width: 164px;
 	height: 170px;
