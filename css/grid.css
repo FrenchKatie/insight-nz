@@ -7,6 +7,9 @@ body {
 img {
   height: 100%; }
 
+.navbar {
+  z-index: 15; }
+
 .grid {
   margin: 100px;
   margin-left: 400px;
@@ -18,8 +21,11 @@ img {
   position: relative;
   overflow: hidden;
   width: 1000px;
-  height: 900px;
-  padding: 100px; }
+  height: 500px;
+  padding: 50px; }
+  .person .journal-wrapper .journal {
+    height: 500px;
+    width: auto; }
 
 tr:nth-child(odd) .journal {
   left: -38px; }
@@ -107,7 +113,7 @@ tr {
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 10000;
+  z-index: 10;
   pointer-events: none; }
 
 .right-shadow {
@@ -120,5 +126,5 @@ tr {
   position: fixed;
   top: 0px;
   right: 0px;
-  z-index: 10000;
+  z-index: 10;
   pointer-events: none; }

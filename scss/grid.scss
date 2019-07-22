@@ -9,6 +9,9 @@ body {
 img {
 	height: 100%;
 }
+.navbar{
+	z-index: 15;
+}
 
 .grid {
 	//use scroll snapping?
@@ -25,9 +28,18 @@ img {
 	position: relative;
 	overflow: hidden;
 	width: 1000px;
-	height: 900px;
-	padding: 100px;
+	height: 500px;
+	padding: 50px;
+	.journal-wrapper{
+		// height: 100%;
+		.journal{
+			height: 500px;
+			width: auto;
+		}
+	}
 }
+
+
 
 tr:nth-child(odd) {
 	.journal {
@@ -153,7 +165,7 @@ tr {
 	position: fixed;
 	top:0px;
 	left: 0px;
-	z-index: 10000;
+	z-index: 10;
 	pointer-events: none;
 }
 
@@ -167,6 +179,6 @@ tr {
 	position: fixed;
 	top:0px;
 	right: 0px;
-	z-index: 10000;
+	z-index: 10;
 	pointer-events: none;
 }
