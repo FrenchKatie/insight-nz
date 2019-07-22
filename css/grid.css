@@ -128,3 +128,25 @@ tr {
   right: 0px;
   z-index: 10;
   pointer-events: none; }
+
+.share-link {
+  position: absolute;
+  right: 150px;
+  top: 400px; }
+  .share-link a {
+    color: white; }
+
+.share-box {
+  height: 100px;
+  background-color: white;
+  color: black;
+  position: absolute;
+  right: 150px;
+  top: 500px;
+  display: none; }
+
+.hidden {
+  display: none; }
+
+.show {
+  display: block; }

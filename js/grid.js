@@ -10,13 +10,14 @@
 		innertable.append(tag);
 		innertable.append(subtag);
 
-		for (j = 1; j < 10; j++) { //22 guidelines 
+		for (j = 1; j < 10; j++) { //22 guidelines
 			var thisid = j + "" + i;
 			var personWrapper = $("<tr>");
 
 			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
-
+			var shareLink = '<div class = "share-link"> <a href="#">Share</a></div> ';
+			var shareBox = '<div class= "share-box">Shared Successfuly</div> ';
 			var person = $('<div>').addClass('person').attr('id', thisid);
 			var journalWrapper = $('<div>').addClass('journal-wrapper');
 			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
@@ -24,6 +25,8 @@
 			var photo = '<img class = "lazy photograph" src="' + imageFile + '" />';
 			person.append(journalWrapper.append(journal));
 			person.append(photoWrapper.append(photo));
+			person.append(shareLink);
+			person.append(shareBox);
 
 			personWrapper.append(person);
 			innertable.append(personWrapper);
@@ -99,3 +102,34 @@
 		$(".top-bar").removeClass("hover");
 		$(".top-bar").removeClass("unactive");
 	});
+
+
+	// $(".share-link").click(function () {
+	// 	console.log('shared');
+	// 	$('.share-box').removeClass('hidden');
+	// 	$('.share-box').addClass('show');
+	// })
+
+
+	$(".share-link").click(function(){
+    // $(".share-box").slideToggle();
+  // $(this).nextElementSibling.slideToggle();
+  // var selectedShareBox = $(this)["0"].nextElementSibling;
+  // selectedShareBox.slideToggle();
+  console.log($(this));
+
+  });
+
+  // $(document).on('click', '.share-link' , function(){
+  //     $(this).children('.share-box').show();
+  // }):
+  //
+  // $('share-link').click(function(e){
+	//   $(e.currentTarget).toggle();
+	// });
+
+
+	//
+	// $(document).on('click', '.share-link' , function(){
+	//     $(this).hide(); // hides only the element that was clicked with the class .the-class
+	// }):

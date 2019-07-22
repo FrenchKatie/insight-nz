@@ -31,7 +31,6 @@ img {
 	height: 500px;
 	padding: 50px;
 	.journal-wrapper{
-		// height: 100%;
 		.journal{
 			height: 500px;
 			width: auto;
@@ -181,4 +180,25 @@ tr {
 	right: 0px;
 	z-index: 10;
 	pointer-events: none;
+}
+
+.share-link{
+	position: absolute;
+	right: 150px;
+	top: 400px;
+	a{
+		color: white;
+	}
+}
+
+.share-box{
+	// width: 100px;
+	height: 100px;
+	background-color: white;
+	color: black;
+	position: absolute;
+	right: 150px;
+	top: 500px;
+	display: none;
+
 }
