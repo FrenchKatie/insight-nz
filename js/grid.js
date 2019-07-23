@@ -18,7 +18,7 @@
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
 
 			var person = $('<div>').addClass('person').attr('id', thisid);
-			var journalWrapper = $('<div>').addClass('journal-wrapper');
+			var journalWrapper = $('<div>').addClass('journal-wrapper current');
 			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
 			var photoWrapper = $('<div>').addClass('photograph-wrapper');
 			var photo = '<img class = "lazy photograph" src="' + imageFile + '" />';
@@ -121,3 +121,8 @@
 	var position = (url.substring(url.indexOf("#") + 1)).charAt(0);
 	var designer = getDesignerType(parseInt(position));
 	$('.grid-breadcrumb-text').text(toString(designer));
+
+
+	$("#rotateBtn").click(function () {
+		$('.holder').children('div').toggleClass('current');
+	});
