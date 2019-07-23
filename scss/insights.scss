@@ -35,21 +35,18 @@ body {
 		@media only screen and (max-width: $width) {
 			margin: 60px 20px 0px;
 			font-size: 19px;
-
 		}
 
 		@media only screen and (min-width: $width) {
 			max-width: max-content;
 			margin-left: 153px;
 			margin-top: 80px;
-			position: sticky;
 		}
 
 		color: #E0E0E0;
 		font-size: 25px;
 		font-weight: 300;
 		line-height: 25px;
-
 
 		ul {
 			.nav-link {

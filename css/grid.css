@@ -22,7 +22,8 @@ img {
   display: inline-block;
   float: left;
   padding: 10px 0px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  text-transform: capitalize; }
   .grid-breadcrumb .arrow {
     display: inline-block !important; }
 

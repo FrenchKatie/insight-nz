@@ -33,8 +33,7 @@ body {
       body .insights-titles {
         max-width: max-content;
         margin-left: 153px;
-        margin-top: 80px;
-        position: sticky; } }
+        margin-top: 80px; } }
     body .insights-titles ul .nav-link {
       color: white;
       padding: 5px; }

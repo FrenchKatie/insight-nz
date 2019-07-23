@@ -30,10 +30,12 @@ img {
 	float: left;
 	padding: 10px 0px;
 	text-decoration: underline;
+	text-transform: capitalize;
 
 	.arrow {
 		display: inline-block !important;
 	}
+
 }
 
 .grid {
