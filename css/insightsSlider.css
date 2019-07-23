@@ -1,18 +1,6 @@
 @media only screen and (max-width: 768px) {
   #rotateBtn {
-    display: none;
-    position: absolute;
-    top: 103px;
-    right: 24px;
-    text-align: right;
-    color: inherit;
-    border: none;
-    padding: 0;
-    outline: inherit;
-    font-size: 30px;
-    background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
-    width: 33px;
-    height: 34px; }
+    top: 103px; }
   .insights-content {
     width: 100%;
     display: none; }
@@ -39,7 +27,8 @@
         max-width: 380px;
         max-height: 600px;
         object-fit: cover;
-        margin-bottom: 100px; }
+        margin-bottom: 100px;
+        top: 40px; }
     .item .photograph-wrapper {
       position: absolute;
       margin-top: 210px;
@@ -83,8 +72,6 @@
     height: 100vh; }
   webkit-scrollbar {
     display: none; }
-  #rotateBtn {
-    display: none; }
   :root {
     --gutter: 1px; }
   .insights-content > * {
@@ -109,7 +96,7 @@
       display: grid;
       grid-gap: calc(var(--gutter) / 2);
       grid-template-columns: repeat(10, calc(35% - var(--gutter) * 2));
-      grid-auto-rows: minmax(440px, 1fr);
+      grid-auto-rows: minmax(480px, 1fr);
       overflow-x: scroll;
       overflow-y: hidden;
       scroll-snap-type: x proximity;
@@ -136,7 +123,8 @@
         width: 270PX;
         background-size: 100% auto;
         background-repeat: no-repeat;
-        object-fit: cover; }
+        object-fit: cover;
+        top: 40px; }
     .item .tag {
       cursor: pointer;
       z-index: 3;
@@ -171,6 +159,12 @@
         .item .photograph-wrapper .photograph:hover {
           width: 330px;
           height: 210px; }
+  .holder div {
+    z-index: 1;
+    /*init z-index*/ }
+  .holder div.current {
+    z-index: 2;
+    /*only this DIV will be visible*/ }
   .sticky-note {
     cursor: pointer;
     position: absolute;
@@ -199,6 +193,21 @@
     transition: transform .3s ease-in-out; }
     .sub-sticky-note:hover {
       transform: rotate(10deg); } }
+
+#rotateBtn {
+  display: none;
+  position: absolute;
+  right: 24px;
+  text-align: right;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  font-size: 30px;
+  background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
+  width: 33px;
+  height: 34px;
+  top: 80px; }
 
 .subtag {
   cursor: pointer;
@@ -261,4 +270,6 @@ li.freelance .subtag {
   background-image: url("../assets/freelance.png"); }
 
 .filtered {
-  top: 0px; }
+  top: 0px !important; }
+  .filtered .journal {
+    top: 0px !important; }
