@@ -34,4 +34,6 @@ $('document').ready(function () {
 	$("#rotateBtn").click(function () {
 		$('.holder').children('div').toggleClass('current');
 	});
+
+
 });

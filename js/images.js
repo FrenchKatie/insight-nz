@@ -169,3 +169,29 @@ $('.photograph').click(function () {
 	window.location.href = url + "/grid.html#" + guideline + person;
 
 });
+
+
+
+
+var getUrlParameter = function getUrlParameter(sParam) {
+	var sPageURL = window.location.search.substring(1),
+		sURLVariables = sPageURL.split('&'),
+		sParameterName,
+		i;
+
+	for (i = 0; i < sURLVariables.length; i++) {
+		sParameterName = sURLVariables[i].split('=');
+
+		if (sParameterName[0] === sParam) {
+			return sParameterName[1] === undefined ? null : decodeURIComponent(sParameterName[1]);
+		}
+	}
+};
+
+var designer = getUrlParameter('designer');
+if (designer != null) {
+	$(".item-wrapper").attr('data-maintag', designer);
+	$(".sticky-note").show();
+	$(".sticky-note").attr('class', 'sticky-note ' + designer);
+	refreshFilters();
+}

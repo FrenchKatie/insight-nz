@@ -11,8 +11,18 @@ img {
 .navbar {
   z-index: 15; }
 
+.insights.active {
+  float: left;
+  text-decoration: none !important; }
+
+.nav-item {
+  width: max-content; }
+
 .grid-breadcrumb {
-  display: inline-block; }
+  display: inline-block;
+  float: left;
+  padding: 10px 0px;
+  text-decoration: underline; }
   .grid-breadcrumb .arrow {
     display: inline-block !important; }
 
