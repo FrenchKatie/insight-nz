@@ -164,3 +164,27 @@ tr {
   background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
   width: 33px;
   height: 34px; }
+
+.share-link {
+  position: fixed;
+  right: 310px;
+  top: 350px; }
+  .share-link a {
+    color: white; }
+
+.share-box {
+  width: 150px;
+  background-color: white;
+  color: black;
+  right: 200px;
+  top: 380px;
+  position: fixed;
+  padding: 10px; }
+  .share-box p {
+    font-size: 10px; }
+  .share-box ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5; }
+  .share-box li:hover {
+    text-decoration: underline; }

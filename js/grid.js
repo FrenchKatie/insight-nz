@@ -7,16 +7,20 @@
 		var innertable = $("<table>");
 		var tag = $('<div>').addClass('tag maintag');
 		var subtag = $('<div>').addClass('tag subtag');
+		var shareLink = '<div class = "share-link"> <a href="#">Share</a></div> ';
+		var shareBox = '<div class= "share-box"><p>Share to</p><ul><li>Twitter</li><li>Facebook</li><li>Pinterest</li></ul></div> ';
+
 		innertable.append(tag);
 		innertable.append(subtag);
+		innertable.append(shareLink);
+		innertable.append(shareBox);
 
-		for (j = 1; j < 22; j++) { //22 guidelines 
+		for (j = 1; j < 22; j++) { //22 guidelines
 			var thisid = j + "" + i;
 			var personWrapper = $("<tr>");
 
 			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
-
 			var person = $('<div>').addClass('person').attr('id', thisid);
 			var journalWrapper = $('<div>').addClass('journal-wrapper current');
 			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
@@ -24,6 +28,7 @@
 			var photo = '<img class = "lazy photograph" src="' + imageFile + '" />';
 			person.append(journalWrapper.append(journal));
 			person.append(photoWrapper.append(photo));
+
 
 			personWrapper.append(person);
 			innertable.append(personWrapper);
@@ -120,9 +125,12 @@
 	var url = window.location.href;
 	var position = (url.substring(url.indexOf("#") + 1)).charAt(0);
 	var designer = getDesignerType(parseInt(position));
-	$('.grid-breadcrumb-text').text(toString(designer));
+	$('.grid-breadcrumb-text').text(toString(designer)); <<
+	<< << < HEAD
 
 
 	$("#rotateBtn").click(function () {
 		$('.holder').children('div').toggleClass('current');
-	});
+	}); ===
+	=== = >>>
+	>>> > dde0098e0be0bf1630defde3e22d8a058f49ebe8
