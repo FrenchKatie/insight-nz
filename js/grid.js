@@ -7,17 +7,17 @@
 		var innertable = $("<table>");
 		var tag = $('<div>').addClass('tag maintag');
 		var subtag = $('<div>').addClass('tag subtag');
-		var shareLink = '<div class = "share-link"> <a href="#">Share</a></div> ';
-		var shareBox = '<div class= "share-box"><p>Share to</p><ul><li>Twitter</li><li>Facebook</li><li>Pinterest</li></ul></div> ';
 
 		innertable.append(tag);
 		innertable.append(subtag);
-		columnWrapper.append(shareLink);
-		columnWrapper.append(shareBox);
 
 		for (j = 1; j < 22; j++) { //22 guidelines
 			var thisid = j + "" + i;
 			var personWrapper = $("<tr>");
+
+			var shareLink = '<div class = "share-link"> Share<img class="share-arrow" src="assets/icons/share.png" /></div> ';
+			var shareBox = '<div class= "share-box"><p>Share to</p><ul><li>Twitter</li><li>Facebook</li><li>Pinterest</li></ul></div> ';
+
 
 			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
@@ -28,7 +28,8 @@
 			var photo = '<img class = "lazy photograph" src="' + imageFile + '" />';
 			person.append(journalWrapper.append(journal));
 			person.append(photoWrapper.append(photo));
-
+			person.append(shareLink);
+			person.append(shareBox);
 
 			personWrapper.append(person);
 			innertable.append(personWrapper);
@@ -81,10 +82,11 @@
 		return classStr.replace("-", " ");
 	}
 
-	$('.column-wrapper').on('click', clickToPerson);
+	$('.photograph-wrapper').on('click', clickToPerson);
+	$('.journal-wrapper').on('click', clickToPerson);
 
 	function clickToPerson(event) {
-		var person = $(this);
+		var person = $(this).closest('.column-wrapper');
 		console.log(person);
 		event.stopPropagation();
 		event.target.scrollIntoView({
@@ -129,4 +131,16 @@
 
 	$("#rotateBtn").click(function () {
 		$('.holder').children('div').toggleClass('current');
+	});
+
+	$('.share-link').click(function () {
+		event.stopPropagation();
+		var link = $(this);
+		link.next().show();
+	});
+
+	$(document).bind('click', function (e) {
+		if ($('.share-box').has(e.target).length == 0) {
+			$('.share-box').hide();
+		}
 	});
