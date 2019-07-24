@@ -195,3 +195,7 @@ if (designer != null) {
 	$(".sticky-note").attr('class', 'sticky-note ' + designer);
 	refreshFilters();
 }
+
+$("#rotateBtn").click(function () {
+	$('.holder').children('div').toggleClass('current');
+});
