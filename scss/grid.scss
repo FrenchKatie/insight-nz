@@ -78,12 +78,10 @@ tr:nth-child(even) {
 	.journal {
 		left: 362px;
 	}
-
 }
 
 .journal-wrapper {
 	position: relative;
-	z-index: 3;
 }
 
 .journal {
@@ -96,7 +94,14 @@ tr:nth-child(even) {
 
 .photograph-wrapper {
 	position: relative;
+}
+
+.person div {
 	z-index: 1;
+}
+
+.person .current {
+	z-index: 3;
 }
 
 .photograph {
@@ -215,18 +220,36 @@ tr {
 
 }
 
-.share-link{
-	position: absolute;
-	right: 200px;
+#rotateBtn {
+	position: fixed;
+	z-index: 15;
+	bottom: 30px;
+	right: 30px;
+	text-align: right;
+	color: inherit;
+	border: none;
+	padding: 0;
+	outline: inherit;
+	font-size: 30px;
+	background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
+	width: 33px;
+	height: 34px;
+
+}
+
+.share-link {
+	position: fixed;
+	right: 310px;
 	top: 350px;
+
 	// right: 23%;
 	// top: 60%;
-	a{
+	a {
 		color: white;
 	}
 }
 
-.share-box{
+.share-box {
 	width: 150px;
 	// height: 100px;
 	background-color: white;
@@ -238,16 +261,19 @@ tr {
 	// right: 20%;
 	// top: 65%;
 	padding: 10px;
+
 	// display: none;
-	p{
+	p {
 		font-size: 10px;
 	}
-	ul{
+
+	ul {
 		list-style-type: none;
 		padding: 0;
 		line-height: 1.5;
 	}
-	li:hover{
+
+	li:hover {
 		text-decoration: underline;
 	}
 

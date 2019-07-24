@@ -51,8 +51,7 @@ tr:nth-child(even) .journal {
   left: 362px; }
 
 .journal-wrapper {
-  position: relative;
-  z-index: 3; }
+  position: relative; }
 
 .journal {
   display: flex;
@@ -61,8 +60,13 @@ tr:nth-child(even) .journal {
   height: 620px; }
 
 .photograph-wrapper {
-  position: relative;
+  position: relative; }
+
+.person div {
   z-index: 1; }
+
+.person .current {
+  z-index: 3; }
 
 .photograph {
   display: flex;
@@ -149,9 +153,24 @@ tr {
 .column-wrapper {
   position: relative; }
 
+#rotateBtn {
+  position: fixed;
+  z-index: 15;
+  bottom: 30px;
+  right: 30px;
+  text-align: right;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  font-size: 30px;
+  background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
+  width: 33px;
+  height: 34px; }
+
 .share-link {
-  position: absolute;
-  right: 200px;
+  position: fixed;
+  right: 310px;
   top: 350px; }
   .share-link a {
     color: white; }
