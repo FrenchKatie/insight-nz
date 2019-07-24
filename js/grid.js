@@ -83,7 +83,6 @@
 	}
 
 	$('.photograph-wrapper').on('click', clickToPerson);
-	$('.journal-wrapper').on('click', clickToPerson);
 
 	function clickToPerson(event) {
 		var person = $(this).closest('.column-wrapper');
