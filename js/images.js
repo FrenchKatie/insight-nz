@@ -200,9 +200,9 @@ $("#rotateBtn").click(function () {
 	$('.holder').children('div').toggleClass('current');
 });
 
-$(".animsition").animsition({
-    inClass: 'fade-in-left',
-    outClass: 'fade-out-left',
+$(".animsition-overlay").animsition({
+    inClass: 'overlay-slide-in-left',
+    outClass: 'overlay-slide-out-left',
     inDuration: 1500,
     outDuration: 800,
     linkElement: '.animsition-link',
@@ -217,7 +217,7 @@ $(".animsition").animsition({
     browser: [ 'animation-duration', '-webkit-animation-duration'],
     // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
     // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
+    overlay : true,
     overlayClass : 'animsition-overlay-slide',
     overlayParentElement : 'body',
     transition: function(url){ window.location.href = url; }
