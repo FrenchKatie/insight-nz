@@ -73,7 +73,6 @@ tr:nth-child(even) .journal {
   position: absolute;
   width: 700px;
   height: auto;
-  object-fit: cover;
   z-index: 2;
   transition: all .2s ease-in-out; }
 
