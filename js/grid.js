@@ -125,12 +125,8 @@
 	var url = window.location.href;
 	var position = (url.substring(url.indexOf("#") + 1)).charAt(0);
 	var designer = getDesignerType(parseInt(position));
-	$('.grid-breadcrumb-text').text(toString(designer)); <<
-	<< << < HEAD
-
+	$('.grid-breadcrumb-text').text(toString(designer));
 
 	$("#rotateBtn").click(function () {
 		$('.holder').children('div').toggleClass('current');
-	}); ===
-	=== = >>>
-	>>> > dde0098e0be0bf1630defde3e22d8a058f49ebe8
+	});
