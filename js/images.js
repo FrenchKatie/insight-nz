@@ -159,14 +159,15 @@ $('.item-wrapper').on('scroll', function (index) {
 	}
 });
 
-$('.photograph').click(function () {
+$('.lazy photograph').click(function () {
+	console.log("photograph clicked");
 	var item = this.closest('.item');
 	var guideline = item.getAttribute("data-guideline");
 	var person = item.getAttribute("data-person");
 	var url = "";
 	var produrl = "https://insight-nz.com";
 	var url = "file:///Users/hannahauckram/Documents/GitHub/insight-nz";
-	window.location.href = url + "/grid.html#" + guideline + person;
+	window.location.href = produrl + "/grid.html#" + guideline + person;
 
 });
 
