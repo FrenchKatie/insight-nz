@@ -159,7 +159,7 @@ $('.item-wrapper').on('scroll', function (index) {
 	}
 });
 
-$('.photograph').click(function () {
+$('.lazy photograph').click(function () {
 	console.log("photograph clicked");
 	var item = this.closest('.item');
 	var guideline = item.getAttribute("data-guideline");
