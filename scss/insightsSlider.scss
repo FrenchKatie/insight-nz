@@ -129,7 +129,7 @@ $width: 768px;
 	.insights-content {
 		display: none;
 		overflow: hidden;
-		position: absolute;
+		position: fixed;
 		bottom: 0;
 		width: 100vw;
 		grid-gap: var(--gutter) 0;
