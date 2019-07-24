@@ -146,9 +146,12 @@ tr {
   z-index: 10;
   pointer-events: none; }
 
+.column-wrapper {
+  position: relative; }
+
 .share-link {
-  position: fixed;
-  right: 310px;
+  position: absolute;
+  right: 200px;
   top: 350px; }
   .share-link a {
     color: white; }
@@ -157,9 +160,9 @@ tr {
   width: 150px;
   background-color: white;
   color: black;
-  right: 200px;
+  right: 90px;
   top: 380px;
-  position: fixed;
+  position: absolute;
   padding: 10px; }
   .share-box p {
     font-size: 10px; }

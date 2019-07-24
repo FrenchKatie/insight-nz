@@ -12,8 +12,8 @@
 
 		innertable.append(tag);
 		innertable.append(subtag);
-		innertable.append(shareLink);
-		innertable.append(shareBox);
+		columnWrapper.append(shareLink);
+		columnWrapper.append(shareBox);
 
 		for (j = 1; j < 22; j++) { //22 guidelines
 			var thisid = j + "" + i;
@@ -21,7 +21,7 @@
 
 			var imageFile = 'assets/Images/' + j + '/' + i + '.jpg';
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
-				var person = $('<div>').addClass('person').attr('id', thisid);
+			var person = $('<div>').addClass('person').attr('id', thisid);
 			var journalWrapper = $('<div>').addClass('journal-wrapper');
 			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
 			var photoWrapper = $('<div>').addClass('photograph-wrapper');
