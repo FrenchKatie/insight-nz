@@ -28,6 +28,9 @@ body {
       margin: 100px auto; }
       body .container .row.rules .nav {
         margin-left: -16px; }
+        @media only screen and (max-width: 768px) {
+          body .container .row.rules .nav .nav-item {
+            font-size: 0.5em; } }
         body .container .row.rules .nav .nav-item .arrow {
           display: inline-block; }
         body .container .row.rules .nav .nav-item .nav-link {

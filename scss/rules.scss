@@ -43,6 +43,9 @@ body {
 				margin-left: -16px;
 
 				.nav-item {
+					@media only screen and (max-width: 768px) {
+						font-size: 0.5em;
+					}
 					.arrow {
 						display: inline-block;
 					}
