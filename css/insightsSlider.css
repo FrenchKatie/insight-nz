@@ -37,7 +37,8 @@
       .item .photograph-wrapper .photograph {
         position: relative;
         margin: 0 auto;
-        background-size: 100% auto;
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         width: 100%; }
     .item .tag {
@@ -151,8 +152,8 @@
         bottom: 55px;
         width: 300px;
         height: 200px;
-        object-fit: cover;
-        background-size: 100% auto;
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         z-index: 2;
         transition: all .2s ease-in-out; }
