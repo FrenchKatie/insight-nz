@@ -233,39 +233,57 @@ tr {
 }
 
 .share-link {
-	position: fixed;
-	right: 310px;
-	top: 350px;
+	right: 100px;
+	position: relative;
+	width: 80px;
+	display: flex;
+	float: right;
+	top: 227px;
+	cursor: pointer;
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 14px;
 
-	// right: 23%;
-	// top: 60%;
-	a {
-		color: white;
+	&:hover {
+		text-decoration: underline;
 	}
 }
 
+.share-arrow {
+	height: 13.5px;
+	width: 14px;
+	display: inline-block;
+	margin-left: 7px;
+	margin-top: -2px;
+}
+
 .share-box {
-	width: 150px;
-	// height: 100px;
+	height: 89px;
+	width: 129px;
 	background-color: white;
 	color: black;
-	// right: -180px;
-	right: 200px;
-	top: 380px;
-	position: fixed;
-	// right: 20%;
-	// top: 65%;
 	padding: 10px;
+	display: block;
+	right: 0px;
+	position: relative;
+	float: right;
+	top: 262px;
 
-	// display: none;
 	p {
-		font-size: 10px;
+		font-size: 8px;
+		margin: 0 0 5px;
 	}
 
 	ul {
 		list-style-type: none;
 		padding: 0;
 		line-height: 1.5;
+
+		li {
+			font-size: 12px;
+			line-height: 18px;
+		}
 	}
 
 	li:hover {

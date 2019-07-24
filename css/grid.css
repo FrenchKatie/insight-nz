@@ -166,25 +166,47 @@ tr {
   height: 34px; }
 
 .share-link {
-  position: fixed;
-  right: 310px;
-  top: 350px; }
-  .share-link a {
-    color: white; }
+  right: 100px;
+  position: relative;
+  width: 80px;
+  display: flex;
+  float: right;
+  top: 227px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px; }
+  .share-link:hover {
+    text-decoration: underline; }
+
+.share-arrow {
+  height: 13.5px;
+  width: 14px;
+  display: inline-block;
+  margin-left: 7px;
+  margin-top: -2px; }
 
 .share-box {
-  width: 150px;
+  height: 89px;
+  width: 129px;
   background-color: white;
   color: black;
-  right: 200px;
-  top: 380px;
-  position: fixed;
-  padding: 10px; }
+  padding: 10px;
+  display: block;
+  right: 0px;
+  position: relative;
+  float: right;
+  top: 262px; }
   .share-box p {
-    font-size: 10px; }
+    font-size: 8px;
+    margin: 0 0 5px; }
   .share-box ul {
     list-style-type: none;
     padding: 0;
     line-height: 1.5; }
+    .share-box ul li {
+      font-size: 12px;
+      line-height: 18px; }
   .share-box li:hover {
     text-decoration: underline; }
