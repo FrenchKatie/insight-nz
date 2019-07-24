@@ -13,6 +13,7 @@
       <!--CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
             integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+      <link rel="stylesheet" href="../dist/css/animsition.min.css">
       <link rel="stylesheet" href="css/nav.css">
       <link rel="stylesheet" href="css/insights.css">
       <link rel="stylesheet" href="css/insightsSlider.css">
@@ -44,13 +45,13 @@
       </div>
       <!-- Page Content -->
       <div class="container">
-            <div class="row insights-titles">
+            <div class="row insights-titles animsition-overlay" data-animsition-overlay="true">
                   <ul class="nav parent">
                         <li id="0" class="nav-item active-guideline"><a class="nav-link active-guideline-link">
                                     <i class="arrow rotate"></i><span
                                           class="active-guideline-link-text">&nbsp;</span></a>
                         </li>
-                        <li id="1" class="nav-item guideline "><a class=" nav-link">
+                        <li id="1" class="nav-item guideline "><a class=" nav-link animsition-link">
                                     <i class="arrow rotate"></i>First thing I do to start a day of designing</a>
                         </li>
                         <li id="2" class="nav-item guideline "><a class=" nav-link">
@@ -246,8 +247,9 @@
       </div>
       <!-- Bootstrap core JavaScript fontawesome-->
       <script src="https://use.fontawesome.com/5afd3d6e40.js"></script>
-      <script src="js/jquery/jquery.slim.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
       <script src="js/jquery/bootstrap.bundle.min.js"></script>
+      <script src="../dist/js/animsition.min.js"></script>
 
       <!-- custom javascript -->
       <script src="js/script.js"></script>

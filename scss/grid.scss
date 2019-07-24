@@ -215,6 +215,12 @@ tr {
 	pointer-events: none;
 }
 
+.column-wrapper {
+	position: relative;
+	// background-color: yellow;
+
+}
+
 #rotateBtn {
 	position: fixed;
 	z-index: 15;

@@ -150,6 +150,9 @@ tr {
   z-index: 10;
   pointer-events: none; }
 
+.column-wrapper {
+  position: relative; }
+
 #rotateBtn {
   position: fixed;
   z-index: 15;
