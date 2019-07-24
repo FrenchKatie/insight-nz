@@ -134,6 +134,13 @@
 	});
 
 	$('.share-link').click(function () {
+		event.stopPropagation();
 		var link = $(this);
 		link.next().show();
+	});
+
+	$(document).bind('click', function (e) {
+		if ($('.share-box').has(e.target).length == 0) {
+			$('.share-box').hide();
+		}
 	});

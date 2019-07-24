@@ -191,13 +191,13 @@ tr {
   margin-top: -2px; }
 
 .share-box {
+  display: none;
   height: 89px;
   width: 129px;
   background-color: white;
   color: black;
   padding: 10px;
-  display: block;
-  right: 0px;
+  right: -28px;
   position: relative;
   float: right;
   top: 262px; }
@@ -210,6 +210,7 @@ tr {
     line-height: 1.5; }
     .share-box ul li {
       font-size: 12px;
-      line-height: 18px; }
+      line-height: 18px;
+      cursor: pointer; }
   .share-box li:hover {
     text-decoration: underline; }
