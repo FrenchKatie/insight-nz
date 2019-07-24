@@ -23,9 +23,9 @@
 			var journalFile = 'assets/Images/' + j + '/' + String.fromCharCode(97 + i) + '.png';
 			var person = $('<div>').addClass('person').attr('id', thisid);
 			var journalWrapper = $('<div>').addClass('journal-wrapper current');
-			var journal = '<img class = "journal" src = "' + journalFile + '" /> ';
+			var journal = '<img class = "journal" data-src = "' + journalFile + '" /> ';
 			var photoWrapper = $('<div>').addClass('photograph-wrapper');
-			var photo = '<img class = "lazy photograph" src="' + imageFile + '" />';
+			var photo = '<img class = "photograph" data-src="' + imageFile + '" />';
 			person.append(journalWrapper.append(journal));
 			person.append(photoWrapper.append(photo));
 			person.append(shareLink);
@@ -57,7 +57,7 @@
 			case 8:
 				return "creative";
 			default:
-				return "unknown";
+				return "creative";
 		}
 	}
 
@@ -75,6 +75,8 @@
 			case 7:
 			case 8:
 				return "freelance";
+			default:
+				return "in-house";
 		}
 	}
 
