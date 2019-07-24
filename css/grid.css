@@ -40,6 +40,9 @@ img {
   height: 620px;
   padding: 0px; }
 
+tr:nth-child(odd) .photograph {
+  left: 100px; }
+
 tr:nth-child(even) .journal {
   left: 362px; }
 
