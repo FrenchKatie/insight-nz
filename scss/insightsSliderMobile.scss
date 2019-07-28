@@ -3,6 +3,8 @@ $width: 768px;
 @media only screen and (max-width: $width) {
 	#rotateBtn {
 		top: 103px;
+		bottom: unset;
+		position: absolute;
 	}
 
 	.insights-content {

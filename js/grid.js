@@ -125,7 +125,7 @@
 	}
 
 	var url = window.location.href;
-	var position = (url.substring(url.indexOf("#") + 1)).charAt(0);
+	var position = (url.substring(url.indexOf("#") + 1)).charAt(1);
 	var designer = getDesignerType(parseInt(position));
 	$('.grid-breadcrumb-text').text(toString(designer));
 

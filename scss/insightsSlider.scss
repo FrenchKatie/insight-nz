@@ -181,8 +181,9 @@ $width: 768px;
 }
 
 #rotateBtn {
+	z-index: 50;
 	display: none;
-	position: absolute;
+	position: fixed;
 	right: 24px;
 	text-align: right;
 	color: inherit;
@@ -193,7 +194,7 @@ $width: 768px;
 	background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
 	width: 33px;
 	height: 34px;
-	top: 80px;
+	bottom: 34px;
 }
 
 .subtag {

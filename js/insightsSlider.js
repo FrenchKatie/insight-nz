@@ -134,47 +134,46 @@ $(".sub-sticky-note").click(function () {
 	refreshFilters();
 	elem.hide();
 });
-if ($(window).width() >= 768) {
 
-	$('.item-wrapper').on('scroll', function (index) {
-		var imagePos = $('.item.one').offset().left;
-		var topOfWindow = $(window).scrollLeft();
-		var mrg = imagePos - topOfWindow;
-		if (mrg <= 1) {
-			// if mrg is less than 1 then it loses margin. Translate
-			$('.insights-content').removeClass('scroller-margin');
-			$('.insights-content').addClass('no-scroller-margin'); // When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
-			// console.log("margin-lost");
-		} else if (mrg <= 600) {
-			//or if margin is less than 600, add margin.
-			// console.log('else if');
-			$('.insights-content').removeClass('no-scroller-margin');
-			// console.log('margin less than 600, no-scroller-margin class removed');
-			$('.insights-content').addClass('scroller-margin');
-			// console.log('margin less than 600, scroller-margin class add');
-		} else {
-			// console.log('else');
-		}
-		if (mrg < topOfWindow) {
-			// console.log('top of window');
-			$(this).delay(index * 600).queue(function () {
-				// $('.insights-content').css('margin-left', mrg + 'px')
+$('.item-wrapper').on('scroll', function (index) {
+	var imagePos = $('.item.one').offset().left;
+	var topOfWindow = $(window).scrollLeft();
+	var mrg = imagePos - topOfWindow;
+	if (mrg <= 1) {
+		// if mrg is less than 1 then it loses margin. Translate
+		$('.insights-content').removeClass('scroller-margin');
+		$('.insights-content').addClass('no-scroller-margin'); // When the carousel hit the left wall and it is swiped to the right it need to gaint he margin back
+		// console.log("margin-lost");
+	} else if (mrg <= 600) {
+		//or if margin is less than 600, add margin.
+		// console.log('else if');
+		$('.insights-content').removeClass('no-scroller-margin');
+		// console.log('margin less than 600, no-scroller-margin class removed');
+		$('.insights-content').addClass('scroller-margin');
+		// console.log('margin less than 600, scroller-margin class add');
+	} else {
+		// console.log('else');
+	}
+	if (mrg < topOfWindow) {
+		// console.log('top of window');
+		$(this).delay(index * 600).queue(function () {
+			// $('.insights-content').css('margin-left', mrg + 'px')
 
-			});
-		}
-	});
-	$('.lazy photograph').click(function () {
-		console.log("photograph clicked");
-		var item = this.closest('.item');
-		var guideline = item.getAttribute("data-guideline");
-		var person = item.getAttribute("data-person");
-		var url = "";
-		var produrl = "https://insight-nz.com";
-		var url = "file:///Users/hannahauckram/Documents/GitHub/insight-nz";
-		window.location.href = produrl + "/grid.html#" + guideline + person;
+		});
+	}
+});
 
-	});
-}
+$('.photograph').click(function () {
+	console.log("photograph clicked");
+	var item = this.closest('.item');
+	var guideline = item.getAttribute("data-guideline");
+	var person = item.getAttribute("data-person");
+	var url = "";
+	var produrl = "https://insight-nz.com";
+	window.location.href = produrl + "/grid.html#" + guideline + person;
+
+});
+
 var getUrlParameter = function getUrlParameter(sParam) {
 	var sPageURL = window.location.search.substring(1),
 		sURLVariables = sPageURL.split('&'),
@@ -200,29 +199,4 @@ if (designer != null) {
 
 $("#rotateBtn").click(function () {
 	$('.holder').children('div').toggleClass('current');
-});
-
-$(".animation-overlay").Animation({
-	inClass: 'overlay-slide-in-left',
-	outClass: 'overlay-slide-out-left',
-	inDuration: 1500,
-	outDuration: 800,
-	linkElement: '.animation-link',
-	// e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-	loading: true,
-	loadingParentElement: 'body', //animation wrapper element
-	loadingClass: 'animation-loading',
-	loadingInner: '', // e.g '<img src="loading.svg" />'
-	timeout: false,
-	timeoutCountdown: 5000,
-	onLoadEvent: true,
-	browser: ['animation-duration', '-webkit-animation-duration'],
-	// "browser" option allows you to disable the "animation" in case the css property in the array is not supported by your browser.
-	// The default setting is to disable the "animaition" in a browser that does not support "animation-duration".
-	overlay: true,
-	overlayClass: 'animation-overlay-slide',
-	overlayParentElement: 'body',
-	transition: function (url) {
-		window.location.href = url;
-	}
 });

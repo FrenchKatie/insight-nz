@@ -127,8 +127,9 @@
       transform: rotate(10deg); } }
 
 #rotateBtn {
+  z-index: 50;
   display: none;
-  position: absolute;
+  position: fixed;
   right: 24px;
   text-align: right;
   color: inherit;
@@ -139,7 +140,7 @@
   background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
   width: 33px;
   height: 34px;
-  top: 80px; }
+  bottom: 34px; }
 
 .subtag {
   cursor: pointer;
