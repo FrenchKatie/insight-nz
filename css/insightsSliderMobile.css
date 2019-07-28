@@ -42,7 +42,8 @@
         background-repeat: no-repeat;
         width: 100%;
         max-width: 400px;
-        height: auto; }
+        height: auto;
+        max-height: 300px; }
     .item .tag {
       cursor: pointer;
       z-index: 2;
