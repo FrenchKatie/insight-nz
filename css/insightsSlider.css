@@ -61,7 +61,7 @@
       cursor: pointer;
       z-index: 3;
       top: 130px;
-      right: 20px;
+      right: 180px;
       float: right;
       display: flex;
       position: absolute;
@@ -146,7 +146,7 @@
   cursor: pointer;
   z-index: 5;
   top: 200px;
-  right: 20px;
+  right: 180px;
   float: right;
   display: flex;
   position: absolute;
