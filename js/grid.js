@@ -45,20 +45,21 @@
 		switch (index) {
 			case 0:
 			case 3:
-			case 5:
+			case 6:
 				return "ux-designer";
 			case 2:
 			case 4:
-			case 6:
+			case 5:
+			case 7:
 				return "service-designer";
 			case 1:
 				return "videographer";
-			case 7:
-				return "typographer";
 			case 8:
+				return "typographer";
+			case 9:
 				return "creative";
 			default:
-				return "unknown";
+				return "service-designer";
 		}
 	}
 
@@ -73,8 +74,8 @@
 			case 5:
 			case 6:
 				return "in-house";
-			case 7:
 			case 8:
+			case 9:
 				return "freelance";
 		}
 	}
