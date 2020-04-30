@@ -61,6 +61,7 @@
     z-index: 1;
   }
   .item .journal-wrapper .journal {
+    cursor: pointer;
     display: flex;
     position: absolute;
     width: 270PX;
@@ -71,6 +72,7 @@
   }
   .item .journal-wrapper .journal:hover {
     width: 290px;
+  }
   .item .tag {
     cursor: pointer;
     z-index: 3;
