@@ -15,6 +15,7 @@ body {
   body h3 {
     color: #FFF;
     font-family: Helvetica;
+    font-weight: 300;
     font-size: 20px;
     line-height: 32px; }
   body .text {
