@@ -13,12 +13,21 @@ body {
     @media only screen and (max-width: 768px) {
       body .container {
         margin-top: 10%; } }
+
+  .container h3{
+          color: #FFF;
+          font-family: Helvetica;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 32px; }
+
   body h3 {
     color: #FFF;
     font-family: Helvetica;
     font-weight: 300;
     font-size: 20px;
     line-height: 32px; }
+
   body .text {
     margin: 200px auto 0px;
     max-width: 530px; }
