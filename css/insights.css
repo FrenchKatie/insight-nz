@@ -14,14 +14,8 @@ body {
       body .container {
         margin-top: 10%; } }
 
-  .container h3{
-          color: #FFF;
-          font-family: Helvetica;
-          font-weight: 300;
-          font-size: 20px;
-          line-height: 32px; }
 
-  body h3 {
+  body .container h3 {
     color: #FFF;
     font-family: Helvetica;
     font-weight: 300;
