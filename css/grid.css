@@ -1,69 +1,89 @@
 body {
   background-color: black;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 img {
-  height: 100%; }
+  height: 100%;
+}
 
 .navbar {
-  z-index: 15; }
+  z-index: 15;
+}
 
 .insights.active {
   float: left;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+}
 
 .nav-item {
-  width: max-content; }
+  width: max-content;
+}
 
 .grid-breadcrumb {
   display: inline-block;
   padding: 10px 0px;
   text-decoration: underline;
-  text-transform: capitalize; }
-  .grid-breadcrumb .arrow {
-    display: inline-block !important; }
+  text-transform: capitalize;
+}
+
+.grid-breadcrumb .arrow {
+  display: inline-block !important;
+}
 
 .grid {
   margin: 100px;
   margin-left: 400px;
-  display: table; }
-  .grid table {
-    margin-top: -130px; }
+  display: table;
+}
+
+.grid table {
+  margin-top: -130px;
+}
 
 .person {
   position: relative;
   overflow: hidden;
   width: 1000px;
   height: 620px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 tr:nth-child(odd) .photograph {
-  left: 100px; }
+  left: 100px;
+}
 
 tr:nth-child(even) .journal {
-  left: 362px; }
+  left: 362px;
+}
 
 .journal-wrapper {
   position: relative;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 .journal {
   display: flex;
   position: absolute;
   width: 440px;
-  height: 620px; }
+  height: 620px;
+}
 
 .photograph-wrapper {
-  position: relative; }
+  position: relative;
+}
 
 .person div {
-  z-index: 1; }
+  z-index: 1;
+}
 
 .person .current {
-  z-index: 3; }
+  z-index: 3;
+}
 
 .photograph {
   display: flex;
@@ -72,7 +92,8 @@ tr:nth-child(even) .journal {
   height: auto;
   z-index: 2;
   transition: all .2s ease-in-out;
-  margin-top: 55px; }
+  margin-top: 55px;
+}
 
 .tag {
   position: -webkit-sticky;
@@ -89,37 +110,52 @@ tr:nth-child(even) .journal {
   background-repeat: no-repeat;
   object-fit: cover;
   -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .3s ease-in-out; }
-  .tag:hover {
-    transform: rotate(10deg); }
+  transition: transform .3s ease-in-out;
+}
+
+.tag:hover {
+  transform: rotate(10deg);
+}
 
 tr {
-  scroll-snap-type: x mandatory; }
+  scroll-snap-type: x mandatory;
+}
 
 .subtag {
   width: 164px;
   height: 170px;
   margin-right: -235px;
   z-index: 4;
-  top: 10px; }
+  top: 10px;
+}
 
 [data-designer="ux-designer"] .maintag {
-  background-image: url("../assets/UX.png"); }
+  background-image: url("../assets/UX.png");
+}
 
 [data-designer="service-designer"] .maintag {
-  background-image: url("../assets/SERV.png"); }
+  background-image: url("../assets/SERV.png");
+}
+
+[data-designer="virtual-designer"].maintag {
+  background-image: url("../assets/VR.png");
+}
 
 [data-designer="videographer"] .maintag {
-  background-image: url("../assets/VID.png"); }
+  background-image: url("../assets/VID.png");
+}
 
 [data-designerWork="in-house"] .subtag {
-  background-image: url("../assets/inhouse.png"); }
+  background-image: url("../assets/inhouse.png");
+}
 
 [data-designerWork="agency"] .subtag {
-  background-image: url("../assets/agency.png"); }
+  background-image: url("../assets/agency.png");
+}
 
 [data-designerWork="freelance"] .subtag {
-  background-image: url("../assets/freelance.png"); }
+  background-image: url("../assets/freelance.png");
+}
 
 .left-shadow {
   height: 100vh;
@@ -132,7 +168,8 @@ tr {
   top: 0px;
   left: 0px;
   z-index: 10;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 .right-shadow {
   height: 100vh;
@@ -145,10 +182,12 @@ tr {
   top: 0px;
   right: 0px;
   z-index: 10;
-  pointer-events: none; }
+  pointer-events: none;
+}
 
 .column-wrapper {
-  position: relative; }
+  position: relative;
+}
 
 #rotateBtn {
   position: fixed;
@@ -163,7 +202,8 @@ tr {
   font-size: 30px;
   background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
   width: 33px;
-  height: 34px; }
+  height: 34px;
+}
 
 .share-link {
   right: 100px;
@@ -176,16 +216,20 @@ tr {
   color: white;
   font-size: 14px;
   font-weight: 300;
-  line-height: 14px; }
-  .share-link:hover {
-    text-decoration: underline; }
+  line-height: 14px;
+}
+
+.share-link:hover {
+  text-decoration: underline;
+}
 
 .share-arrow {
   height: 13.5px;
   width: 14px;
   display: inline-block;
   margin-left: 7px;
-  margin-top: -2px; }
+  margin-top: -2px;
+}
 
 .share-box {
   display: none;
@@ -197,17 +241,26 @@ tr {
   right: -28px;
   position: relative;
   float: right;
-  top: 262px; }
-  .share-box p {
-    font-size: 8px;
-    margin: 0 0 5px; }
-  .share-box ul {
-    list-style-type: none;
-    padding: 0;
-    line-height: 1.5; }
-    .share-box ul li {
-      font-size: 12px;
-      line-height: 18px;
-      cursor: pointer; }
-  .share-box li:hover {
-    text-decoration: underline; }
+  top: 262px;
+}
+
+.share-box p {
+  font-size: 8px;
+  margin: 0 0 5px;
+}
+
+.share-box ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.share-box ul li {
+  font-size: 12px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.share-box li:hover {
+  text-decoration: underline;
+}

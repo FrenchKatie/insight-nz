@@ -69,6 +69,7 @@
     background-repeat: no-repeat;
     object-fit: cover;
     top: 40px;
+    transition: all .2s ease-in-out;
   }
   .item .journal-wrapper .journal:hover {
     width: 290px;
@@ -76,7 +77,7 @@
   .item .tag {
     cursor: pointer;
     z-index: 3;
-    top: 130px;
+    top: 115px;
     right: 180px;
     float: right;
     display: flex;
@@ -85,12 +86,13 @@
     height: 100px;
     background-size: 100% auto;
     background-repeat: no-repeat;
+    transform: rotate(15deg);
     object-fit: cover;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform .3s ease-in-out;
   }
   .item .tag:hover {
-    transform: rotate(10deg);
+    transform: rotate(25deg);
   }
   .item .photograph-wrapper {
     width: content;
@@ -123,6 +125,7 @@
   .sticky-note {
     cursor: pointer;
     position: absolute;
+    transform: rotate(15deg);
     top: 100px;
     right: 50px;
     height: 100px;
@@ -134,7 +137,7 @@
     transition: transform .3s ease-in-out;
   }
   .sticky-note:hover {
-    transform: rotate(10deg);
+    transform: rotate(25deg);
   }
   .sub-sticky-note {
     cursor: pointer;
@@ -184,12 +187,13 @@
   background-size: 100% auto;
   background-repeat: no-repeat;
   object-fit: cover;
+  transform: rotate(15deg);
   -webkit-transition: -webkit-transform .8s ease-in-out;
   transition: transform .3s ease-in-out;
 }
 
 .subtag:hover {
-  transform: rotate(10deg);
+  transform: rotate(25deg);
 }
 
 .sticky-note.ux-designer {
@@ -200,12 +204,24 @@
   background-image: url("../assets/SERV.png");
 }
 
+.sticky-note.virtual-designer {
+  background-image: url("../assets/VR.png");
+}
+
+.sticky-note.videographer {
+  background-image: url("../assets/VID.png");
+}
+
 .sticky-note.typographer {
-  background-image: url("../assets/TYPE.png");
+  background-image: url("../assets/GRAPHIC.png");
 }
 
 .sticky-note.creative {
   background-image: url("../assets/creat.png");
+}
+
+.sticky-note.digital-designer {
+  background-image: url("../assets/digital\ designer.png");
 }
 
 .sub-sticky-note.inhouse {
@@ -224,12 +240,24 @@ li.ux-designer .tag {
   background-image: url("../assets/UX.png");
 }
 
-li.typographer .tag {
-  background-image: url("../assets/TYPE.png");
+li.videographer .tag {
+  background-image: url("../assets/VID.png");
+}
+
+li.graphic-designer .tag {
+  background-image: url("../assets/GRAPHIC.png");
 }
 
 li.service-designer .tag {
   background-image: url("../assets/SERV.png");
+}
+
+li.virtual-designer .tag {
+  background-image: url("../assets/VR.png");
+}
+
+li.digital-designer .tag {
+  background-image: url("../assets/digital\ designer.png");
 }
 
 li.creative .tag {
