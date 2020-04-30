@@ -2,6 +2,7 @@ body {
   background-color: black;
   color: white;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
   display: grid;
   place-items: center;
   max-width: 100%;
