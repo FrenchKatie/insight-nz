@@ -31,7 +31,7 @@ body {
         margin-left: -16px; }
         @media only screen and (max-width: 768px) {
           body .container .row.rules .nav .nav-item {
-            font-size: 0.5em; } }
+            font-size: 20px; } }
         body .container .row.rules .nav .nav-item .arrow {
           display: inline-block; }
         body .container .row.rules .nav .nav-item .nav-link {
