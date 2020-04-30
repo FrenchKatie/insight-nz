@@ -1,15 +1,20 @@
 @media only screen and (min-width: 768px) {
   .container {
     position: relative;
-    height: 100vh; }
+    height: 100vh;
+  }
   webkit-scrollbar {
-    display: none; }
+    display: none;
+  }
   :root {
-    --gutter: 1px; }
-  .insights-content > * {
-    grid-column: 2 / -2; }
-  .insights-content > .full {
-    grid-column: 1 / -1; }
+    --gutter: 1px;
+  }
+  .insights-content>* {
+    grid-column: 2 / -2;
+  }
+  .insights-content>.full {
+    grid-column: 1 / -1;
+  }
   .insights-content {
     display: none;
     overflow: hidden;
@@ -22,22 +27,26 @@
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; }
-    .insights-content .item-wrapper {
-      list-style: none;
-      display: grid;
-      grid-gap: calc(var(--gutter) / 2);
-      grid-template-columns: repeat(10, calc(35% - var(--gutter) * 2));
-      grid-auto-rows: minmax(480px, 1fr);
-      overflow-x: scroll;
-      overflow-y: hidden;
-      scroll-snap-type: x proximity;
-      padding-bottom: calc(.75 * var(--gutter));
-      margin-bottom: calc(-.25 * var(--gutter)); }
+    transition: all 0.5s ease;
+  }
+  .insights-content .item-wrapper {
+    list-style: none;
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: repeat(10, calc(35% - var(--gutter) * 2));
+    grid-auto-rows: minmax(480px, 1fr);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+  }
   .scroller-margin {
-    margin-left: 450px; }
+    margin-left: 450px;
+  }
   .no-scroller-margin {
-    margin-left: 0px; }
+    margin-left: 0px;
+  }
   .item {
     padding: 0;
     top: 40px;
@@ -45,58 +54,70 @@
     scroll-snap-align: center;
     display: flex;
     flex-direction: column;
-    align-items: baseline; }
-    .item .journal-wrapper {
-      position: relative;
-      z-index: 1; }
-      .item .journal-wrapper .journal {
-        display: flex;
-        position: absolute;
-        width: 270PX;
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        object-fit: cover;
-        top: 40px; }
-    .item .tag {
-      cursor: pointer;
-      z-index: 3;
-      top: 130px;
-      right: 180px;
-      float: right;
-      display: flex;
-      position: absolute;
-      width: 100px;
-      height: 100px;
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      object-fit: cover;
-      -webkit-transition: -webkit-transform .8s ease-in-out;
-      transition: transform .3s ease-in-out; }
-      .item .tag:hover {
-        transform: rotate(10deg); }
-    .item .photograph-wrapper {
-      width: content; }
-      .item .photograph-wrapper .photograph {
-        cursor: pointer;
-        display: flex;
-        position: absolute;
-        bottom: 55px;
-        width: 300px;
-        height: 200px;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        z-index: 2;
-        transition: all .2s ease-in-out; }
-        .item .photograph-wrapper .photograph:hover {
-          width: 330px;
-          height: 210px; }
+    align-items: baseline;
+  }
+  .item .journal-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  .item .journal-wrapper .journal {
+    display: flex;
+    position: absolute;
+    width: 270PX;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    top: 40px;
+  }
+  .item .journal-wrapper .journal:hover {
+    width: 290px;
+  .item .tag {
+    cursor: pointer;
+    z-index: 3;
+    top: 130px;
+    right: 180px;
+    float: right;
+    display: flex;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .3s ease-in-out;
+  }
+  .item .tag:hover {
+    transform: rotate(10deg);
+  }
+  .item .photograph-wrapper {
+    width: content;
+  }
+  .item .photograph-wrapper .photograph {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    bottom: 55px;
+    width: 300px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+  }
+  .item .photograph-wrapper .photograph:hover {
+    width: 330px;
+    height: 210px;
+  }
   .holder div {
     z-index: 1;
-    /*init z-index*/ }
+    /*init z-index*/
+  }
   .holder div.current {
     z-index: 2;
-    /*only this DIV will be visible*/ }
+    /*only this DIV will be visible*/
+  }
   .sticky-note {
     cursor: pointer;
     position: absolute;
@@ -108,9 +129,11 @@
     background-repeat: no-repeat;
     object-fit: cover;
     -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .3s ease-in-out; }
-    .sticky-note:hover {
-      transform: rotate(10deg); }
+    transition: transform .3s ease-in-out;
+  }
+  .sticky-note:hover {
+    transform: rotate(10deg);
+  }
   .sub-sticky-note {
     cursor: pointer;
     position: absolute;
@@ -122,9 +145,12 @@
     background-repeat: no-repeat;
     object-fit: cover;
     -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .3s ease-in-out; }
-    .sub-sticky-note:hover {
-      transform: rotate(10deg); } }
+    transition: transform .3s ease-in-out;
+  }
+  .sub-sticky-note:hover {
+    transform: rotate(10deg);
+  }
+}
 
 #rotateBtn {
   z-index: 50;
@@ -140,7 +166,8 @@
   background: url("../assets/icons/rotate.png") no-repeat no-repeat center;
   width: 33px;
   height: 34px;
-  bottom: 34px; }
+  bottom: 34px;
+}
 
 .subtag {
   cursor: pointer;
@@ -156,53 +183,73 @@
   background-repeat: no-repeat;
   object-fit: cover;
   -webkit-transition: -webkit-transform .8s ease-in-out;
-  transition: transform .3s ease-in-out; }
-  .subtag:hover {
-    transform: rotate(10deg); }
+  transition: transform .3s ease-in-out;
+}
+
+.subtag:hover {
+  transform: rotate(10deg);
+}
 
 .sticky-note.ux-designer {
-  background-image: url("../assets/UX.png"); }
+  background-image: url("../assets/UX.png");
+}
 
 .sticky-note.service-designer {
-  background-image: url("../assets/SERV.png"); }
+  background-image: url("../assets/SERV.png");
+}
 
 .sticky-note.typographer {
-  background-image: url("../assets/TYPE.png"); }
+  background-image: url("../assets/TYPE.png");
+}
 
 .sticky-note.creative {
-  background-image: url("../assets/creat.png"); }
+  background-image: url("../assets/creat.png");
+}
 
 .sub-sticky-note.inhouse {
-  background-image: url("../assets/inhouse.png"); }
+  background-image: url("../assets/inhouse.png");
+}
 
 .sub-sticky-note.agency {
-  background-image: url("../assets/agency.png"); }
+  background-image: url("../assets/agency.png");
+}
 
 .sub-sticky-note.freelance {
-  background-image: url("../assets/freelance.png"); }
+  background-image: url("../assets/freelance.png");
+}
 
 li.ux-designer .tag {
-  background-image: url("../assets/UX.png"); }
+  background-image: url("../assets/UX.png");
+}
 
 li.typographer .tag {
-  background-image: url("../assets/TYPE.png"); }
+  background-image: url("../assets/TYPE.png");
+}
 
 li.service-designer .tag {
-  background-image: url("../assets/SERV.png"); }
+  background-image: url("../assets/SERV.png");
+}
 
 li.creative .tag {
-  background-image: url("../assets/creat.png"); }
+  background-image: url("../assets/creat.png");
+}
 
 li.inhouse .subtag {
-  background-image: url("../assets/inhouse.png"); }
+  background-image: url("../assets/inhouse.png");
+}
 
 li.agency .subtag {
-  background-image: url("../assets/agency.png"); }
+  background-image: url("../assets/agency.png");
+}
 
 li.freelance .subtag {
-  background-image: url("../assets/freelance.png"); }
+  background-image: url("../assets/freelance.png");
+}
 
 .filtered {
-  top: 0px !important; }
-  .filtered .journal {
-    top: 0px !important; }
+  top: 0px !important;
+}
+
+.filtered .journal {
+  top: 0px !important;
+}
