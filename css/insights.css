@@ -18,7 +18,7 @@ body {
     font-size: 20px;
     line-height: 32px; }
   body .text {
-    margin: 200px auto 0px;
+    margin: 50px auto 0px;
     max-width: 530px; }
   body .insights-titles {
     color: #E0E0E0;
@@ -39,7 +39,7 @@ body {
       padding: 5px; }
       @media only screen and (max-width: 768px) {
         body .insights-titles ul .nav-link {
-          border: 2px solid white; } }
+          border: 0.1px solid white; } }
       body .insights-titles ul .nav-link:hover {
         color: white;
         text-decoration: underline;
