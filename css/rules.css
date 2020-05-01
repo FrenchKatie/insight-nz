@@ -29,7 +29,10 @@ body {
       margin: 100px auto; }
       body .container .row.rules .nav {
         margin-left: -16px; }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 768px) 
+        {body .container .text {
+          margin: 50px auto 0px;
+          max-width: 530px; }
           body .container .row.rules .nav .nav-item {
             font-size: 20px; } }
         body .container .row.rules .nav .nav-item .arrow {
