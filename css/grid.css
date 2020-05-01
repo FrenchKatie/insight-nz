@@ -137,12 +137,20 @@ tr {
   background-image: url("../assets/SERV.png");
 }
 
-[data-designer="virtual-designer"].maintag {
+[data-designer="virtual-reality-designer"] .maintag {
   background-image: url("../assets/VR.png");
 }
 
 [data-designer="videographer"] .maintag {
   background-image: url("../assets/VID.png");
+}
+
+[data-designer="creative"] .maintag {
+  background-image: url("../assets/creat.png");
+}
+
+[data-designer="graphic-designer"] .maintag {
+  background-image: url("../assets/GRAPHIC.png");
 }
 
 [data-designerWork="in-house"] .subtag {
