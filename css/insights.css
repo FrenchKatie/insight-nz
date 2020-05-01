@@ -39,7 +39,7 @@ body {
       padding: 5px; }
       @media only screen and (max-width: 768px) {
         body .insights-titles ul .nav-link {
-          border: 2px solid white; } }
+          border: 1px solid white; } }
       body .insights-titles ul .nav-link:hover {
         color: white;
         text-decoration: underline;
