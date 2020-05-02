@@ -78,9 +78,7 @@
     cursor: pointer;
     z-index: 3;
     top: 115px;
-    right: 180px;
-    float: right;
-    display: flex;
+    left: 225px;
     position: absolute;
     width: 100px;
     height: 100px;
@@ -178,9 +176,7 @@
   cursor: pointer;
   z-index: 5;
   top: 200px;
-  right: 180px;
-  float: right;
-  display: flex;
+  left: 265px;
   position: absolute;
   width: 60px;
   height: 60px;
@@ -218,6 +214,10 @@
 
 .sticky-note.creative {
   background-image: url("../assets/creat.png");
+}
+
+.sticky-note.graphic-designer {
+  background-image: url("../assets/GRAPHIC.png");
 }
 
 .sticky-note.digital-designer {
