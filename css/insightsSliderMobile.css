@@ -2,7 +2,7 @@
   #rotateBtn {
     top: 103px;
     bottom: unset;
-    position: absolute; }
+    position: fixed; }
   .insights-content {
     width: 100%;
     display: none; }
